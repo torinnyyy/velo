@@ -341,7 +341,7 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                     'Sec-Fetch-Mode': 'navigate',
                     'Sec-Fetch-User': '?1',
                     'Sec-Fetch-Dest': 'document',
-                    'Upgrade-Insecure-Requests': 1,
+                    'Upgrade-Insecure-Requests': '1',
                     'Connection': 'keep-alive',
                     'sec-ch-ua-mobile': '?0',
                     'sec-ch-ua-platform': '"macOS"',
