@@ -1,0 +1,45 @@
+{
+  "ads_config": {
+    "init_ads": "admob"
+  },
+  "is_old_version": false,
+  "tmdb_apikey": {
+    "ios_key": "3161de04ca660985f0b42e883eb49fef",
+    "android_key": "3161de04ca660985f0b42e883eb49fef"
+  },
+  "notification": {
+    "url": "https://discord.gg/VdWnkyuePu",
+    "title": "Join Us",
+    "contents": "<p>Come and be a part of our Discord community. You can find the latest infomation and enjoy with friends.</p>",
+    "show": true,
+    "key": "NOTI_1.0"
+  },
+  "is_caption": false,
+  "is_ocr_image": true,
+  "is_ocr_scanner": true,
+  "is_ocr_image_ai": true,
+  "is_ocr_image_ai_v2": true,
+  "is_text_to_video": false,
+  "admob_config": {
+    "detail_start": {
+      "enable_admob": false,
+      "enable_applovin": false,
+      "count_show": 2
+    },
+    "player_start": {
+      "enable_admob": true,
+      "enable_applovin": true,
+      "count_show": 0
+    },
+    "player_back": {
+      "enable_admob": true,
+      "enable_applovin": true,
+      "count_show": 0
+    },
+    "player_next_episode": {
+      "enable_admob": true,
+      "enable_applovin": true,
+      "count_show": 0
+    }
+  }
+}
