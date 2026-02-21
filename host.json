@@ -38,7 +38,6 @@
 	"dist/hosts/megacloud.js",
 	"dist/hosts/mcloud.js",
 	"dist/hosts/rapidcloud.js",
-	"dist/hosts/vizcloud.js",
-	"dist/hosts/vidsrcme.js"
+	"dist/hosts/vizcloud.js"
 	]
 }
