@@ -38,70 +38,65 @@ var _this = this;
 
 // Akwam Arabic Provider — ak.sv
 // Covers Arabic-exclusive content: برامج (shows), مسلسلات (series), أفلام (movies)
-// Flow: search → content page → episode page (TV) → watch_id → embed_callback
+// Fix: akwam search engine is Arabic-only → must fetch Arabic title from TMDB first
+// Flow: TMDB ar title → search ak.sv → first result → episode page (TV) → watch_id → embed_callback
 source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    var PROVIDER, DOMAIN, urlSearch, parseSearch, contentUrl, watchId, watchUrl,
+    var PROVIDER, DOMAIN, tmdbInfo, arabicTitle, urlSearch, parseSearch, contentUrl, watchId, watchUrl,
         parseContent, episodeUrl, parseEpisode, watchLink;
     return __generator(this, function (_a) {
         switch (_a.label) {
 
-            // ── Step 1: Search ───────────────────────────────────────────────────────
+            // ── Step 1: Get Arabic title from TMDB ───────────────────────────────────
             case 0:
                 PROVIDER = 'AKWAM';
                 DOMAIN = 'https://ak.sv';
-                urlSearch = DOMAIN + '/search?q=' + encodeURIComponent(movieInfo.title);
-                libs.log({ title: movieInfo.title, type: movieInfo.type, urlSearch: urlSearch }, PROVIDER, 'SEARCH START');
-                return [4, libs.request_get(urlSearch, {}, true)];
+                libs.log({ title: movieInfo.title, type: movieInfo.type, tmdb_id: movieInfo.tmdb_id }, PROVIDER, 'START');
+                if (movieInfo.type === 'tv') {
+                    return [4, libs.tmdb_tv_info(movieInfo.tmdb_id, 'ar')];
+                }
+                return [4, libs.tmdb_movie_info(movieInfo.tmdb_id, 'ar')];
 
             case 1:
+                tmdbInfo = _a.sent();
+                arabicTitle = tmdbInfo && tmdbInfo.title ? tmdbInfo.title : movieInfo.title;
+                libs.log({ arabicTitle: arabicTitle }, PROVIDER, 'AR TITLE');
+
+                // ── Step 2: Search with Arabic title ─────────────────────────────────
+                urlSearch = DOMAIN + '/search?q=' + encodeURIComponent(arabicTitle);
+                libs.log({ urlSearch: urlSearch }, PROVIDER, 'SEARCH');
+                return [4, libs.request_get(urlSearch, {}, true)];
+
+            case 2:
                 parseSearch = _a.sent();
                 if (typeof parseSearch !== 'function') {
-                    console.warn('[AKWAM] parseSearch failed — request blocked | url=' + urlSearch);
+                    console.warn('[AKWAM] Search request blocked | url=' + urlSearch);
                     return [2];
                 }
 
-                // Find best-matching content link (/series/, /shows/, /movie/)
+                // Take first matching content link — search is accurate with Arabic title
                 contentUrl = null;
                 parseSearch('a[href*="/series/"], a[href*="/shows/"], a[href*="/movie/"]').each(function (i, el) {
                     if (contentUrl) return false;
                     var href = parseSearch(el).attr('href');
-                    var text = parseSearch(el).text().trim();
-                    if (!href || !text) return true;
-                    if (libs.string_matching_title(movieInfo, text, false)) {
+                    if (href && href.indexOf(DOMAIN) === 0) {
                         contentUrl = href;
-                        libs.log({ contentUrl: contentUrl, matchedText: text }, PROVIDER, 'EXACT MATCH');
+                        libs.log({ contentUrl: contentUrl }, PROVIDER, 'FIRST RESULT');
                         return false;
                     }
                 });
-                // Fallback: regex match
-                if (!contentUrl) {
-                    parseSearch('a[href*="/series/"], a[href*="/shows/"], a[href*="/movie/"]').each(function (i, el) {
-                        if (contentUrl) return false;
-                        var href = parseSearch(el).attr('href');
-                        var text = parseSearch(el).text().trim();
-                        if (!href || !text) return true;
-                        if (libs.string_matching_title(movieInfo, text, true)) {
-                            contentUrl = href;
-                            libs.log({ contentUrl: contentUrl, matchedText: text }, PROVIDER, 'REGEX MATCH');
-                            return false;
-                        }
-                    });
-                }
 
                 if (!contentUrl) {
-                    console.warn('[AKWAM] No matching title in search results | title=' + movieInfo.title);
+                    console.warn('[AKWAM] No results found | arabicTitle=' + arabicTitle);
                     return [2];
                 }
 
-                libs.log({ contentUrl: contentUrl }, PROVIDER, 'CONTENT URL FOUND');
-
-            // ── Step 2: Load content page (series/show/movie) ───────────────────────
+            // ── Step 3: Load content page ─────────────────────────────────────────
                 return [4, libs.request_get(contentUrl, {}, true)];
 
-            case 2:
+            case 3:
                 parseContent = _a.sent();
                 if (typeof parseContent !== 'function') {
-                    console.warn('[AKWAM] parseContent failed | url=' + contentUrl);
+                    console.warn('[AKWAM] Content page failed | url=' + contentUrl);
                     return [2];
                 }
 
@@ -115,40 +110,54 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                     }
                     watchId = watchLink.replace(/.*\/watch\/(\d+).*/, '$1');
                     watchUrl = DOMAIN + '/watch/' + watchId;
-                    libs.log({ watchUrl: watchUrl, watchId: watchId }, PROVIDER, 'MOVIE WATCH URL');
+                    libs.log({ watchUrl: watchUrl }, PROVIDER, 'MOVIE WATCH URL');
                     return [4, libs.embed_callback(watchUrl, PROVIDER, 'Akwam', 'mp4', callback, 1, [], [], { 'Referer': DOMAIN + '/' })];
                 }
 
-                // ── TV branch: find episode by number ───────────────────────────────
-                // Episode hrefs contain /الحلقة-{N} or URL-encoded equivalent
+                // ── TV branch: find episode by number ────────────────────────────────
+                // Episode hrefs contain /الحلقة-{N} (raw Arabic) or encoded form
                 episodeUrl = null;
                 parseContent('a[href*="/episode/"]').each(function (i, el) {
                     if (episodeUrl) return false;
                     var href = parseContent(el).attr('href') || '';
-                    // Match: /الحلقة-{N} (raw Arabic) or encoded %D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-{N}
-                    var m = href.match(/\/\u0627\u0644\u062d\u0644\u0642\u0629-(\d+)$/) ||
-                            href.match(/%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-(\d+)$/i);
+                    // Match raw Arabic: /الحلقة-{N}
+                    var m = href.match(/\/\u0627\u0644\u062d\u0644\u0642\u0629-(\d+)/) ||
+                    // Match URL-encoded: /%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-{N}
+                            href.match(/%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-(\d+)/i);
                     if (m && parseInt(m[1], 10) === movieInfo.episode) {
                         episodeUrl = href;
-                        libs.log({ episodeUrl: episodeUrl, ep: movieInfo.episode }, PROVIDER, 'EPISODE URL MATCH');
+                        libs.log({ episodeUrl: episodeUrl, ep: movieInfo.episode }, PROVIDER, 'EPISODE MATCH');
                         return false;
                     }
                 });
 
+                // Also check /show/episode/ links for shows (different path pattern)
                 if (!episodeUrl) {
-                    console.warn('[AKWAM] Episode not found | ep=' + movieInfo.episode + ' | content=' + contentUrl);
+                    parseContent('a[href*="/show/episode/"]').each(function (i, el) {
+                        if (episodeUrl) return false;
+                        var href = parseContent(el).attr('href') || '';
+                        var m = href.match(/\/\u0627\u0644\u062d\u0644\u0642\u0629-(\d+)/) ||
+                                href.match(/%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-(\d+)/i);
+                        if (m && parseInt(m[1], 10) === movieInfo.episode) {
+                            episodeUrl = href;
+                            libs.log({ episodeUrl: episodeUrl, ep: movieInfo.episode }, PROVIDER, 'SHOW EPISODE MATCH');
+                            return false;
+                        }
+                    });
+                }
+
+                if (!episodeUrl) {
+                    console.warn('[AKWAM] Episode not found | ep=' + movieInfo.episode + ' | url=' + contentUrl);
                     return [2];
                 }
 
-                libs.log({ episodeUrl: episodeUrl }, PROVIDER, 'EPISODE URL');
-
-            // ── Step 3: Load episode page → extract watch_id ─────────────────────
+            // ── Step 4: Load episode page → extract watch_id ──────────────────────
                 return [4, libs.request_get(episodeUrl, {}, true)];
 
-            case 3:
+            case 4:
                 parseEpisode = _a.sent();
                 if (typeof parseEpisode !== 'function') {
-                    console.warn('[AKWAM] parseEpisode failed | url=' + episodeUrl);
+                    console.warn('[AKWAM] Episode page failed | url=' + episodeUrl);
                     return [2];
                 }
 
@@ -164,10 +173,10 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                 watchUrl = DOMAIN + '/watch/' + watchId;
                 libs.log({ watchUrl: watchUrl, watchId: watchId }, PROVIDER, 'FINAL WATCH URL');
 
-            // ── Step 4: Send to player ───────────────────────────────────────────
+            // ── Step 5: Send to player ───────────────────────────────────────────
                 return [4, libs.embed_callback(watchUrl, PROVIDER, 'Akwam', 'mp4', callback, 1, [], [], { 'Referer': DOMAIN + '/' })];
 
-            case 4:
+            case 5:
                 _a.sent();
                 return [2, true];
         }
