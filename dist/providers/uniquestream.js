@@ -53,6 +53,10 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                 return [4, libs.request_get(urlSearch, {}, true)];
             case 1:
                 parseSearch = _a.sent();
+                if (typeof parseSearch !== 'function') {
+                    console.warn('[DUniqueStream] parseSearch is not a function — request likely failed | url=' + urlSearch);
+                    return [2];
+                }
                 postID = parseSearch("input[name='postid']").val();
                 libs.log({ postID: postID }, PROVIDER, 'POST ID');
                 if (!postID) {

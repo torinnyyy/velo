@@ -71,6 +71,10 @@ subs.getResource = function (movieInfo, config, callback) { return __awaiter(_th
             case 2:
                 subsData = _b.sent();
                 libs.log({ subsData: subsData }, PROVIDER, "SUB DATA");
+                if (!subsData || !subsData.subtitles || !Array.isArray(subsData.subtitles)) {
+                    console.warn('[SubSource] subsData.subtitles missing or invalid — skipping | url=' + url);
+                    return [2, true];
+                }
                 _i = 0, _a = subsData.subtitles;
                 _b.label = 3;
             case 3:

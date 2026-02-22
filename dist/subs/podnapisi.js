@@ -54,6 +54,10 @@ subs.getResource = function (movieInfo, config, callback) { return __awaiter(_th
             case 2:
                 dataSearch = _b.sent();
                 libs.log({ dataSearch: dataSearch }, PROVIDER, "==DATA SEARCH==");
+                if (!dataSearch || !dataSearch.data || !Array.isArray(dataSearch.data)) {
+                    console.warn('[Podnapisi] dataSearch.data missing or invalid — skipping | url=' + urlSearch);
+                    return [2, true];
+                }
                 ID = "";
                 for (_i = 0, _a = dataSearch.data; _i < _a.length; _i++) {
                     item = _a[_i];

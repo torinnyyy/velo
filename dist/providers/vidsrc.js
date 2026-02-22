@@ -203,6 +203,10 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                     }, true)];
             case 2:
                 parseSearch = _a.sent();
+                if (typeof parseSearch !== 'function') {
+                    console.warn('[RVIDSRC] parseSearch is not a function — request likely failed | url=' + urlSearch);
+                    return [2, false];
+                }
                 parseIframe = parseSearch("#player_iframe").attr("src");
                 libs.log({ parseIframe: parseIframe }, PROVIDER, "PARSE IFRAME");
                 if (!parseIframe) {

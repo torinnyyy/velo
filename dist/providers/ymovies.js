@@ -51,6 +51,10 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
             case 2:
                 parseSearch_1 = _a.sent();
                 libs.log({ parseSearch: parseSearch_1 }, PROVIDER, 'DATA SEARCH');
+                if (typeof parseSearch_1 !== 'function') {
+                    console.warn('[YMovies] parseSearch_1 is not a function — request likely failed | url=' + urlSearch);
+                    return [2];
+                }
                 LINK_DETAIL_1 = "";
                 parseSearch_1('.ml-item').each(function (key, item) {
                     var title = parseSearch_1(item).find('.mi-name a').text();

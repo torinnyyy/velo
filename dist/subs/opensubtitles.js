@@ -85,6 +85,10 @@ subs.getResource = function (movieInfo, config, callback) { return __awaiter(_th
                     { name: 'Turkish', id: 'tur' },
                     { name: 'Indonesian', id: 'ind' },
                 ];
+                if (!movieInfo.imdb_id) {
+                    console.warn('[OpenSubtitles] imdb_id is null/undefined — skipping | title=' + movieInfo.title);
+                    return [2, true];
+                }
                 url = "https://rest.opensubtitles.org/search/imdbid-".concat(movieInfo.imdb_id.replace("tt", ""));
                 libs.log({ url: url }, PROVIDER, "URL SEARCH");
                 _i = 0, subLanguageIds_1 = subLanguageIds;
