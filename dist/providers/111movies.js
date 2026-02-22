@@ -116,10 +116,17 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                     })];
             case 5:
                 requestServer = _c.sent();
-                return [4, requestServer.json()];
+                return [4, requestServer.text()];
             case 6:
                 dataServer = _c.sent();
-                libs.log({ dataServer: dataServer, urlServer: urlServer }, PROVIDER, "DATA SERVER");
+                libs.log({ dataServerRaw: dataServer, urlServer: urlServer }, PROVIDER, "DATA SERVER RAW");
+                try {
+                    dataServer = JSON.parse(dataServer);
+                } catch (jsonErr) {
+                    console.warn('[OneOneOne] requestServer.json() parse error — server returned non-JSON | url=' + urlServer + ' | preview=' + String(dataServer).substring(0, 120));
+                    return [2];
+                }
+                libs.log({ dataServer: dataServer }, PROVIDER, "DATA SERVER");
                 if (!dataServer || !dataServer.length) {
                     return [2];
                 }
@@ -146,9 +153,15 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                     })];
             case 8:
                 requestEmbed = _c.sent();
-                return [4, requestEmbed.json()];
+                return [4, requestEmbed.text()];
             case 9:
                 dataEmbed = _c.sent();
+                try {
+                    dataEmbed = JSON.parse(dataEmbed);
+                } catch (jsonErr2) {
+                    console.warn('[OneOneOne] requestEmbed.json() parse error — server returned non-JSON | url=' + urlEmbed + ' | preview=' + String(dataEmbed).substring(0, 120));
+                    return [3, 10];
+                }
                 libs.log({ dataEmbed: dataEmbed, urlEmbed: urlEmbed }, PROVIDER, "DATA EMBED");
                 if (!dataEmbed || !dataEmbed.url) {
                     return [3, 10];

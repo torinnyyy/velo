@@ -277,6 +277,7 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                         referer: "https://".concat(host, "/"),
                         Origin: "https://".concat(host)
                     });
+                    break;
                 }
                 return [3, 8];
             case 7:

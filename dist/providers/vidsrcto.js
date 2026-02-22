@@ -181,6 +181,10 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                     var wi = a.o(Mi);
                     return a.O(wi);
                 };
+                if (!movieInfo.imdb_id) {
+                    console.warn('[WVIDSRCTO] imdb_id is null/undefined — skipping | title=' + movieInfo.title);
+                    return [2];
+                }
                 urlSearch = '';
                 if (movieInfo.type == 'tv') {
                     urlSearch = "".concat(DOMAIN, "/embed/tv/").concat(movieInfo.imdb_id, "/").concat(movieInfo.season, "/").concat(movieInfo.episode);
@@ -194,6 +198,10 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                     }, true)];
             case 2:
                 parseSearch = _b.sent();
+                if (typeof parseSearch !== 'function') {
+                    console.warn('[WVIDSRCTO] parseSearch is not a function — request likely failed | url=' + urlSearch);
+                    return [2];
+                }
                 id = parseSearch('.episodes li a').attr('data-id');
                 libs.log({ id: id }, PROVIDER, 'ID');
                 if (!id) {

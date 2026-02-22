@@ -193,7 +193,7 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                         season: season,
                         type: type
                     }, PROVIDER, 'SEARCH INFO');
-                    if (libs.string_matching_title(movieInfo, title) && !LINK_DETAIL) {
+                    if (libs.string_matching_title(movieInfo, title, false) && !LINK_DETAIL) {
                         if (movieInfo.type == 'movie' && type == 'movie') {
                             LINK_DETAIL = "".concat(DOMAIN, "/movie/").concat(href, ".html");
                         }

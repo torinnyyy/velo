@@ -42,6 +42,10 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
             case 0:
                 PROVIDER = 'PTOWEMBED';
                 DOMAIN = "https://2embed.org";
+                if (!movieInfo.imdb_id) {
+                    console.warn('[PTOWEMBED] imdb_id is null/undefined — skipping | title=' + movieInfo.title);
+                    return [2];
+                }
                 urlSearch = '';
                 if (movieInfo.type == 'tv') {
                     urlSearch = "".concat(DOMAIN, "/embed/series?imdb=").concat(movieInfo.imdb_id, "&sea=").concat(movieInfo.season, "&epi=").concat(movieInfo.episode);
@@ -53,6 +57,10 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                 return [4, libs.request_get(urlSearch, {}, true)];
             case 1:
                 parseSearch = _a.sent();
+                if (typeof parseSearch !== 'function') {
+                    console.warn('[PTOWEMBED] parseSearch is not a function — request likely failed | url=' + urlSearch);
+                    return [2];
+                }
                 filmIds = [];
                 movieId = parseSearch('#embed-player').attr('data-movie-id');
                 libs.log({ length: parseSearch('.server').length, movieId: movieId }, PROVIDER, 'PARSE SEARCH');

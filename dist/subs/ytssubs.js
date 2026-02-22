@@ -51,6 +51,10 @@ subs.getResource = function (movieInfo, config, callback) { return __awaiter(_th
                 return [4, libs.request_post(urlSearch, {}, {}, true)];
             case 2:
                 dataSearch_1 = _b.sent();
+                if (typeof dataSearch_1 !== 'function') {
+                    console.warn('[YTSSubs] dataSearch_1 is not a function — request likely failed | url=' + urlSearch);
+                    return [2];
+                }
                 subLang_1 = {};
                 dataSearch_1("tr").each(function (key, item) {
                     var dataId = dataSearch_1(item).attr("data-id");
