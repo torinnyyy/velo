@@ -1,6 +1,6 @@
 {
-	"hosts": [	
-		
+	"hosts": [
+
 	"dist/hosts/streamlare.js",
 	"dist/hosts/streamrapid.js",
 	"dist/hosts/playmezzz.js",
@@ -29,6 +29,14 @@
 	"dist/hosts/turbovid.js",
 	"dist/hosts/moviplus.js",
 	"dist/hosts/smashystream.js",
-	"dist/hosts/streamwish.js"
+	"dist/hosts/streamwish.js",
+	"dist/hosts/dood.js",
+	"dist/hosts/megacloud.js",
+	"dist/hosts/mcloud.js",
+	"dist/hosts/hackplayer.js",
+	"dist/hosts/vidmoly.js",
+	"dist/hosts/vidara.js",
+	"dist/hosts/savefiles.js",
+	"dist/hosts/bysezejataos.js"
 	]
 }
