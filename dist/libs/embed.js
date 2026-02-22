@@ -68,35 +68,46 @@ libs.embed_redirect = function (embed_1, quality_1, movieInfo_1, provider_1, cal
             switch (_a.label) {
                 case 0:
                     if (!embed) {
+                        console.warn('[EMBED:REDIRECT] embed is empty — provider=' + provider);
                         return [2];
                     }
                     hostname = libs.url_get_host(embed);
                     libs.log({ hostname: hostname, embed: embed }, provider, 'EMBED HOST');
+                    console.log('[EMBED:REDIRECT] provider=' + provider + ' embed=' + embed + ' hostname=' + hostname + ' quality=' + (quality || 'auto'));
                     if (embed.indexOf('.m3u8') != -1 || embed.indexOf('.hls') != -1) {
+                        console.log('[EMBED:REDIRECT] Direct HLS detected → callback | provider=' + provider + ' url=' + embed);
                         libs.embed_callback(embed, provider, host ? host : hostname.toUpperCase(), 'Hls', callback, 1, subs, [], headers);
                         return [2];
                     }
                     if (!hostname) {
+                        console.warn('[EMBED:REDIRECT] No hostname resolved from embed — skipping | provider=' + provider + ' embed=' + embed);
                         return [2];
                     }
                     if (quality) {
+                        console.log('[EMBED:REDIRECT] quality set → direct callback | provider=' + provider + ' url=' + embed);
                         libs.embed_callback(embed, provider, host ? host : hostname.toUpperCase(), '', callback, 1, subs, [], headers);
                         return [2];
                     }
                     if (hosts && hosts[hostname]) {
+                        console.log('[EMBED:REDIRECT] Dispatching to host handler: ' + hostname + ' | provider=' + provider);
                         hosts[hostname](embed, movieInfo, provider, {
                             subs: subs ? subs : [],
                             options: options,
                         }, callback);
                         return [2];
                     }
+                    console.log('[EMBED:REDIRECT] No host handler — checking content-length | provider=' + provider + ' url=' + embed);
                     return [4, libs.request_head(embed, headers)];
                 case 1:
                     headersData = _a.sent();
                     contentLength = headersData['content-length'];
                     libs.log({ contentLength: contentLength }, 'CONTENT_LENGTH');
+                    console.log('[EMBED:REDIRECT] content-length=' + contentLength + ' | provider=' + provider + ' url=' + embed);
                     if (contentLength > 100000000) {
+                        console.log('[EMBED:REDIRECT] Large file detected → direct callback | provider=' + provider);
                         libs.embed_callback(embed, provider, host ? host : hostname.toUpperCase(), '', callback, 1, subs, [], headers);
+                    } else {
+                        console.warn('[EMBED:REDIRECT] content-length too small or missing — no callback | provider=' + provider + ' contentLength=' + contentLength);
                     }
                     return [2];
             }
@@ -116,6 +127,18 @@ libs.embed_callback = function (urlDirect, provider, host, quality, callback, ra
     if (direct_quality === void 0) { direct_quality = []; }
     if (headers === void 0) { headers = {}; }
     if (options === void 0) { options = {}; }
+
+    // ── لوج مكثف: كل نتيجة ناجحة
+    console.log(
+        '[EMBED:CALLBACK] ✅ provider=' + provider +
+        ' host=' + host +
+        ' quality=' + quality +
+        ' rank=' + rank +
+        ' directQualityCount=' + direct_quality.length +
+        ' subsCount=' + subs.length +
+        ' url=' + urlDirect
+    );
+
     var parseSubs = [];
     if (subs.length > 0) {
         for (var _i = 0, subs_1 = subs; _i < subs_1.length; _i++) {
@@ -142,16 +165,20 @@ libs.parse_size = function (file, provider, host, type, callback, rank, tracks) 
     var directSizes, patternSize, directQuality, _i, patternSize_1, patternItem, sizeQuality;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get(file, {})];
+            case 0:
+                console.log('[PARSE_SIZE] provider=' + provider + ' file=' + file);
+                return [4, libs.request_get(file, {})];
             case 1:
                 directSizes = _a.sent();
                 patternSize = directSizes.match(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/ig);
                 if (!patternSize) {
-                    libs.embed_callback(file, provider, host, item.type, callback, ++rank, tracks);
+                    console.warn('[PARSE_SIZE] No URLs found in m3u8 — direct callback | provider=' + provider + ' file=' + file);
+                    libs.embed_callback(file, provider, host, type, callback, ++rank, tracks);
                     return [2];
                 }
                 directQuality = [];
                 libs.log({ patternSize: patternSize }, provider, 'PATTERN SIZE');
+                console.log('[PARSE_SIZE] Found ' + patternSize.length + ' quality URLs | provider=' + provider);
                 for (_i = 0, patternSize_1 = patternSize; _i < patternSize_1.length; _i++) {
                     patternItem = patternSize_1[_i];
                     sizeQuality = patternItem.match(/\/([0-9]+)\//i);

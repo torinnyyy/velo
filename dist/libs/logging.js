@@ -1,251 +1,165 @@
-// ════════════════════════════════════════════════════════════════════
-// نظام اللوج المركزي لـ Velo
-// ════════════════════════════════════════════════════════════════════
-//
-// ⚠️ ملاحظة تقنية مهمة:
-// هذا الكود يعمل داخل JavaScriptCore (JSC) في React Native.
-// JSC لا يدعم Node.js APIs (fs, path, stream) لذلك لا يمكن استخدام
-// مكتبات مثل winston مباشرة.
-// الحل: نظام لوج خفيف الوزن 100% متوافق مع JSC.
-//
-// الميزات:
-//   1. libs.log()       — نفس الواجهة القديمة بدون أي تغيير (backward compatible)
-//   2. libs.logger      — واجهة جديدة: info / warn / error / success
-//   3. libs.logger.trackProvider() — تتبع نجاح/فشل كل provider
-//   4. libs.logger.getHealthReport() — تقرير صحة الـ providers
-//   5. libs.logger.getLogs()        — استرجاع سجل الـ logs المخزنة
-//
-// ════════════════════════════════════════════════════════════════════
-
+// ══════════════════════════════════════════════════════════════════════
+// نظام اللوج المكثف لـ Velo — JSC-Compatible (بدون Node.js)
+// ══════════════════════════════════════════════════════════════════════
 (function () {
 
-    // ────────────────────────────────────────────────────────────────
-    // إعدادات
-    // ────────────────────────────────────────────────────────────────
-    var MAX_LOG_ENTRIES = 500;   // الحد الأقصى للإدخالات المحفوظة في الذاكرة
-    var LOG_LEVEL = 'info';      // 'info' | 'warn' | 'error'
+    // ──────────────────────────────────────────────────────────────────
+    // Circular buffer — آخر 1000 إدخال فقط (لتجنب memory leak)
+    // ──────────────────────────────────────────────────────────────────
+    var MAX_ENTRIES = 1000;
+    var _buf = [];
 
-    var LEVELS = { info: 0, warn: 1, error: 2, success: 0 };
-
-    // ────────────────────────────────────────────────────────────────
-    // مخزن اللوج (Circular Buffer في الذاكرة)
-    // ────────────────────────────────────────────────────────────────
-    var logBuffer = [];
-
-    function getTimestamp() {
-        var now = new Date();
-        var pad = function (n) { return n < 10 ? '0' + n : '' + n; };
-        return now.getFullYear() + '-' +
-            pad(now.getMonth() + 1) + '-' +
-            pad(now.getDate()) + ' ' +
-            pad(now.getHours()) + ':' +
-            pad(now.getMinutes()) + ':' +
-            pad(now.getSeconds());
+    function _ts() {
+        var d = new Date();
+        var p = function (n) { return n < 10 ? '0' + n : '' + n; };
+        return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) +
+            ' ' + p(d.getHours()) + ':' + p(d.getMinutes()) + ':' + p(d.getSeconds()) +
+            '.' + (d.getMilliseconds() < 100 ? '0' : '') + (d.getMilliseconds() < 10 ? '0' : '') + d.getMilliseconds();
     }
 
-    function addToBuffer(entry) {
-        logBuffer.push(entry);
-        // احتفظ بآخر MAX_LOG_ENTRIES فقط لتجنب استهلاك الذاكرة
-        if (logBuffer.length > MAX_LOG_ENTRIES) {
-            logBuffer.shift();
-        }
+    function _push(entry) {
+        _buf.push(entry);
+        if (_buf.length > MAX_ENTRIES) _buf.shift();
     }
 
-    // ────────────────────────────────────────────────────────────────
-    // الوظيفة الأساسية للكتابة
-    // ────────────────────────────────────────────────────────────────
-    function writeLog(level, message, meta) {
-        var currentLevelValue = LEVELS[LOG_LEVEL] !== undefined ? LEVELS[LOG_LEVEL] : 0;
-        var entryLevelValue   = LEVELS[level]     !== undefined ? LEVELS[level]     : 0;
-
-        // تجاهل المستويات الأدنى من الإعداد الحالي
-        if (entryLevelValue < currentLevelValue) return;
-
-        var entry = {
-            timestamp: getTimestamp(),
-            level: level,
-            message: message,
-        };
-
-        if (meta && typeof meta === 'object') {
-            // نسخ المعطيات بدون تعديل الأصل
-            entry.provider    = meta.provider    || undefined;
-            entry.url         = meta.url         || undefined;
-            entry.statusCode  = meta.statusCode  || undefined;
-            entry.error       = meta.error       || undefined;
-            entry.stack       = meta.stack       || undefined;
-        }
-
-        addToBuffer(entry);
-
-        // طباعة في الـ console بتنسيق موحد
-        var prefix = '[' + entry.timestamp + '] [' + level.toUpperCase() + ']';
-        if (entry.provider) prefix += ' [' + entry.provider + ']';
-
-        if (level === 'error') {
-            console.error(prefix, message, meta || '');
-        } else if (level === 'warn') {
-            console.warn(prefix, message, meta || '');
-        } else {
-            console.log(prefix, message, meta || '');
-        }
+    // ──────────────────────────────────────────────────────────────────
+    // تحديد level من نص prefix تلقائياً
+    // ──────────────────────────────────────────────────────────────────
+    function _detectLevel(prefix, subfix) {
+        var txt = (String(prefix || '') + ' ' + String(subfix || '')).toLowerCase();
+        if (txt.indexOf('error') !== -1 || txt.indexOf('fail') !== -1 || txt.indexOf('خطأ') !== -1) return 'ERROR';
+        if (txt.indexOf('warn') !== -1 || txt.indexOf('timeout') !== -1) return 'WARN';
+        if (txt.indexOf('success') !== -1 || txt.indexOf('direct url') !== -1 || txt.indexOf('callback') !== -1) return 'SUCCESS';
+        return 'INFO';
     }
 
-    // ────────────────────────────────────────────────────────────────
-    // تتبع صحة الـ Providers (Provider Health Tracking)
-    // ────────────────────────────────────────────────────────────────
-    var providerStats = {};
+    // ──────────────────────────────────────────────────────────────────
+    // Provider health tracking
+    // ──────────────────────────────────────────────────────────────────
+    var _stats = {};
 
-    function trackProvider(providerName, success, responseTimeMs) {
-        if (!providerStats[providerName]) {
-            providerStats[providerName] = { success: 0, fail: 0, totalTime: 0, calls: 0 };
-        }
-        var stat = providerStats[providerName];
-        if (success) {
-            stat.success++;
-        } else {
-            stat.fail++;
-        }
-        if (typeof responseTimeMs === 'number') {
-            stat.totalTime += responseTimeMs;
-            stat.calls++;
-        }
+    function _track(name, ok, ms) {
+        if (!name) return;
+        if (!_stats[name]) _stats[name] = { ok: 0, fail: 0, ms: 0, calls: 0 };
+        var s = _stats[name];
+        if (ok) s.ok++; else s.fail++;
+        if (typeof ms === 'number') { s.ms += ms; s.calls++; }
     }
 
-    function getHealthReport() {
-        var report = [];
-        var names = Object.keys(providerStats);
-        for (var i = 0; i < names.length; i++) {
-            var name = names[i];
-            var stat = providerStats[name];
-            var total = stat.success + stat.fail;
-            var rate = total > 0 ? ((stat.success / total) * 100).toFixed(1) : '0.0';
-            var avgTime = stat.calls > 0 ? (stat.totalTime / stat.calls).toFixed(0) : 'N/A';
-            report.push({
-                provider: name,
-                successRate: rate + '%',
-                success: stat.success,
-                fail: stat.fail,
-                avgResponseTime: avgTime + 'ms'
-            });
+    function _healthReport() {
+        var keys = Object.keys(_stats);
+        if (!keys.length) { console.log('[HEALTH] No data yet'); return; }
+        console.log('[HEALTH] ════ Provider Health Report [' + _ts() + '] ════');
+        for (var i = 0; i < keys.length; i++) {
+            var n = keys[i], s = _stats[n];
+            var total = s.ok + s.fail;
+            var rate = total ? ((s.ok / total) * 100).toFixed(1) : '0.0';
+            var avg = s.calls ? (s.ms / s.calls).toFixed(0) : 'N/A';
+            console.log('[HEALTH]   ' + n + ' | OK=' + s.ok + ' FAIL=' + s.fail + ' Rate=' + rate + '% AvgMs=' + avg);
         }
-        return report;
+        console.log('[HEALTH] ═══════════════════════════════════════════════');
     }
 
-    function printHealthReport() {
-        var report = getHealthReport();
-        console.log('════ تقرير صحة الـ Providers [' + getTimestamp() + '] ════');
-        if (report.length === 0) {
-            console.log('  (لا توجد بيانات بعد)');
-            return;
-        }
-        for (var i = 0; i < report.length; i++) {
-            var r = report[i];
-            console.log(
-                '  ' + r.provider + ': نجاح=' + r.success +
-                ' فشل=' + r.fail +
-                ' معدل النجاح=' + r.successRate +
-                ' متوسط الوقت=' + r.avgResponseTime
-            );
-        }
-        console.log('═══════════════════════════════════════════════════');
-    }
-
-    // ────────────────────────────────────────────────────────────────
-    // الواجهة العامة: libs.logger
-    // ────────────────────────────────────────────────────────────────
-    libs.logger = {
-        // تسجيل معلومات عامة
-        // مثال: libs.logger.info('جاري الاستخراج', { provider: 'okru', url: url })
-        info: function (message, meta) {
-            writeLog('info', message, meta);
-        },
-
-        // تسجيل تحذير
-        // مثال: libs.logger.warn('فشل المحاولة', { provider: 'okru', error: err.message })
-        warn: function (message, meta) {
-            writeLog('warn', message, meta);
-        },
-
-        // تسجيل خطأ
-        // مثال: libs.logger.error('فشل الطلب', { provider: 'okru', url: url, error: err.message, statusCode: 403 })
-        error: function (message, meta) {
-            writeLog('error', message, meta);
-        },
-
-        // تسجيل نجاح (نفس مستوى info)
-        // مثال: libs.logger.success('تم استخراج الرابط', { provider: 'okru', url: url })
-        success: function (message, meta) {
-            writeLog('success', message, meta);
-        },
-
-        // ── تتبع صحة الـ providers ──────────────────────────────────
-        // الاستخدام:
-        //   var start = Date.now();
-        //   var result = await extractFromProvider(provider, url);
-        //   libs.logger.trackProvider(provider, !!result, Date.now() - start);
-        trackProvider: trackProvider,
-
-        // ── استرجاع تقرير صحة الـ providers ────────────────────────
-        // يُرجع: مصفوفة من { provider, successRate, success, fail, avgResponseTime }
-        getHealthReport: getHealthReport,
-
-        // ── طباعة تقرير الصحة في الـ console ───────────────────────
-        printHealthReport: printHealthReport,
-
-        // ── استرجاع سجلات محفوظة في الذاكرة ────────────────────────
-        // الاستخدام: libs.logger.getLogs('error') → آخر 500 إدخال من نوع error
-        //            libs.logger.getLogs()         → كل الإدخالات
-        getLogs: function (levelFilter) {
-            if (!levelFilter) return logBuffer.slice();
-            return logBuffer.filter(function (e) { return e.level === levelFilter; });
-        },
-
-        // ── مسح سجل الأخطاء من الذاكرة ──────────────────────────────
-        clearLogs: function () {
-            logBuffer = [];
-        },
-
-        // ── ضبط مستوى اللوج ─────────────────────────────────────────
-        // الاستخدام: libs.logger.setLevel('error') لإظهار الأخطاء فقط
-        setLevel: function (level) {
-            if (LEVELS[level] !== undefined) {
-                LOG_LEVEL = level;
-            }
-        }
-    };
-
-    // ────────────────────────────────────────────────────────────────
-    // libs.log — نفس الواجهة القديمة تماماً (Backward Compatible)
-    // الكود القديم يعمل بدون أي تعديل
-    // ────────────────────────────────────────────────────────────────
+    // ──────────────────────────────────────────────────────────────────
+    // libs.log — الواجهة الأصلية (لا تغيير في signature)
+    // تُضاف: timestamp + level + حفظ في buffer + لوج منظم
+    // ──────────────────────────────────────────────────────────────────
     libs.log = function (data, prefix, subfix) {
-        // الإخراج القديم: لا تغيير — نفس النص بنفس التنسيق
-        console.log(data, "----- ".concat(prefix, " ").concat(subfix, " ----"));
+        var ts = _ts();
+        var level = _detectLevel(prefix, subfix);
+        var provider = String(prefix || '');
+        var tag = String(subfix || '');
 
-        // بالإضافة: نحفظ في الـ buffer الجديد
-        var level = 'info';
-        var prefixStr = String(prefix || '');
-        if (prefixStr.toLowerCase().indexOf('error') !== -1) {
-            level = 'error';
-        } else if (prefixStr.toLowerCase().indexOf('warn') !== -1) {
-            level = 'warn';
+        // الإخراج الأصلي — لم يتغير أبداً
+        console.log(data, '----- ' + prefix + ' ' + subfix + ' ----');
+
+        // إخراج إضافي منظم مع timestamp ومستوى
+        var meta = '[' + ts + '] [' + level + '] [' + provider + '] ' + tag;
+        if (level === 'ERROR') {
+            console.error(meta, data);
+        } else if (level === 'WARN') {
+            console.warn(meta, data);
+        } else {
+            console.log(meta, data);
         }
 
-        addToBuffer({
-            timestamp: getTimestamp(),
+        // حفظ في buffer
+        _push({
+            ts: ts,
             level: level,
-            message: String(subfix || ''),
-            provider: prefix || undefined,
+            provider: provider,
+            tag: tag,
             data: data
         });
+
+        // auto-track provider health من نوع السجل
+        if (level === 'ERROR' || level === 'WARN') {
+            _track(provider, false, null);
+        } else if (level === 'SUCCESS' || tag.toLowerCase().indexOf('direct url') !== -1 || tag.toLowerCase().indexOf('embed callback') !== -1) {
+            _track(provider, true, null);
+        }
     };
 
-    // ────────────────────────────────────────────────────────────────
-    // تقرير دوري كل 30 دقيقة (اختياري — يطبع في console)
-    // ────────────────────────────────────────────────────────────────
-    setInterval(function () {
-        printHealthReport();
-    }, 30 * 60 * 1000);
+    // ──────────────────────────────────────────────────────────────────
+    // libs.logger — واجهة منظمة للاستخدام المباشر من providers جديدة
+    // ──────────────────────────────────────────────────────────────────
+    libs.logger = {
+
+        info: function (msg, meta) {
+            var ts = _ts();
+            var out = '[' + ts + '] [INFO]' + (meta && meta.provider ? ' [' + meta.provider + ']' : '') + ' ' + msg;
+            console.log(out, meta || '');
+            _push({ ts: ts, level: 'INFO', message: msg, meta: meta || {} });
+        },
+
+        warn: function (msg, meta) {
+            var ts = _ts();
+            var out = '[' + ts + '] [WARN]' + (meta && meta.provider ? ' [' + meta.provider + ']' : '') + ' ' + msg;
+            console.warn(out, meta || '');
+            _push({ ts: ts, level: 'WARN', message: msg, meta: meta || {} });
+        },
+
+        error: function (msg, meta) {
+            var ts = _ts();
+            var out = '[' + ts + '] [ERROR]' + (meta && meta.provider ? ' [' + meta.provider + ']' : '') + ' ' + msg;
+            console.error(out, meta || '');
+            _push({ ts: ts, level: 'ERROR', message: msg, meta: meta || {} });
+        },
+
+        success: function (msg, meta) {
+            var ts = _ts();
+            var out = '[' + ts + '] [SUCCESS]' + (meta && meta.provider ? ' [' + meta.provider + ']' : '') + ' ' + msg;
+            console.log(out, meta || '');
+            _push({ ts: ts, level: 'SUCCESS', message: msg, meta: meta || {} });
+            if (meta && meta.provider) _track(meta.provider, true, meta.ms || null);
+        },
+
+        // تتبع نجاح/فشل provider يدوياً
+        // مثال: var t = Date.now(); ... libs.logger.track('vidsrc', !!result, Date.now()-t);
+        track: _track,
+
+        // استرجاع تقرير الصحة
+        getReport: function () { return _stats; },
+        printReport: _healthReport,
+
+        // استرجاع سجل اللوج
+        getLogs: function (level) {
+            if (!level) return _buf.slice();
+            var l = level.toUpperCase();
+            return _buf.filter(function (e) { return e.level === l; });
+        },
+
+        clearLogs: function () { _buf = []; },
+
+        // مستوى اللوج الحالي (للعرض فقط — كل المستويات مفعلة دائماً في النمط المكثف)
+        getCount: function () { return _buf.length; }
+    };
+
+    // ──────────────────────────────────────────────────────────────────
+    // تقرير صحة تلقائي كل 30 دقيقة
+    // ──────────────────────────────────────────────────────────────────
+    setInterval(_healthReport, 30 * 60 * 1000);
+
+    console.log('[VELO] Logging system initialized — buffer max=' + MAX_ENTRIES + ' | ' + _ts());
 
 })();

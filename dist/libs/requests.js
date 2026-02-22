@@ -126,7 +126,7 @@ libs.request_get = function (url, headers, isCheerio, isRecursive, retry) {
     if (isRecursive === void 0) { isRecursive = false; }
     if (retry === void 0) { retry = 1; }
     return __awaiter(_this, void 0, void 0, function () {
-        var defaultHeaders, requestData, e_1;
+        var defaultHeaders, _t, requestData, _ms, e_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -135,17 +135,22 @@ libs.request_get = function (url, headers, isCheerio, isRecursive, retry) {
                     if (!defaultHeaders['user-agent']) {
                         defaultHeaders['user-agent'] = libs.request_getRandomUserAgent();
                     }
+                    _t = Date.now();
+                    console.log('[REQ:GET] --> ' + url);
                     return [4, axiosS.get(url, {
                             headers: defaultHeaders,
                         })];
                 case 1:
                     requestData = _a.sent();
+                    _ms = Date.now() - _t;
+                    console.log('[REQ:GET] <-- ' + requestData.status + ' (' + _ms + 'ms) ' + url);
                     if (isCheerio) {
                         return [2, cheerio.load(requestData.data)];
                     }
                     return [2, requestData.data];
                 case 2:
                     e_1 = _a.sent();
+                    console.error('[REQ:GET] ERROR ' + url + ' | ' + (e_1 && e_1.message ? e_1.message : String(e_1)));
                     if (!isRecursive || (isRecursive && retry <= 0)) {
                         return [2, ""];
                     }
@@ -162,7 +167,7 @@ libs.request_status_code = function (url, headers, isDefaultHeader) {
     if (headers === void 0) { headers = {}; }
     if (isDefaultHeader === void 0) { isDefaultHeader = true; }
     return __awaiter(_this, void 0, void 0, function () {
-        var defaultHeaders, requestData, e_2;
+        var defaultHeaders, _t, requestData, _ms, e_2;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -171,14 +176,19 @@ libs.request_status_code = function (url, headers, isDefaultHeader) {
                     if (!defaultHeaders['user-agent'] && isDefaultHeader) {
                         defaultHeaders['user-agent'] = libs.request_getRandomUserAgent();
                     }
+                    _t = Date.now();
+                    console.log('[REQ:STATUS] --> ' + url);
                     return [4, axiosS.get(url, {
                             headers: defaultHeaders,
                         })];
                 case 1:
                     requestData = _a.sent();
+                    _ms = Date.now() - _t;
+                    console.log('[REQ:STATUS] <-- ' + requestData.status + ' (' + _ms + 'ms) ' + url);
                     return [2, requestData.status];
                 case 2:
                     e_2 = _a.sent();
+                    console.error('[REQ:STATUS] ERROR ' + url + ' | ' + (e_2 && e_2.message ? e_2.message : String(e_2)));
                     return [2, 404];
                 case 3: return [2];
             }
@@ -188,7 +198,7 @@ libs.request_status_code = function (url, headers, isDefaultHeader) {
 libs.request_head = function (url, headers) {
     if (headers === void 0) { headers = {}; }
     return __awaiter(_this, void 0, void 0, function () {
-        var defaultHeaders, requestData, e_3;
+        var defaultHeaders, _t, requestData, _ms, e_3;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -197,15 +207,20 @@ libs.request_head = function (url, headers) {
                     if (!defaultHeaders['user-agent']) {
                         defaultHeaders['user-agent'] = libs.request_getRandomUserAgent();
                     }
+                    _t = Date.now();
+                    console.log('[REQ:HEAD] --> ' + url);
                     return [4, axiosS.head(url, {
                             headers: defaultHeaders,
                             withCredentials: true,
                         })];
                 case 1:
                     requestData = _a.sent();
+                    _ms = Date.now() - _t;
+                    console.log('[REQ:HEAD] <-- ' + requestData.status + ' (' + _ms + 'ms) ' + url);
                     return [2, requestData.headers];
                 case 2:
                     e_3 = _a.sent();
+                    console.error('[REQ:HEAD] ERROR ' + url + ' | ' + (e_3 && e_3.message ? e_3.message : String(e_3)));
                     return [2, ""];
                 case 3: return [2];
             }
@@ -215,7 +230,7 @@ libs.request_head = function (url, headers) {
 libs.request_get_redirect_url = function (url, headers) {
     if (headers === void 0) { headers = {}; }
     return __awaiter(_this, void 0, void 0, function () {
-        var defaultHeaders, requestData, e_4;
+        var defaultHeaders, _t, requestData, _ms, e_4;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -224,14 +239,19 @@ libs.request_get_redirect_url = function (url, headers) {
                     if (!defaultHeaders['user-agent']) {
                         defaultHeaders['user-agent'] = libs.request_getRandomUserAgent();
                     }
+                    _t = Date.now();
+                    console.log('[REQ:REDIRECT] --> ' + url);
                     return [4, axiosS.get(url, {
                             headers: defaultHeaders,
                         })];
                 case 1:
                     requestData = _a.sent();
+                    _ms = Date.now() - _t;
+                    console.log('[REQ:REDIRECT] <-- ' + requestData.status + ' (' + _ms + 'ms) redirectURL=' + requestData.request.responseURL);
                     return [2, requestData.request.responseURL];
                 case 2:
                     e_4 = _a.sent();
+                    console.error('[REQ:REDIRECT] ERROR ' + url + ' | ' + (e_4 && e_4.message ? e_4.message : String(e_4)));
                     return [2, ""];
                 case 3: return [2];
             }
@@ -241,7 +261,7 @@ libs.request_get_redirect_url = function (url, headers) {
 libs.request_put = function (url, headers, body) {
     if (headers === void 0) { headers = {}; }
     return __awaiter(_this, void 0, void 0, function () {
-        var defaultHeaders, requestData, e_5;
+        var defaultHeaders, _t, requestData, _ms, e_5;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -250,14 +270,19 @@ libs.request_put = function (url, headers, body) {
                     if (!defaultHeaders['user-agent']) {
                         defaultHeaders['user-agent'] = libs.request_getRandomUserAgent();
                     }
+                    _t = Date.now();
+                    console.log('[REQ:PUT] --> ' + url);
                     return [4, axiosS.put(url, body, {
                             headers: defaultHeaders,
                         })];
                 case 1:
                     requestData = _a.sent();
+                    _ms = Date.now() - _t;
+                    console.log('[REQ:PUT] <-- ' + requestData.status + ' (' + _ms + 'ms) ' + url);
                     return [2, requestData.data];
                 case 2:
                     e_5 = _a.sent();
+                    console.error('[REQ:PUT] ERROR ' + url + ' | ' + (e_5 && e_5.message ? e_5.message : String(e_5)));
                     return [2, ""];
                 case 3: return [2];
             }
@@ -269,7 +294,7 @@ libs.request_post = function (url, headers, body, isCheerio, isUserAgentDefault)
     if (isCheerio === void 0) { isCheerio = false; }
     if (isUserAgentDefault === void 0) { isUserAgentDefault = true; }
     return __awaiter(_this, void 0, void 0, function () {
-        var defaultHeaders, requestData, e_6;
+        var defaultHeaders, _t, requestData, _ms, e_6;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -278,18 +303,23 @@ libs.request_post = function (url, headers, body, isCheerio, isUserAgentDefault)
                     if (!defaultHeaders['user-agent'] && isUserAgentDefault) {
                         defaultHeaders['user-agent'] = libs.request_getRandomUserAgent();
                     }
+                    _t = Date.now();
+                    console.log('[REQ:POST] --> ' + url);
                     return [4, axiosS.post(url, body, {
                             headers: defaultHeaders,
                             responseType: 'json'
                         })];
                 case 1:
                     requestData = _a.sent();
+                    _ms = Date.now() - _t;
+                    console.log('[REQ:POST] <-- ' + requestData.status + ' (' + _ms + 'ms) ' + url);
                     if (isCheerio) {
                         return [2, cheerio.load(requestData.data)];
                     }
                     return [2, requestData.data];
                 case 2:
                     e_6 = _a.sent();
+                    console.error('[REQ:POST] ERROR ' + url + ' | ' + (e_6 && e_6.message ? e_6.message : String(e_6)));
                     return [2, ""];
                 case 3: return [2];
             }
