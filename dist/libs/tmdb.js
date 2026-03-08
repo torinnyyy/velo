@@ -35,15 +35,12 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
+var TMDB_API_KEY = "54ed8b21fd2d7a380faaa388189b382f";
 libs.tmdb_movie_info = function (id, lang) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/movie/".concat(id, "?api_key=").concat(API_KEY, "&language=").concat(lang);
+                        case 1:                url = "https://api.themoviedb.org/3/movie/".concat(id, "?api_key=").concat(TMDB_API_KEY, "&language=").concat(lang);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -54,14 +51,10 @@ libs.tmdb_movie_info = function (id, lang) { return __awaiter(_this, void 0, voi
     });
 }); };
 libs.tmdb_tv_info = function (id, lang) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/tv/".concat(id, "?api_key=").concat(API_KEY, "&language=").concat(lang);
+                        case 1:                url = "https://api.themoviedb.org/3/tv/".concat(id, "?api_key=").concat(TMDB_API_KEY, "&language=").concat(lang);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -91,14 +84,10 @@ libs.tmdb_tv_info = function (id, lang) { return __awaiter(_this, void 0, void 0
 // Trending movies today with Arabic metadata
 // Endpoint: /3/trending/movie/day?language=ar-SA&region=SA&page={page}
 libs.tmdb_movie_trending_ar = function (page) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/trending/movie/day?api_key=".concat(API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
+                        case 1:                url = "https://api.themoviedb.org/3/trending/movie/day?api_key=".concat(TMDB_API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -110,14 +99,10 @@ libs.tmdb_movie_trending_ar = function (page) { return __awaiter(_this, void 0, 
 // Popular movies with Arabic metadata
 // Endpoint: /3/movie/popular?language=ar-SA&region=SA
 libs.tmdb_movie_popular_ar = function (page) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/movie/popular?api_key=".concat(API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
+                        case 1:                url = "https://api.themoviedb.org/3/movie/popular?api_key=".concat(TMDB_API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -129,14 +114,10 @@ libs.tmdb_movie_popular_ar = function (page) { return __awaiter(_this, void 0, v
 // Top rated movies with Arabic metadata
 // Endpoint: /3/movie/top_rated?language=ar-SA&region=SA
 libs.tmdb_movie_top_rated_ar = function (page) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/movie/top_rated?api_key=".concat(API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
+                        case 1:                url = "https://api.themoviedb.org/3/movie/top_rated?api_key=".concat(TMDB_API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -148,14 +129,10 @@ libs.tmdb_movie_top_rated_ar = function (page) { return __awaiter(_this, void 0,
 // Upcoming movies with Arabic metadata + SA region release dates
 // Endpoint: /3/movie/upcoming?language=ar-SA&region=SA
 libs.tmdb_movie_upcoming_ar = function (page) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/movie/upcoming?api_key=".concat(API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
+                        case 1:                url = "https://api.themoviedb.org/3/movie/upcoming?api_key=".concat(TMDB_API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -167,14 +144,10 @@ libs.tmdb_movie_upcoming_ar = function (page) { return __awaiter(_this, void 0, 
 // Now playing movies in Arab region cinemas
 // Endpoint: /3/movie/now_playing?language=ar-SA&region=SA
 libs.tmdb_movie_now_playing_ar = function (page) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/movie/now_playing?api_key=".concat(API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
+                        case 1:                url = "https://api.themoviedb.org/3/movie/now_playing?api_key=".concat(TMDB_API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -186,14 +159,10 @@ libs.tmdb_movie_now_playing_ar = function (page) { return __awaiter(_this, void 
 // Discover movies originally produced in Arabic (not just translated)
 // Endpoint: /3/discover/movie?with_original_language=ar&language=ar-SA&region=SA&sort_by=popularity.desc
 libs.tmdb_discover_arabic_movies = function (page) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/discover/movie?api_key=".concat(API_KEY, "&language=ar-SA&with_original_language=ar&region=SA&sort_by=popularity.desc&page=").concat(page || 1);
+                        case 1:                url = "https://api.themoviedb.org/3/discover/movie?api_key=".concat(TMDB_API_KEY, "&language=ar-SA&with_original_language=ar&region=SA&sort_by=popularity.desc&page=").concat(page || 1);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -205,14 +174,10 @@ libs.tmdb_discover_arabic_movies = function (page) { return __awaiter(_this, voi
 // Movie details with full Arabic metadata
 // Endpoint: /3/movie/{id}?language=ar-SA
 libs.tmdb_movie_detail_ar = function (id) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/movie/".concat(id, "?api_key=").concat(API_KEY, "&language=ar-SA");
+                        case 1:                url = "https://api.themoviedb.org/3/movie/".concat(id, "?api_key=").concat(TMDB_API_KEY, "&language=ar-SA");
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -224,14 +189,10 @@ libs.tmdb_movie_detail_ar = function (id) { return __awaiter(_this, void 0, void
 // Movie recommendations with Arabic titles
 // Endpoint: /3/movie/{id}/recommendations?language=ar-SA
 libs.tmdb_movie_recommendations_ar = function (id, page) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/movie/".concat(id, "/recommendations?api_key=").concat(API_KEY, "&language=ar-SA&page=").concat(page || 1);
+                        case 1:                url = "https://api.themoviedb.org/3/movie/".concat(id, "/recommendations?api_key=").concat(TMDB_API_KEY, "&language=ar-SA&page=").concat(page || 1);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -243,14 +204,10 @@ libs.tmdb_movie_recommendations_ar = function (id, page) { return __awaiter(_thi
 // Movie images: Arabic posters + language-neutral backdrops
 // Endpoint: /3/movie/{id}/images?language=ar&include_image_language=ar,null
 libs.tmdb_movie_images_ar = function (id) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/movie/".concat(id, "/images?api_key=").concat(API_KEY, "&language=ar&include_image_language=ar,null");
+                        case 1:                url = "https://api.themoviedb.org/3/movie/".concat(id, "/images?api_key=").concat(TMDB_API_KEY, "&language=ar&include_image_language=ar,null");
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -262,14 +219,10 @@ libs.tmdb_movie_images_ar = function (id) { return __awaiter(_this, void 0, void
 // Search movies and TV in Arabic
 // Endpoint: /3/search/multi?query={q}&language=ar-SA&region=SA
 libs.tmdb_search_ar = function (query, page) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/search/multi?api_key=".concat(API_KEY, "&query=").concat(encodeURIComponent(query), "&language=ar-SA&region=SA&page=").concat(page || 1);
+                        case 1:                url = "https://api.themoviedb.org/3/search/multi?api_key=".concat(TMDB_API_KEY, "&query=").concat(encodeURIComponent(query), "&language=ar-SA&region=SA&page=").concat(page || 1);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -283,14 +236,10 @@ libs.tmdb_search_ar = function (query, page) { return __awaiter(_this, void 0, v
 // Trending TV shows this week with Arabic metadata
 // Endpoint: /3/trending/tv/week?language=ar-SA&region=SA
 libs.tmdb_tv_trending_ar = function (page) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/trending/tv/week?api_key=".concat(API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
+                        case 1:                url = "https://api.themoviedb.org/3/trending/tv/week?api_key=".concat(TMDB_API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -302,14 +251,10 @@ libs.tmdb_tv_trending_ar = function (page) { return __awaiter(_this, void 0, voi
 // Popular TV shows with Arabic metadata
 // Endpoint: /3/tv/popular?language=ar-SA&region=SA
 libs.tmdb_tv_popular_ar = function (page) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/tv/popular?api_key=".concat(API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
+                        case 1:                url = "https://api.themoviedb.org/3/tv/popular?api_key=".concat(TMDB_API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -321,14 +266,10 @@ libs.tmdb_tv_popular_ar = function (page) { return __awaiter(_this, void 0, void
 // Top rated TV shows with Arabic metadata
 // Endpoint: /3/tv/top_rated?language=ar-SA&region=SA
 libs.tmdb_tv_top_rated_ar = function (page) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/tv/top_rated?api_key=".concat(API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
+                        case 1:                url = "https://api.themoviedb.org/3/tv/top_rated?api_key=".concat(TMDB_API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -340,14 +281,10 @@ libs.tmdb_tv_top_rated_ar = function (page) { return __awaiter(_this, void 0, vo
 // TV shows airing today with Arabic metadata
 // Endpoint: /3/tv/airing_today?language=ar-SA&region=SA
 libs.tmdb_tv_airing_today_ar = function (page) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/tv/airing_today?api_key=".concat(API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
+                        case 1:                url = "https://api.themoviedb.org/3/tv/airing_today?api_key=".concat(TMDB_API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -359,14 +296,10 @@ libs.tmdb_tv_airing_today_ar = function (page) { return __awaiter(_this, void 0,
 // TV shows currently on air with Arabic metadata
 // Endpoint: /3/tv/on_the_air?language=ar-SA&region=SA
 libs.tmdb_tv_on_the_air_ar = function (page) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/tv/on_the_air?api_key=".concat(API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
+                        case 1:                url = "https://api.themoviedb.org/3/tv/on_the_air?api_key=".concat(TMDB_API_KEY, "&language=ar-SA&region=SA&page=").concat(page || 1);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -378,14 +311,10 @@ libs.tmdb_tv_on_the_air_ar = function (page) { return __awaiter(_this, void 0, v
 // Discover TV shows originally produced in Arabic
 // Endpoint: /3/discover/tv?with_original_language=ar&language=ar-SA&region=SA&sort_by=popularity.desc
 libs.tmdb_discover_arabic_tv = function (page) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/discover/tv?api_key=".concat(API_KEY, "&language=ar-SA&with_original_language=ar&region=SA&sort_by=popularity.desc&page=").concat(page || 1);
+                        case 1:                url = "https://api.themoviedb.org/3/discover/tv?api_key=".concat(TMDB_API_KEY, "&language=ar-SA&with_original_language=ar&region=SA&sort_by=popularity.desc&page=").concat(page || 1);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -397,14 +326,10 @@ libs.tmdb_discover_arabic_tv = function (page) { return __awaiter(_this, void 0,
 // TV show details with full Arabic metadata
 // Endpoint: /3/tv/{id}?language=ar-SA
 libs.tmdb_tv_detail_ar = function (id) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/tv/".concat(id, "?api_key=").concat(API_KEY, "&language=ar-SA");
+                        case 1:                url = "https://api.themoviedb.org/3/tv/".concat(id, "?api_key=").concat(TMDB_API_KEY, "&language=ar-SA");
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -416,14 +341,10 @@ libs.tmdb_tv_detail_ar = function (id) { return __awaiter(_this, void 0, void 0,
 // TV show recommendations with Arabic titles
 // Endpoint: /3/tv/{id}/recommendations?language=ar-SA
 libs.tmdb_tv_recommendations_ar = function (id, page) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/tv/".concat(id, "/recommendations?api_key=").concat(API_KEY, "&language=ar-SA&page=").concat(page || 1);
+                        case 1:                url = "https://api.themoviedb.org/3/tv/".concat(id, "/recommendations?api_key=").concat(TMDB_API_KEY, "&language=ar-SA&page=").concat(page || 1);
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -435,14 +356,10 @@ libs.tmdb_tv_recommendations_ar = function (id, page) { return __awaiter(_this, 
 // TV images: Arabic posters + language-neutral backdrops
 // Endpoint: /3/tv/{id}/images?language=ar&include_image_language=ar,null
 libs.tmdb_tv_images_ar = function (id) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/tv/".concat(id, "/images?api_key=").concat(API_KEY, "&language=ar&include_image_language=ar,null");
+                        case 1:                url = "https://api.themoviedb.org/3/tv/".concat(id, "/images?api_key=").concat(TMDB_API_KEY, "&language=ar&include_image_language=ar,null");
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
@@ -454,14 +371,10 @@ libs.tmdb_tv_images_ar = function (id) { return __awaiter(_this, void 0, void 0,
 // Genre list in Arabic
 // Endpoint: /3/genre/{media_type}/list?language=ar-SA
 libs.tmdb_genres_ar = function (mediaType) { return __awaiter(_this, void 0, void 0, function () {
-    var configData, API_KEY, url, result;
+    var url, result;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, libs.request_get("https://raw.githubusercontent.com/lulunnqqq/configs/main/data.json")];
-            case 1:
-                configData = _a.sent();
-                API_KEY = configData.tmdb_apikey.web_key;
-                url = "https://api.themoviedb.org/3/genre/".concat(mediaType || 'movie', "/list?api_key=").concat(API_KEY, "&language=ar-SA");
+                        case 1:                url = "https://api.themoviedb.org/3/genre/".concat(mediaType || 'movie', "/list?api_key=").concat(TMDB_API_KEY, "&language=ar-SA");
                 return [4, libs.request_get(url)];
             case 2:
                 result = _a.sent();
