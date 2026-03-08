@@ -36,30 +36,60 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 var _this = this;
 
-// Akwam Arabic Provider — ak.sv
+// Akwam Arabic Provider — domain-agnostic (ak.sv / ak.cm / ak.cc / ...)
 // Arabic-exclusive content: برامج، مسلسلات، أفلام
+//
+// النطاق يتغير كل فترة — الكود يكتشفه تلقائياً:
+//   1. يجرب النطاقات المعروفة بالترتيب حتى يجد واحداً يستجيب
+//   2. يستخرج DOMAIN من أول نتيجة بحث ناجحة
+//   3. جميع الـ selectors تعتمد على /path/ فقط، بدون اسم نطاق ثابت
 //
 // Live-tested flow:
 //   case 0: get Arabic title from TMDB
-//   case 1: search ak.sv?q={title} → pick first /shows/ or /series/ or /movie/ result
+//   case 1: try known domains → search ?q={title} → pick first result
 //   case 2: content page → MOVIE: find /watch/ link → case 4
 //                        → TV: find episode link → case 3
-//   case 3: episode page → find go.ak.sv/watch/{watchId} link → case 4
-//   case 4: fetch go.ak.sv/watch/{watchId} → get ak.sv/watch/{watchId}/{epId}/...
-//   case 5: fetch real watch page → extract src="...mp4" or iframe embeds → call embed_callback/embed_redirect
+//   case 3: episode page → find go.{domain}/watch link → case 4
+//   case 4: fetch go.{domain}/watch → get {domain}/watch/{id}/{epId}/...
+//   case 5: fetch real watch page → extract src="...mp4" or iframe embeds
+
+// النطاقات المعروفة لأكوام — مرتبة من الأحدث للأقدم
+// عند تغيير النطاق: أضف الجديد في البداية فقط
+var AKWAM_DOMAINS = [
+    'https://ak.sv',
+    'https://ak.cm',
+    'https://ak.cc',
+    'https://akwam.to',
+    'https://akwam.tv'
+];
+
+// استخراج النطاق الأساسي من أي URL (يشمل go. subdomain)
+// مثال: "https://go.ak.sv/watch/123" → "https://ak.sv"
+//        "https://ak.cm/series/..."   → "https://ak.cm"
+function akwamExtractDomain(url) {
+    var m = url.match(/^(https?:\/\/)(?:go\.|two\.|mirror\d*\.)?([^/]+)/i);
+    return m ? m[1] + m[2] : null;
+}
+
+// هل الـ URL ينتمي لأكوام (أي نطاق)؟
+// يتعرف على النمط: نطاق يبدأ بـ "ak" أو يحتوي "akwam"
+function akwamIsOwnUrl(url) {
+    return /https?:\/\/(?:go\.|two\.|mirror\d*\.)?(?:ak\.[a-z]{2,6}|akwam\.[a-z]{2,6})/i.test(url);
+}
 
 source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
     var PROVIDER, DOMAIN, UA, tmdbInfo, arabicTitle, urlSearch,
         parseSearch, contentUrl, episodeUrl, goWatchUrl, realWatchUrl,
         parseContent, parseEpisode, parseGo, parseWatch,
-        watchLink, m, sources, i, src;
+        watchLink, m, sources, i, src,
+        domainIdx;
     return __generator(this, function (_a) {
         switch (_a.label) {
 
             // ── case 0: get Arabic title from TMDB ───────────────────────────────────
             case 0:
                 PROVIDER = 'AKWAM';
-                DOMAIN   = 'https://ak.sv';
+                DOMAIN   = null;   // سيُكتشف تلقائياً في case 1
                 UA       = libs.request_getRandomUserAgent();
                 libs.log({ title: movieInfo.title, type: movieInfo.type, tmdb_id: movieInfo.tmdb_id }, PROVIDER, 'START');
                 if (movieInfo.type === 'tv') {
@@ -67,21 +97,30 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                 }
                 return [4, libs.tmdb_movie_info(movieInfo.tmdb_id, 'ar')];
 
-            // ── case 1: received TMDB info → search ──────────────────────────────────
+            // ── case 1: received TMDB info → search (نطاق index 0 = الأحدث) ───────────
             case 1:
                 tmdbInfo    = _a.sent();
                 arabicTitle = tmdbInfo && tmdbInfo.title ? tmdbInfo.title : movieInfo.title;
                 libs.log({ arabicTitle: arabicTitle }, PROVIDER, 'AR TITLE');
 
-                urlSearch = DOMAIN + '/search?q=' + encodeURIComponent(arabicTitle);
+                // ابدأ بالنطاق الأول (الأحدث) — إذا فشل البحث سيُعاد عبر domainIdx
+                domainIdx = 0;
+                urlSearch = AKWAM_DOMAINS[domainIdx] + '/search?q=' + encodeURIComponent(arabicTitle);
                 libs.log({ urlSearch: urlSearch }, PROVIDER, 'SEARCH');
-                return [4, libs.request_get(urlSearch, { 'user-agent': UA, 'Referer': DOMAIN + '/' }, true)];
+                return [4, libs.request_get(urlSearch, { 'user-agent': UA, 'Referer': AKWAM_DOMAINS[domainIdx] + '/' }, true)];
 
-            // ── case 2: pick first content URL ───────────────────────────────────────
+            // ── case 2: pick first content URL & lock DOMAIN ─────────────────────────
             case 2:
                 parseSearch = _a.sent();
                 if (typeof parseSearch !== 'function') {
-                    console.warn('[AKWAM] Search blocked | url=' + urlSearch);
+                    // النطاق الحالي محجوب → جرب التالي في القائمة
+                    domainIdx++;
+                    if (domainIdx < AKWAM_DOMAINS.length) {
+                        urlSearch = AKWAM_DOMAINS[domainIdx] + '/search?q=' + encodeURIComponent(arabicTitle);
+                        libs.log({ urlSearch: urlSearch, fallback: domainIdx }, PROVIDER, 'DOMAIN FALLBACK');
+                        return [4, libs.request_get(urlSearch, { 'user-agent': UA, 'Referer': AKWAM_DOMAINS[domainIdx] + '/' }, true)];
+                    }
+                    console.warn('[AKWAM] All domains blocked | arabicTitle=' + arabicTitle);
                     return [2];
                 }
 
@@ -90,7 +129,9 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                     if (contentUrl) return false;
                     var href = parseSearch(el).attr('href') || '';
                     if (!href || href === '#') return true;
-                    var full = href.startsWith('http') ? href : DOMAIN + href;
+                    // إذا كان absolute URL → استخدمه مباشرة
+                    // إذا كان relative → ألصقه بنطاق البحث الحالي
+                    var full = href.startsWith('http') ? href : AKWAM_DOMAINS[domainIdx] + href;
                     contentUrl = full;
                     libs.log({ contentUrl: contentUrl }, PROVIDER, 'FIRST RESULT');
                     return false;
@@ -100,6 +141,11 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                     console.warn('[AKWAM] No results | arabicTitle=' + arabicTitle);
                     return [2];
                 }
+
+                // استخرج DOMAIN من الـ URL الحقيقي (قد يختلف عن نطاق البحث في حال redirect)
+                DOMAIN = akwamExtractDomain(contentUrl) || AKWAM_DOMAINS[domainIdx];
+                libs.log({ DOMAIN: DOMAIN }, PROVIDER, 'DOMAIN LOCKED');
+
                 return [4, libs.request_get(contentUrl, { 'user-agent': UA, 'Referer': DOMAIN + '/' }, true)];
 
             // ── case 3: content page ─────────────────────────────────────────────────
@@ -113,7 +159,8 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                 // MOVIE: find /watch/ link directly
                 if (movieInfo.type !== 'tv') {
                     watchLink = null;
-                    parseContent('a[href*="go.ak.sv/watch"], a[href*="/watch/"]').each(function (i, el) {
+                    // لا نربط بنطاق محدد — أي href يحتوي /watch/ مقبول
+                    parseContent('a[href*="/watch/"]').each(function (i, el) {
                         if (watchLink) return false;
                         var href = parseContent(el).attr('href') || '';
                         if (href.indexOf('/watch/') !== -1) {
@@ -154,7 +201,7 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                 }
                 return [4, libs.request_get(episodeUrl, { 'user-agent': UA, 'Referer': contentUrl }, true)];
 
-            // ── case 4: episode page (TV) → find go.ak.sv/watch link ─────────────────
+            // ── case 4: episode page (TV) → find go.{domain}/watch link ──────────────
             case 4:
                 parseEpisode = _a.sent();
                 if (typeof parseEpisode !== 'function') {
@@ -163,7 +210,8 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                 }
 
                 watchLink = null;
-                parseEpisode('a[href*="go.ak.sv/watch"], a[href*="/watch/"]').each(function (i, el) {
+                // أي href يحتوي /watch/ — سواء go.ak.sv أو go.ak.cm أو غيره
+                parseEpisode('a[href*="/watch/"]').each(function (i, el) {
                     if (watchLink) return false;
                     var href = parseEpisode(el).attr('href') || '';
                     if (href.indexOf('/watch/') !== -1) {
@@ -176,30 +224,28 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                 });
 
                 if (!watchLink) {
-                    console.warn('[AKWAM] No go.ak.sv/watch link on episode page | url=' + episodeUrl);
+                    console.warn('[AKWAM] No watch link on episode page | url=' + episodeUrl);
                     return [2];
                 }
                 goWatchUrl = watchLink;
                 libs.log({ goWatchUrl: goWatchUrl }, PROVIDER, 'TV GO-WATCH');
                 return [4, libs.request_get(goWatchUrl, { 'user-agent': UA, 'Referer': episodeUrl }, true)];
 
-            // ── case 5: go.ak.sv page → extract ak.sv/watch/{id}/{epId}/... link ──────
-            // This page has links like:
-            //   href="https://ak.sv/watch/{watchId}/{epId}/{slug}"  (main domain)
-            //   href="https://two.akw.cam/watch/..."  (mirror)
+            // ── case 5: go page → extract real watch URL ──────────────────────────────
+            // يبحث عن أي رابط /watch/ ينتمي لأكوام (أي نطاق)
             case 5:
                 parseGo = _a.sent();
                 if (typeof parseGo !== 'function') {
-                    // go.ak.sv may return raw HTML string
-                    console.warn('[AKWAM] go.ak.sv page not parsed | url=' + goWatchUrl);
+                    console.warn('[AKWAM] go page not parsed | url=' + goWatchUrl);
                     return [2];
                 }
 
                 realWatchUrl = null;
-                parseGo('a[href*="ak.sv/watch/"]').each(function (i, el) {
+                parseGo('a[href*="/watch/"]').each(function (i, el) {
                     if (realWatchUrl) return false;
                     var href = parseGo(el).attr('href') || '';
-                    if (href.indexOf('/watch/') !== -1 && href.indexOf('ak.sv') !== -1) {
+                    // يقبل أي نطاق أكوام (ak.sv / ak.cm / ...) مع /watch/
+                    if (href.indexOf('/watch/') !== -1 && akwamIsOwnUrl(href)) {
                         realWatchUrl = href;
                         libs.log({ realWatchUrl: realWatchUrl }, PROVIDER, 'REAL WATCH URL');
                         return false;
@@ -208,9 +254,9 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                 });
 
                 if (!realWatchUrl) {
-                    // Try raw HTML match as fallback
+                    // Fallback: regex في HTML الخام — يشمل أي نطاق ak.*
                     var rawGo = parseGo.html ? parseGo.html() : '';
-                    m = rawGo.match(/href="(https:\/\/ak\.sv\/watch\/[^"]+)"/);
+                    m = rawGo.match(/href="(https?:\/\/(?:ak\.[a-z]{2,6}|akwam\.[a-z]{2,6})\/watch\/[^"]+)"/i);
                     if (m) realWatchUrl = m[1];
                 }
 
@@ -218,7 +264,10 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                     console.warn('[AKWAM] Could not find real watch URL | go=' + goWatchUrl);
                     return [2];
                 }
-                libs.log({ realWatchUrl: realWatchUrl }, PROVIDER, 'FETCH WATCH');
+
+                // حدّث DOMAIN من الـ URL الحقيقي في حال اختلف
+                DOMAIN = akwamExtractDomain(realWatchUrl) || DOMAIN;
+                libs.log({ realWatchUrl: realWatchUrl, DOMAIN: DOMAIN }, PROVIDER, 'FETCH WATCH');
                 return [4, libs.request_get(realWatchUrl, { 'user-agent': UA, 'Referer': DOMAIN + '/' }, true)];
 
             // ── case 6: real watch page → extract mp4/embed sources ──────────────────
