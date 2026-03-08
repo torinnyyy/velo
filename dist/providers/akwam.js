@@ -154,8 +154,39 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
                 }
                 return [4, libs.request_get(episodeUrl, { 'user-agent': UA, 'Referer': contentUrl }, true)];
 
-            // ── case 4: episode page (TV) → find go.ak.sv/watch link ─────────────────
+            // ── case 4: go.ak.sv page (MOVIE) OR episode page (TV) ───────────────────
             case 4:
+                // MOVIE: response here is the go.ak.sv/watch page → jump to case 5 logic inline
+                if (movieInfo.type !== 'tv') {
+                    parseGo = _a.sent();
+                    if (typeof parseGo !== 'function') {
+                        console.warn('[AKWAM] go.ak.sv page not parsed (movie) | url=' + goWatchUrl);
+                        return [2];
+                    }
+                    realWatchUrl = null;
+                    parseGo('a[href*="ak.sv/watch/"]').each(function (i, el) {
+                        if (realWatchUrl) return false;
+                        var href = parseGo(el).attr('href') || '';
+                        if (href.indexOf('/watch/') !== -1 && href.indexOf('ak.sv') !== -1) {
+                            realWatchUrl = href;
+                            return false;
+                        }
+                        return true;
+                    });
+                    if (!realWatchUrl) {
+                        var rawGo = parseGo.html ? parseGo.html() : '';
+                        m = rawGo.match(/href="(https:\/\/ak\.sv\/watch\/[^"]+)"/);
+                        if (m) realWatchUrl = m[1];
+                    }
+                    if (!realWatchUrl) {
+                        console.warn('[AKWAM] Could not find real watch URL (movie) | go=' + goWatchUrl);
+                        return [2];
+                    }
+                    libs.log({ realWatchUrl: realWatchUrl }, PROVIDER, 'MOVIE FETCH WATCH');
+                    return [4, libs.request_get(realWatchUrl, { 'user-agent': UA, 'Referer': DOMAIN + '/' }, true)];
+                }
+
+                // TV: response here is the episode page → find go.ak.sv/watch link
                 parseEpisode = _a.sent();
                 if (typeof parseEpisode !== 'function') {
                     console.warn('[AKWAM] Episode page blocked | url=' + episodeUrl);
