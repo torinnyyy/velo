@@ -56,23 +56,39 @@ var _this = this;
 // Decode base64 embed URLs from the /watch/ page
 function _arabseed_embeds(parseWatch, PROVIDER) {
     var urls = [];
+
+    // النوع 1: سيرفرات 1-4 — روابط /play/?id= مشفّرة بـ base64
     parseWatch('a[href*="/play/?id="], a[href*="/play?id="]').each(function (i, el) {
         var href = parseWatch(el).attr('href') || '';
         var m = href.match(/[?&]id=([A-Za-z0-9+/=_-]+)/);
         if (!m) return true;
         try {
-            // Normalize base64 padding
             var b64 = m[1].replace(/-/g, '+').replace(/_/g, '/');
             while (b64.length % 4 !== 0) b64 += '=';
             var decoded = libs.string_atob(b64);
             if (decoded && decoded.indexOf('http') === 0) {
                 urls.push(decoded);
-                libs.log({ i: i, url: decoded }, PROVIDER, 'EMBED');
+                libs.log({ i: i, url: decoded }, PROVIDER, 'EMBED base64');
             }
         } catch (e) { /* skip bad base64 */ }
         return true;
     });
-    return urls;
+
+    // النوع 2: سيرفر عرب سيد — data-link مباشر (ليس base64)
+    // مثال: data-link="https://m.reviewrate.net/embed-xxx.html"
+    parseWatch('[data-link]').each(function (i, el) {
+        var link = parseWatch(el).attr('data-link') || '';
+        // تجاهل روابط asd.pics/play (هذه النوع 1 وتم معالجتها)
+        if (link.indexOf('/play/?id=') !== -1 || link.indexOf('/play?id=') !== -1) return true;
+        if (link.indexOf('http') === 0) {
+            urls.push(link);
+            libs.log({ i: i, url: link }, PROVIDER, 'EMBED direct');
+        }
+        return true;
+    });
+
+    // إزالة التكرار
+    return urls.filter(function (v, i, a) { return a.indexOf(v) === i; });
 }
 
 // Find episode number encoded in a URL (الحلقة-N, raw or %-encoded)
@@ -109,6 +125,7 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
             // ── case 0: get Arabic title from TMDB ───────────────────────────────────
             case 0:
                 PROVIDER = 'ARABSEED';
+                console.log('[ARABSEED] getResource called | title=' + movieInfo.title + ' type=' + movieInfo.type + ' tmdb=' + movieInfo.tmdb_id);
                 DOMAIN   = 'https://asd.pics';
                 UA       = libs.request_getRandomUserAgent();
                 libs.log({ title: movieInfo.title, type: movieInfo.type, tmdb_id: movieInfo.tmdb_id }, PROVIDER, 'START');
@@ -129,6 +146,7 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
             // ── case 2: received search results → pick first CONTENT URL ─────────────
             case 2:
                 parseSearch = _a.sent();
+                console.log('[ARABSEED] search response type=' + (typeof parseSearch));
                 if (typeof parseSearch !== 'function') {
                     console.warn('[ARABSEED] Search blocked | url=' + urlSearch);
                     return [2];

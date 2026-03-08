@@ -37,6 +37,7 @@
 	"dist/hosts/vidmoly.js",
 	"dist/hosts/vidara.js",
 	"dist/hosts/savefiles.js",
-	"dist/hosts/bysezejataos.js"
+	"dist/hosts/bysezejataos.js",
+	"dist/hosts/reviewrate.js"
 	]
 }
