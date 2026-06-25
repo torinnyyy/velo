@@ -2,7 +2,8 @@
 	"providers": [
 
 
-"dist/providers/fmovies.js",
+"dist/providers/gdplayer.js",
+		"dist/providers/fmovies.js",
 "dist/providers/111movies.js",
 "dist/providers/videasy.js",
 "dist/providers/vixsrc.js",
