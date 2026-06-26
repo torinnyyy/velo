@@ -59,8 +59,8 @@ source.getResource = function (movieInfo, config, callback) {
           _di = 0;
 
           embedUrl = movieInfo.type === 'tv'
-            ? DOMAINS[_di] + "/tv/" + (movieInfo.imdb_id || ("tt" + movieInfo.tmdb_id)) + "/" + movieInfo.season + "/" + movieInfo.episode + ""
-            : DOMAINS[_di] + "/movie/" + (movieInfo.imdb_id || ("tt" + movieInfo.tmdb_id)) + "";
+            ? DOMAINS[_di] + "/tv/" + movieInfo.tmdb_id + "/" + movieInfo.season + "/" + movieInfo.episode + ""
+            : DOMAINS[_di] + "/movie/" + movieInfo.tmdb_id + "";
 
           libs.log({ embedUrl: embedUrl, type: movieInfo.type }, PROVIDER, 'EMBED');
 

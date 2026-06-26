@@ -46,7 +46,7 @@ var _this = this;
 //
 // PROVIDER_ID:  OneOneOne
 // Display Name: 111Movies
-// Source:       https://111movies.com
+// Source:       https://111movies.net
 // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 source.getResource = function (movieInfo, config, callback) {
   return __awaiter(_this, void 0, void 0, function () {
@@ -55,7 +55,7 @@ source.getResource = function (movieInfo, config, callback) {
       switch (_a.label) {
         case 0:
           PROVIDER = 'OneOneOne';
-          DOMAINS = ["https://111movies.com"];
+          DOMAINS = ["https://111movies.net"];
           _di = 0;
 
           embedUrl = movieInfo.type === 'tv'

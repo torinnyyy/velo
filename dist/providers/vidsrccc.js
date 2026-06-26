@@ -45,8 +45,8 @@ var _this = this;
 // solves Turnstile automatically and captures the real m3u8.
 //
 // PROVIDER_ID:  VidsrcCC
-// Display Name: VidsrcCC
-// Source:       https://vidsrc.cc
+// Display Name: VidsrcIN
+// Source:       https://vidsrc.in
 // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 source.getResource = function (movieInfo, config, callback) {
   return __awaiter(_this, void 0, void 0, function () {
@@ -55,19 +55,19 @@ source.getResource = function (movieInfo, config, callback) {
       switch (_a.label) {
         case 0:
           PROVIDER = 'VidsrcCC';
-          DOMAINS = ["https://vidsrc.cc"];
+          DOMAINS = ["https://vidsrc.in"];
           _di = 0;
 
           embedUrl = movieInfo.type === 'tv'
-            ? DOMAINS[_di] + "/v2/embed/tv/" + movieInfo.tmdb_id + "/" + movieInfo.season + "/" + movieInfo.episode + ""
-            : DOMAINS[_di] + "/v2/embed/movie/" + movieInfo.tmdb_id + "";
+            ? DOMAINS[_di] + "/embed/tv/" + movieInfo.tmdb_id + "/" + movieInfo.season + "/" + movieInfo.episode + ""
+            : DOMAINS[_di] + "/embed/movie/" + movieInfo.tmdb_id + "";
 
           libs.log({ embedUrl: embedUrl, type: movieInfo.type }, PROVIDER, 'EMBED');
 
           libs.embed_callback(
             embedUrl,
             PROVIDER,
-            'VidsrcCC',
+            'VidsrcIN',
             'embed',  // â WebView will extract real m3u8
             callback,
             1,
