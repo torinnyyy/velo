@@ -180,23 +180,74 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
         }
         return _0x3239f9;
     }
-    var PROVIDER, DOMAIN, userAgent, urlSearch, parseSearch, parseIframe, requestFrame2, parseFrame2, iframePro, host, requestFrame3, textFrame3, dataDecoded, parseDecodeData, _i, parseDecodeData_1, item, directUrl, e_1;
+    // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // VIDSRC PROVIDER â Updated 2026-06-26
+    //
+    // ÙÙØ§Ø­Ø¸Ø© ÙÙÙØ©: vidsrc ÙØ³ØªØ®Ø¯Ù Cloudflare Turnstile ÙÙØ° 2025.
+    // ÙØ§ ÙÙÙÙ Ø§Ø³ØªØ®Ø±Ø§Ø¬ m3u8 Ø¨Ù HTTP - ÙØ­ØªØ§Ø¬ WebView.
+    //
+    // ÙØ°Ø§ Ø§ÙÙ provider ÙÙØ±Ø¬Ø¹ embed URL ÙØ¨Ø§Ø´Ø±Ø© (type='embed').
+    // Ø§ÙØªØ·Ø¨ÙÙ ÙÙØªØ­Ù ÙÙ HiddenWebViewExtractor ÙÙØ­ÙÙ Turnstile ØªÙÙØ§Ø¦ÙØ§Ù
+    // ÙÙÙØªÙØ· m3u8 ÙÙ network monitoring.
+    //
+    // Ø§ÙÙØ±Ø¬Ø¹: docs/CAPTCHA_BYPASS_DECISION.md
+    // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    var PROVIDER, DOMAINS, DOMAIN, _di, userAgent, urlSearch, parseSearch, parseIframe, requestFrame2, parseFrame2, iframePro, host, requestFrame3, textFrame3, dataDecoded, parseDecodeData, _i, parseDecodeData_1, item, directUrl, e_1, embedUrl;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
                 PROVIDER = 'RVIDSRC';
-                DOMAIN = "https://vidsrc.xyz";
+                // Ø§ÙØ¯ÙÙÙÙØ§Øª Ø§ÙÙØ´Ø·Ø© (vidsrc.xyz ÙÙØª â Jun 2026)
+                // Ø§ÙÙØ±Ø¬Ø¹: https://vidsrc.domains
+                DOMAINS = [
+                    "https://vsembed.ru",
+                    "https://vidsrcme.ru",
+                    "https://vidsrc-embed.ru",
+                    "https://vsrc.su",
+                    "https://vidsrcme.su",
+                    "https://vidsrc-me.ru",
+                    "https://vidsrc-embed.su"
+                ];
+                _di = 0;
+                DOMAIN = DOMAINS[_di];
+
+                // ÙØ³Ø§Ø± Ø³Ø±ÙØ¹: ÙÙØ±Ø¬Ø¹ embed URL ÙØ¨Ø§Ø´Ø±Ø© â Ø§ÙØªØ·Ø¨ÙÙ ÙÙØªØ­Ù ÙÙ WebView
+                embedUrl = movieInfo.type === 'tv'
+                    ? DOMAIN + "/embed/tv?tmdb=" + movieInfo.tmdb_id + "&season=" + movieInfo.season + "&episode=" + movieInfo.episode
+                    : DOMAIN + "/embed/movie?tmdb=" + movieInfo.tmdb_id;
+
+                libs.log({ embedUrl: embedUrl }, PROVIDER, "EMBED URL (for WebView extraction)");
+
+                libs.embed_callback(
+                    embedUrl,            // embed URL â ÙÙÙØªØ­ ÙÙ WebView
+                    PROVIDER,            // 'RVIDSRC' â "Server R{n}"
+                    'Vidsrc',            // host display name
+                    'embed',             // â ÙÙØ¹ Ø¬Ø¯ÙØ¯: WebView extraction
+                    callback,
+                    1,
+                    [],                  // subs (Ø³ÙÙÙØªÙØ· ÙÙ WebView)
+                    [],                  // qualities (Ø³ÙÙÙØªÙØ· ÙÙ WebView)
+                    {
+                        'Referer': DOMAIN + '/',
+                        'User-Agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
+                    }
+                );
+
+                return [2, true];
+
+                // âââ Ø§ÙÙÙØ¯ Ø§ÙØªØ§ÙÙ ÙÙØªÙØ§ÙÙ Ø§ÙØ®ÙÙÙ ÙÙØ· (ÙÙ Ø¶Ø±ÙØ±Ø©) âââ
                 _a.label = 1;
             case 1:
                 _a.trys.push([1, 7, , 8]);
                 userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36";
                 urlSearch = '';
                 if (movieInfo.type == 'tv') {
-                    urlSearch = "".concat(DOMAIN, "/embed/tv/").concat(movieInfo.tmdb_id, "/").concat(movieInfo.season, "-").concat(movieInfo.episode);
+                    urlSearch = "".concat(DOMAIN, "/embed/tv?tmdb=").concat(movieInfo.tmdb_id, "&season=").concat(movieInfo.season, "&episode=").concat(movieInfo.episode);
                 }
                 else {
-                    urlSearch = "".concat(DOMAIN, "/embed/").concat(movieInfo.tmdb_id);
+                    urlSearch = "".concat(DOMAIN, "/embed/movie?tmdb=").concat(movieInfo.tmdb_id);
                 }
+                libs.log({ urlSearch: urlSearch, domain_idx: _di }, PROVIDER, "TRY DOMAIN");
                 return [4, libs.request_get(urlSearch, {
                         'user-agent': userAgent,
                         'accept': "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
@@ -204,12 +255,22 @@ source.getResource = function (movieInfo, config, callback) { return __awaiter(_
             case 2:
                 parseSearch = _a.sent();
                 if (typeof parseSearch !== 'function') {
-                    console.warn('[RVIDSRC] parseSearch is not a function — request likely failed | url=' + urlSearch);
+                    console.warn('[RVIDSRC] parseSearch is not a function â domain failed: ' + DOMAIN);
+                    _di++;
+                    if (_di < DOMAINS.length) {
+                        DOMAIN = DOMAINS[_di];
+                        return [3, 1]; // re-try with next domain
+                    }
                     return [2, false];
                 }
                 parseIframe = parseSearch("#player_iframe").attr("src");
                 libs.log({ parseIframe: parseIframe }, PROVIDER, "PARSE IFRAME");
                 if (!parseIframe) {
+                    _di++;
+                    if (_di < DOMAINS.length) {
+                        DOMAIN = DOMAINS[_di];
+                        return [3, 1]; // re-try with next domain
+                    }
                     return [2, false];
                 }
                 if (_.startsWith(parseIframe, '//')) {
