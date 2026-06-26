@@ -35,125 +35,52 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    var CryptoJSAesJson, PROVIDER, DOMAIN, parseHead, headerUrl, urlSearch, parseSeach_1, id, headers, numes_2, _i, numes_1, nume, body, urlAjaxEmbed, embedData, decode, e_1;
+
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// IDFLIX â Embed URL Provider (DHFLIX)
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Strategy: returns embed URL instead of extracting m3u8.
+// HTTP scraping no longer works (Cloudflare Turnstile).
+// The RN app opens the embed URL in HiddenWebViewExtractor which
+// solves Turnstile automatically and captures the real m3u8.
+//
+// PROVIDER_ID:  JIdFlix
+// Display Name: IdFlix
+// Source:       https://tv9.idlix.asia
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+source.getResource = function (movieInfo, config, callback) {
+  return __awaiter(_this, void 0, void 0, function () {
+    var PROVIDER, DOMAINS, embedUrl, _di;
     return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0:
-                CryptoJSAesJson = {
-                    'encrypt': function (value, password) {
-                        return cryptoS.AES.encrypt(JSON.stringify(value), password, { format: CryptoJSAesJson }).toString();
-                    },
-                    'decrypt': function (jsonStr, password) {
-                        var parseStr = JSON.parse(jsonStr);
-                        var m = parseStr.m;
-                        var newPass = "";
-                        var r = password.split("\\x");
-                        for (var _i = 0, _a = libs.string_atob(m.split("").reduce(function (t, e) { return e + t; }, "")).split("|"); _i < _a.length; _i++) {
-                            var s = _a[_i];
-                            newPass += "\\x" + r[parseInt(s) + 1];
-                        }
-                        libs.log({ newPass: newPass }, 'IDFLIX', 'NEWPASS');
-                        return JSON.parse(cryptoS.AES.decrypt(jsonStr, newPass, { format: CryptoJSAesJson }).toString(cryptoS.enc.Utf8));
-                    },
-                    'stringify': function (cipherParams) {
-                        var j = { ct: cipherParams.ciphertext.toString(cryptoS.enc.Base64) };
-                        if (cipherParams.iv)
-                            j.iv = cipherParams.iv.toString();
-                        if (cipherParams.salt)
-                            j.s = cipherParams.salt.toString();
-                        return JSON.stringify(j).replace(/\s/g, '');
-                    },
-                    'parse': function (jsonStr) {
-                        var j = JSON.parse(jsonStr);
-                        var cipherParams = cryptoS.lib.CipherParams.create({ ciphertext: cryptoS.enc.Base64.parse(j.ct) });
-                        if (j.iv)
-                            cipherParams.iv = cryptoS.enc.Hex.parse(j.iv);
-                        if (j.s)
-                            cipherParams.salt = cryptoS.enc.Hex.parse(j.s);
-                        return cipherParams;
-                    }
-                };
-                PROVIDER = 'JIdFlix';
-                DOMAIN = "https://tv9.idlix.asia/";
-                _a.label = 1;
-            case 1:
-                _a.trys.push([1, 9, , 10]);
-                return [4, fetch("https://vip.idlixofficialx.net/", {
-                        method: "HEAD",
-                        headers: {
-                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
-                        },
-                        redirect: "manual"
-                    })];
-            case 2:
-                parseHead = _a.sent();
-                libs.log({ parseHead: parseHead }, PROVIDER, 'HEAD');
-                headerUrl = parseHead.url;
-                if (headerUrl) {
-                    DOMAIN = headerUrl;
-                }
-                urlSearch = "";
-                if (movieInfo.type == 'movie') {
-                    urlSearch = "".concat(DOMAIN, "movie/").concat(libs.url_slug_search(movieInfo), "-").concat(movieInfo.year);
-                }
-                else {
-                    urlSearch = "".concat(DOMAIN, "episode/").concat(libs.url_slug_search(movieInfo), "-season-").concat(movieInfo.season, "-episode-").concat(movieInfo.episode);
-                }
-                libs.log({ urlSearch: urlSearch }, PROVIDER, "URL SEARCH");
-                return [4, libs.request_get(urlSearch, {}, true)];
-            case 3:
-                parseSeach_1 = _a.sent();
-                id = parseSeach_1("#player-option-1").attr("data-post");
-                libs.log({ urlSearch: urlSearch, id: id }, PROVIDER, "URL SEARCH");
-                headers = {
-                    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-                    "Referer": urlSearch.replace("tv.idlixofficials.com", "tv3.idlix.asia")
-                };
-                numes_2 = [];
-                parseSeach_1('.dooplay_player_option').each(function (key, item) {
-                    var n = parseSeach_1(item).attr("data-nume");
-                    if (n) {
-                        numes_2.push(n);
-                    }
-                });
-                _i = 0, numes_1 = numes_2;
-                _a.label = 4;
-            case 4:
-                if (!(_i < numes_1.length)) return [3, 8];
-                nume = numes_1[_i];
-                body = qs.stringify({
-                    action: "doo_player_ajax",
-                    post: id,
-                    nume: nume,
-                    type: movieInfo.type == 'movie' ? 'movie' : 'tv'
-                });
-                urlAjaxEmbed = "".concat(DOMAIN, "wp-admin/admin-ajax.php");
-                return [4, libs.request_post(urlAjaxEmbed, headers, body)];
-            case 5:
-                embedData = _a.sent();
-                libs.log({ embedData: embedData, body: body, headers: headers, urlAjaxEmbed: urlAjaxEmbed }, PROVIDER, "EMBED DATA");
-                if (!embedData.embed_url) {
-                    return [2];
-                }
-                decode = CryptoJSAesJson.decrypt(embedData.embed_url, embedData.key);
-                libs.log({ decode: decode }, PROVIDER, 'decode');
-                if (!decode) return [3, 7];
-                return [4, libs.embed_redirect(decode, '', movieInfo, PROVIDER, callback, undefined, [], {
-                        domain: DOMAIN
-                    })];
-            case 6:
-                _a.sent();
-                _a.label = 7;
-            case 7:
-                _i++;
-                return [3, 4];
-            case 8: return [3, 10];
-            case 9:
-                e_1 = _a.sent();
-                libs.log(e_1, PROVIDER, 'ERROR');
-                return [3, 10];
-            case 10: return [2, true];
-        }
+      switch (_a.label) {
+        case 0:
+          PROVIDER = 'JIdFlix';
+          DOMAINS = ["https://tv9.idlix.asia"];
+          _di = 0;
+
+          embedUrl = movieInfo.type === 'tv'
+            ? DOMAINS[_di] + "/tv/" + movieInfo.tmdb_id + "/" + movieInfo.season + "/" + movieInfo.episode + ""
+            : DOMAINS[_di] + "/movie/" + movieInfo.tmdb_id + "";
+
+          libs.log({ embedUrl: embedUrl, type: movieInfo.type }, PROVIDER, 'EMBED');
+
+          libs.embed_callback(
+            embedUrl,
+            PROVIDER,
+            'IdFlix',
+            'embed',  // â WebView will extract real m3u8
+            callback,
+            1,
+            [],       // subs (captured by WebView)
+            [],       // qualities (captured by WebView)
+            {
+              'Referer': DOMAINS[_di] + '/',
+              'User-Agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
+            }
+          );
+
+          return [2, true];
+      }
     });
-}); };
+  });
+};

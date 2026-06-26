@@ -35,89 +35,52 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    var PROVIDER, DOMAIN, headers, urlSearch, dataDetail, htmlDetail, urlDirect, token, expires, buildUrlDirect, dataDirect, htmlDirect, dataVideo, directQuality, _i, dataVideo_1, item, quality, e_1;
+
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// VIXSRC â Embed URL Provider (DHFLIX)
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Strategy: returns embed URL instead of extracting m3u8.
+// HTTP scraping no longer works (Cloudflare Turnstile).
+// The RN app opens the embed URL in HiddenWebViewExtractor which
+// solves Turnstile automatically and captures the real m3u8.
+//
+// PROVIDER_ID:  Vixsrc
+// Display Name: VixSrc
+// Source:       https://vixsrc.to
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+source.getResource = function (movieInfo, config, callback) {
+  return __awaiter(_this, void 0, void 0, function () {
+    var PROVIDER, DOMAINS, embedUrl, _di;
     return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0:
-                PROVIDER = 'Vixsrc';
-                DOMAIN = "https://vixsrc.to";
-                headers = {
-                    'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
-                    'Referer': "https://vixsrc.to/",
-                    'Origin': DOMAIN,
-                };
-                _a.label = 1;
-            case 1:
-                _a.trys.push([1, 6, , 7]);
-                urlSearch = "".concat(DOMAIN, "/movie/").concat(movieInfo.tmdb_id);
-                if (movieInfo.type == 'tv') {
-                    urlSearch = "".concat(DOMAIN, "/tv/").concat(movieInfo.tmdb_id, "/").concat(movieInfo.season, "/").concat(movieInfo.episode);
-                }
-                return [4, fetch(urlSearch, {
-                        headers: headers,
-                    })];
-            case 2:
-                dataDetail = _a.sent();
-                return [4, dataDetail.text()];
-            case 3:
-                htmlDetail = _a.sent();
-                urlDirect = htmlDetail.match(/url *\: *\'([^\']+)/i);
-                urlDirect = urlDirect ? urlDirect[1] : "";
-                libs.log({ urlDirect: urlDirect }, PROVIDER, "URL DIRECT");
-                if (!urlDirect) {
-                    return [2];
-                }
-                token = htmlDetail.match(/\'token\' *\: *\'([^\']+)/i);
-                token = token ? token[1] : "";
-                libs.log({ token: token }, PROVIDER, "TOKEN");
-                if (!token) {
-                    return [2];
-                }
-                expires = htmlDetail.match(/\'expires\' *\: *\'([^\']+)/i);
-                expires = expires ? expires[1] : "";
-                libs.log({ expires: expires }, PROVIDER, "EXPIRES");
-                if (!expires) {
-                    return [2];
-                }
-                buildUrlDirect = "".concat(urlDirect, "?token=").concat(token, "&expires=").concat(expires, "&h=1&lang=en");
-                if (urlDirect.indexOf("?") != -1) {
-                    buildUrlDirect = "".concat(urlDirect, "&token=").concat(token, "&expires=").concat(expires, "&h=1&lang=en");
-                }
-                return [4, fetch(buildUrlDirect, {
-                        headers: headers,
-                    })];
-            case 4:
-                dataDirect = _a.sent();
-                return [4, dataDirect.text()];
-            case 5:
-                htmlDirect = _a.sent();
-                libs.log({ buildUrlDirect: buildUrlDirect, htmlDirect: htmlDirect }, PROVIDER, "FINAL URL DIRECT");
-                dataVideo = htmlDirect.match(/^https:\/\/vixsrc\.to\/playlist\/.*?type=video.*?$/igm);
-                libs.log({ dataVideo: dataVideo }, PROVIDER, "DATA VIDEO");
-                directQuality = [];
-                for (_i = 0, dataVideo_1 = dataVideo; _i < dataVideo_1.length; _i++) {
-                    item = dataVideo_1[_i];
-                    if (item.indexOf("type=video") == -1 || item.indexOf("https") == -1) {
-                        continue;
-                    }
-                    quality = item.match(/rendition\=([0-9]+)/i);
-                    libs.log({ quality: quality }, PROVIDER, "QUALITY MATCH");
-                    quality = quality ? quality[1] : 1080;
-                    directQuality.push({ file: item, quality: Number(quality) });
-                }
-                libs.log({ directQuality: directQuality }, PROVIDER, "DIRECT QUALITY");
-                if (!directQuality.length) {
-                    return [2];
-                }
-                directQuality = _.orderBy(directQuality, ['quality'], ['desc']);
-                libs.embed_callback(directQuality[0].file, PROVIDER, PROVIDER, 'Hls', callback, 1, [], directQuality, headers);
-                return [3, 7];
-            case 6:
-                e_1 = _a.sent();
-                libs.log({ e: e_1 }, PROVIDER, "ERROR");
-                return [3, 7];
-            case 7: return [2];
-        }
+      switch (_a.label) {
+        case 0:
+          PROVIDER = 'Vixsrc';
+          DOMAINS = ["https://vixsrc.to"];
+          _di = 0;
+
+          embedUrl = movieInfo.type === 'tv'
+            ? DOMAINS[_di] + "/tv/" + movieInfo.tmdb_id + "/" + movieInfo.season + "/" + movieInfo.episode + ""
+            : DOMAINS[_di] + "/movie/" + movieInfo.tmdb_id + "";
+
+          libs.log({ embedUrl: embedUrl, type: movieInfo.type }, PROVIDER, 'EMBED');
+
+          libs.embed_callback(
+            embedUrl,
+            PROVIDER,
+            'VixSrc',
+            'embed',  // â WebView will extract real m3u8
+            callback,
+            1,
+            [],       // subs (captured by WebView)
+            [],       // qualities (captured by WebView)
+            {
+              'Referer': DOMAINS[_di] + '/',
+              'User-Agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
+            }
+          );
+
+          return [2, true];
+      }
     });
-}); };
+  });
+};

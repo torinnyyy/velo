@@ -35,107 +35,52 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    var PROVIDER, DOMAIN, headers, qw_1, RL, enc, urlovo, response, json, _a, _b, _c, _i, item, source, qualityData, directQuality, _d, _e, qItem, errorRequest_1, e_1;
-    return __generator(this, function (_f) {
-        switch (_f.label) {
-            case 0:
-                PROVIDER = 'XVidsrcVip';
-                DOMAIN = "https://vidrock.net";
-                headers = {
-                    'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                    'referer': "https://vidrock.net/",
-                    'origin': "https://vidrock.net"
-                };
-                _f.label = 1;
-            case 1:
-                _f.trys.push([1, 11, , 12]);
-                qw_1 = "x7k9mPqT2rWvY8zA5bC3nF6hJ2lK4mN9";
-                RL = function (r, e, t, n) {
-                    var s = e === "tv" ? "".concat(r, "_").concat(t, "_").concat(n) : r, i = cryptoS.enc.Utf8.parse(qw_1), a = cryptoS.enc.Utf8.parse(qw_1.substring(0, 16));
-                    libs.log({ s: s, i: i, a: a }, PROVIDER, "ENCRYPTION INPUTS");
-                    var c = cryptoS.AES.encrypt(s, i, {
-                        iv: a
-                    }).ciphertext.toString(cryptoS.enc.Base64);
-                    c = c.replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
-                    return c;
-                };
-                enc = RL(String(movieInfo.tmdb_id), movieInfo.type, movieInfo.season, movieInfo.episode);
-                libs.log({ enc: enc }, PROVIDER, "ENCODED");
-                urlovo = "".concat(DOMAIN, "/api/").concat(movieInfo.type, "/").concat(encodeURIComponent(enc));
-                libs.log({ urlovo: urlovo }, PROVIDER, "URL");
-                return [4, fetch(urlovo)];
-            case 2:
-                response = _f.sent();
-                if (!response.ok) {
-                    return [2];
-                }
-                return [4, response.json()];
-            case 3:
-                json = _f.sent();
-                libs.log({ json: json }, PROVIDER, "JSON");
-                _a = json;
-                _b = [];
-                for (_c in _a)
-                    _b.push(_c);
-                _i = 0;
-                _f.label = 4;
-            case 4:
-                if (!(_i < _b.length)) return [3, 10];
-                _c = _b[_i];
-                if (!(_c in _a)) return [3, 9];
-                item = _c;
-                _f.label = 5;
-            case 5:
-                _f.trys.push([5, 8, , 9]);
-                if (!["Astra", "Nova"].includes(item)) {
-                    return [3, 9];
-                }
-                source = json[item];
-                if (!source.url) {
-                    return [3, 9];
-                }
-                if (!(source.url.indexOf("cdn.vidrock.store") != -1)) return [3, 7];
-                return [4, libs.request_get(source.url, headers)];
-            case 6:
-                qualityData = _f.sent();
-                libs.log({ qualityData: qualityData }, PROVIDER, "QUALITY DATA");
-                directQuality = [];
-                for (_d = 0, _e = qualityData || []; _d < _e.length; _d++) {
-                    qItem = _e[_d];
-                    libs.log({ qItem: qItem }, PROVIDER, "QUALITY ITEM");
-                    if (qItem.resolution && qItem.url) {
-                        directQuality.push({
-                            file: qItem.url,
-                            quality: qItem.resolution,
-                        });
-                    }
-                }
-                if (directQuality.length > 0) {
-                    libs.log({ directQuality: directQuality }, PROVIDER, "DIRECT QUALITY");
-                    directQuality = _.orderBy(directQuality, ['quality'], ['desc']);
-                    libs.embed_callback(directQuality[0].file, PROVIDER, PROVIDER, 'Hls', callback, 1, [], directQuality, headers, {
-                        type: "m3u8"
-                    });
-                }
-                return [3, 9];
-            case 7:
-                libs.embed_callback(source.url, PROVIDER, PROVIDER, 'Hls', callback, 1, [], [{ file: source.url, quality: 1080 }], headers, {
-                    type: "m3u8"
-                });
-                return [3, 9];
-            case 8:
-                errorRequest_1 = _f.sent();
-                return [3, 9];
-            case 9:
-                _i++;
-                return [3, 4];
-            case 10: return [3, 12];
-            case 11:
-                e_1 = _f.sent();
-                libs.log({ e: e_1 }, PROVIDER, "ERROR");
-                return [3, 12];
-            case 12: return [2];
-        }
+
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// VIDSRCVIP â Embed URL Provider (DHFLIX)
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Strategy: returns embed URL instead of extracting m3u8.
+// HTTP scraping no longer works (Cloudflare Turnstile).
+// The RN app opens the embed URL in HiddenWebViewExtractor which
+// solves Turnstile automatically and captures the real m3u8.
+//
+// PROVIDER_ID:  XVidsrcVip
+// Display Name: Vidrock
+// Source:       https://vidrock.net
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+source.getResource = function (movieInfo, config, callback) {
+  return __awaiter(_this, void 0, void 0, function () {
+    var PROVIDER, DOMAINS, embedUrl, _di;
+    return __generator(this, function (_a) {
+      switch (_a.label) {
+        case 0:
+          PROVIDER = 'XVidsrcVip';
+          DOMAINS = ["https://vidrock.net"];
+          _di = 0;
+
+          embedUrl = movieInfo.type === 'tv'
+            ? DOMAINS[_di] + "/tv/" + movieInfo.tmdb_id + "/" + movieInfo.season + "/" + movieInfo.episode + ""
+            : DOMAINS[_di] + "/movie/" + movieInfo.tmdb_id + "";
+
+          libs.log({ embedUrl: embedUrl, type: movieInfo.type }, PROVIDER, 'EMBED');
+
+          libs.embed_callback(
+            embedUrl,
+            PROVIDER,
+            'Vidrock',
+            'embed',  // â WebView will extract real m3u8
+            callback,
+            1,
+            [],       // subs (captured by WebView)
+            [],       // qualities (captured by WebView)
+            {
+              'Referer': DOMAINS[_di] + '/',
+              'User-Agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
+            }
+          );
+
+          return [2, true];
+      }
     });
-}); };
+  });
+};

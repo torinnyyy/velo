@@ -35,171 +35,52 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    function customEncode(input) {
-        var src = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_";
-        var dst = "TuzHOxl7b0RW9o_1FPV3eGfmL4Z5pD8cahBQr2U-6yvEYwngXCdJjANtqKIMiSks";
-        var b64 = libs.string_btoa(unescape(encodeURIComponent(input)))
-            .replace(/\+/g, '-')
-            .replace(/\//g, '_')
-            .replace(/=/g, '');
-        return b64.split('').map(function (char) {
-            var index = src.indexOf(char);
-            return index !== -1 ? dst[index] : char;
-        }).join('');
-    }
-    function hexToBytes(hex) {
-        var bytes = [];
-        for (var i = 0; i < hex.length; i += 2) {
-            bytes.push(parseInt(hex.substr(i, 2), 16));
-        }
-        return new Uint8Array(bytes);
-    }
-    var PROVIDER, DOMAIN, headers, staticID, urlDetail, dataDetail, textDetail, rawData, encodedFinal, urlServer, requestServer, dataServer, _i, dataServer_1, itemServer, id, urlEmbed, requestEmbed, dataEmbed, tracks, _a, _b, itemTrack, lang, file, parseLang, e_1;
-    return __generator(this, function (_c) {
-        switch (_c.label) {
-            case 0:
-                PROVIDER = 'OneOneOne';
-                DOMAIN = "https://111movies.com";
-                headers = {
-                    'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
-                    "X-Requested-With": "XMLHttpRequest",
-                    "Referer": "".concat(DOMAIN, "/"),
-                    "Content-Type": "application/octet-stream",
-                    "Accept": "*"
-                };
-                _c.label = 1;
-            case 1:
-                _c.trys.push([1, 12, , 13]);
-                staticID = "APA91jkm9izwoCjqLPR78ZKT1SE0jVyJz0GDV5BOIgjCDvBU9_B1ymKNYHbOAFeZi6fe1D6xLPgSmhEcQMGCm1f6WyiQRfF4YJlJG5IE5ZDjO38yNE1Zv1wnMGVL6QtRPbsR2s7MvvyFnSTJhTil-H4z60VBjZSyfHArb9qkGwCm_3IB8JtOF9Y/1000019584590139/em";
-                urlDetail = "".concat(DOMAIN, "/movie/").concat(movieInfo.tmdb_id);
-                if (movieInfo.type == 'tv') {
-                    urlDetail = "".concat(DOMAIN, "/tv/").concat(movieInfo.tmdb_id, "/").concat(movieInfo.season, "/").concat(movieInfo.episode);
-                }
-                return [4, fetch(urlDetail, {
-                        headers: {
-                            'User-Agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
-                            "Referer": "".concat(DOMAIN, "/"),
-                            "Origin": DOMAIN,
-                            "X-Requested-With": "XMLHttpRequest"
-                        }
-                    })];
-            case 2:
-                dataDetail = _c.sent();
-                return [4, dataDetail.text()];
-            case 3:
-                textDetail = _c.sent();
-                rawData = textDetail.match(/\"data\" *\: *\"([^\"]+)/i);
-                rawData = rawData ? rawData[1] : "";
-                libs.log({ rawData: rawData }, PROVIDER, "RAW DATA");
-                if (!rawData) {
-                    return [2];
-                }
-                return [4, libs.request_get("https://aquariumtv.app/one?id=".concat(rawData))];
-            case 4:
-                encodedFinal = _c.sent();
-                libs.log({ encodedFinal: encodedFinal }, PROVIDER, "FINAL ENCODED");
-                if (!encodedFinal) {
-                    return [2];
-                }
-                urlServer = "".concat(DOMAIN, "/").concat(staticID, "/").concat(encodedFinal, "/sr");
-                libs.log({ urlServer: urlServer }, PROVIDER, "URL SERVER");
-                return [4, fetch(urlServer, {
-                        method: "POST",
-                        headers: {
-                            'User-Agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
-                            "Referer": "".concat(DOMAIN, "/"),
-                            "Origin": DOMAIN,
-                            "Content-Type": "text/javascript",
-                            "X-Requested-With": "XMLHttpRequest"
-                        }
-                    })];
-            case 5:
-                requestServer = _c.sent();
-                return [4, requestServer.text()];
-            case 6:
-                dataServer = _c.sent();
-                libs.log({ dataServerRaw: dataServer, urlServer: urlServer }, PROVIDER, "DATA SERVER RAW");
-                try {
-                    dataServer = JSON.parse(dataServer);
-                } catch (jsonErr) {
-                    console.warn('[OneOneOne] requestServer.json() parse error — server returned non-JSON | url=' + urlServer + ' | preview=' + String(dataServer).substring(0, 120));
-                    return [2];
-                }
-                libs.log({ dataServer: dataServer }, PROVIDER, "DATA SERVER");
-                if (!dataServer || !dataServer.length) {
-                    return [2];
-                }
-                dataServer = [dataServer[0]];
-                _i = 0, dataServer_1 = dataServer;
-                _c.label = 7;
-            case 7:
-                if (!(_i < dataServer_1.length)) return [3, 11];
-                itemServer = dataServer_1[_i];
-                id = itemServer.data;
-                if (!id) {
-                    return [3, 10];
-                }
-                urlEmbed = "".concat(DOMAIN, "/").concat(staticID, "/").concat(id);
-                return [4, fetch(urlEmbed, {
-                        method: 'POST',
-                        headers: {
-                            'User-Agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
-                            "Referer": "".concat(DOMAIN, "/"),
-                            "Origin": DOMAIN,
-                            "Content-Type": "text/javascript",
-                            "X-Requested-With": "XMLHttpRequest"
-                        }
-                    })];
-            case 8:
-                requestEmbed = _c.sent();
-                return [4, requestEmbed.text()];
-            case 9:
-                dataEmbed = _c.sent();
-                try {
-                    dataEmbed = JSON.parse(dataEmbed);
-                } catch (jsonErr2) {
-                    console.warn('[OneOneOne] requestEmbed.json() parse error — server returned non-JSON | url=' + urlEmbed + ' | preview=' + String(dataEmbed).substring(0, 120));
-                    return [3, 10];
-                }
-                libs.log({ dataEmbed: dataEmbed, urlEmbed: urlEmbed }, PROVIDER, "DATA EMBED");
-                if (!dataEmbed || !dataEmbed.url) {
-                    return [3, 10];
-                }
-                tracks = [];
-                for (_a = 0, _b = dataEmbed.tracks || []; _a < _b.length; _a++) {
-                    itemTrack = _b[_a];
-                    lang = itemTrack.label;
-                    if (!lang) {
-                        continue;
-                    }
-                    file = itemTrack.file;
-                    if (!file) {
-                        continue;
-                    }
-                    parseLang = lang.split("-");
-                    if (parseLang.length > 0) {
-                        lang = parseLang[0].trim();
-                    }
-                    tracks.push({
-                        file: itemTrack.file,
-                        kind: 'captions',
-                        label: lang
-                    });
-                }
-                libs.embed_callback(dataEmbed.url, PROVIDER, PROVIDER, 'Hls', callback, 0, tracks, [{ file: dataEmbed.url, quality: 1080 }], {
-                    type: "m3u8"
-                });
-                _c.label = 10;
-            case 10:
-                _i++;
-                return [3, 7];
-            case 11: return [3, 13];
-            case 12:
-                e_1 = _c.sent();
-                libs.log(e_1, PROVIDER, 'ERROR');
-                return [3, 13];
-            case 13: return [2, true];
-        }
+
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// 111MOVIES â Embed URL Provider (DHFLIX)
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Strategy: returns embed URL instead of extracting m3u8.
+// HTTP scraping no longer works (Cloudflare Turnstile).
+// The RN app opens the embed URL in HiddenWebViewExtractor which
+// solves Turnstile automatically and captures the real m3u8.
+//
+// PROVIDER_ID:  OneOneOne
+// Display Name: 111Movies
+// Source:       https://111movies.com
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+source.getResource = function (movieInfo, config, callback) {
+  return __awaiter(_this, void 0, void 0, function () {
+    var PROVIDER, DOMAINS, embedUrl, _di;
+    return __generator(this, function (_a) {
+      switch (_a.label) {
+        case 0:
+          PROVIDER = 'OneOneOne';
+          DOMAINS = ["https://111movies.com"];
+          _di = 0;
+
+          embedUrl = movieInfo.type === 'tv'
+            ? DOMAINS[_di] + "/tv/" + movieInfo.tmdb_id + "/" + movieInfo.season + "/" + movieInfo.episode + ""
+            : DOMAINS[_di] + "/movie/" + movieInfo.tmdb_id + "";
+
+          libs.log({ embedUrl: embedUrl, type: movieInfo.type }, PROVIDER, 'EMBED');
+
+          libs.embed_callback(
+            embedUrl,
+            PROVIDER,
+            '111Movies',
+            'embed',  // â WebView will extract real m3u8
+            callback,
+            1,
+            [],       // subs (captured by WebView)
+            [],       // qualities (captured by WebView)
+            {
+              'Referer': DOMAINS[_di] + '/',
+              'User-Agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
+            }
+          );
+
+          return [2, true];
+      }
     });
-}); };
+  });
+};

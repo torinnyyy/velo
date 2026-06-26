@@ -35,110 +35,52 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    function generateUUID() {
-        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-            var r = Math.random() * 16 | 0;
-            var v = c === 'x' ? r : (r & 0x3 | 0x8);
-            return v.toString(16);
-        });
-    }
-    var PROVIDER, DOMAIN, headers, sources, _i, sources_1, item, url, dataDetail, textDetail, urlDecrypt, body, random, decryptData, directQuality, tracks, _a, _b, itemDirect, quality, _c, _d, itemSubtitle, lang, errorSource_1, e_1;
-    return __generator(this, function (_e) {
-        switch (_e.label) {
-            case 0:
-                PROVIDER = 'AVideasy';
-                DOMAIN = "https://api.videasy.net";
-                headers = {
-                    'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                    'referer': "".concat(DOMAIN, "/"),
-                    "origin": "".concat(DOMAIN)
-                };
-                _e.label = 1;
-            case 1:
-                _e.trys.push([1, 10, , 11]);
-                sources = ["myflixerzupcloud"];
-                _i = 0, sources_1 = sources;
-                _e.label = 2;
-            case 2:
-                if (!(_i < sources_1.length)) return [3, 9];
-                item = sources_1[_i];
-                _e.label = 3;
-            case 3:
-                _e.trys.push([3, 7, , 8]);
-                url = "https://api.videasy.net/myflixerzupcloud/sources-with-title?mediaType=".concat(movieInfo.type, "&year=").concat(movieInfo.year, "&tmdbId=").concat(movieInfo.tmdb_id, "&imdbId=").concat(movieInfo.imdb_id, "&title=").concat(encodeURIComponent(movieInfo.title));
-                if (movieInfo.type == "tv") {
-                    url += "&episodeId=".concat(movieInfo.episode, "&seasonId=").concat(movieInfo.season);
-                }
-                return [4, fetch(url, {
-                        headers: headers
-                    })];
-            case 4:
-                dataDetail = _e.sent();
-                return [4, dataDetail.text()];
-            case 5:
-                textDetail = _e.sent();
-                libs.log({ textDetail: textDetail }, PROVIDER, 'TEXT DETAIL');
-                if (!textDetail) {
-                    return [3, 8];
-                }
-                urlDecrypt = "https://enc-dec.app/api/dec-videasy";
-                body = {
-                    text: textDetail,
-                    id: movieInfo.tmdb_id
-                };
-                random = _.random(0, 1000000);
-                return [4, libs.request_post(urlDecrypt, {
-                        "content-type": "application/json",
-                        'user-agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
-                        Referer: "https://vidsrc-embed.ru/",
-                    }, body)];
-            case 6:
-                decryptData = _e.sent();
-                libs.log({ decryptData: decryptData }, PROVIDER, 'DECRYPT DATA');
-                if (!decryptData || !decryptData.result.sources) {
-                    return [3, 8];
-                }
-                directQuality = [];
-                tracks = [];
-                for (_a = 0, _b = decryptData.result.sources; _a < _b.length; _a++) {
-                    itemDirect = _b[_a];
-                    quality = itemDirect.quality;
-                    quality = quality.match(/([0-9]+)/i);
-                    quality = quality ? Number(quality[1]) : 1080;
-                    directQuality.push({
-                        file: itemDirect.url,
-                        quality: quality,
-                    });
-                }
-                for (_c = 0, _d = decryptData.result.subtitles; _c < _d.length; _c++) {
-                    itemSubtitle = _d[_c];
-                    lang = itemSubtitle.language;
-                    tracks.push({
-                        file: itemSubtitle.url,
-                        kind: 'captions',
-                        label: lang
-                    });
-                }
-                if (directQuality.length == 0) {
-                    return [3, 8];
-                }
-                directQuality = _.orderBy(directQuality, ['quality'], ['desc']);
-                libs.log({ directQuality: directQuality, tracks: tracks }, PROVIDER, "FINAL QUALITY");
-                libs.embed_callback(directQuality[0].file, PROVIDER, PROVIDER, 'Hls', callback, 1, tracks, directQuality, headers);
-                return [3, 8];
-            case 7:
-                errorSource_1 = _e.sent();
-                return [3, 8];
-            case 8:
-                _i++;
-                return [3, 2];
-            case 9: return [2];
-            case 10:
-                e_1 = _e.sent();
-                libs.log({ e: e_1 }, PROVIDER, "ERROR");
-                return [3, 11];
-            case 11: return [2];
-        }
+
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// VIDEASY â Embed URL Provider (DHFLIX)
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Strategy: returns embed URL instead of extracting m3u8.
+// HTTP scraping no longer works (Cloudflare Turnstile).
+// The RN app opens the embed URL in HiddenWebViewExtractor which
+// solves Turnstile automatically and captures the real m3u8.
+//
+// PROVIDER_ID:  AVideasy
+// Display Name: Videasy
+// Source:       https://player.videasy.net
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+source.getResource = function (movieInfo, config, callback) {
+  return __awaiter(_this, void 0, void 0, function () {
+    var PROVIDER, DOMAINS, embedUrl, _di;
+    return __generator(this, function (_a) {
+      switch (_a.label) {
+        case 0:
+          PROVIDER = 'AVideasy';
+          DOMAINS = ["https://player.videasy.net"];
+          _di = 0;
+
+          embedUrl = movieInfo.type === 'tv'
+            ? DOMAINS[_di] + "/tv/" + movieInfo.tmdb_id + "/" + movieInfo.season + "/" + movieInfo.episode + ""
+            : DOMAINS[_di] + "/movie/" + movieInfo.tmdb_id + "";
+
+          libs.log({ embedUrl: embedUrl, type: movieInfo.type }, PROVIDER, 'EMBED');
+
+          libs.embed_callback(
+            embedUrl,
+            PROVIDER,
+            'Videasy',
+            'embed',  // â WebView will extract real m3u8
+            callback,
+            1,
+            [],       // subs (captured by WebView)
+            [],       // qualities (captured by WebView)
+            {
+              'Referer': DOMAINS[_di] + '/',
+              'User-Agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
+            }
+          );
+
+          return [2, true];
+      }
     });
-}); };
+  });
+};

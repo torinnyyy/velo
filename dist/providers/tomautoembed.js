@@ -35,91 +35,52 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    var PROVIDER, DOMAIN, headers, decryptWithPassword, _i, _a, serverID, urlDirect, dataDirect, t, a, decryptData, directUrl, e_1;
-    return __generator(this, function (_b) {
-        switch (_b.label) {
-            case 0:
-                PROVIDER = 'TomAutoEmbed';
-                DOMAIN = "https://test.autoembed.cc";
-                headers = {
-                    'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
-                    'Referer': "".concat(DOMAIN, "/"),
-                    'Origin': DOMAIN,
-                };
-                _b.label = 1;
-            case 1:
-                _b.trys.push([1, 6, , 7]);
-                decryptWithPassword = function (e) {
-                    var t = cryptoS.enc.Hex.parse(e.salt);
-                    var a = cryptoS.enc.Hex.parse(e.iv);
-                    var l = e.encryptedData;
-                    var n = cryptoS.PBKDF2(e.key, t, {
-                        keySize: 8,
-                        iterations: e.iterations,
-                        hasher: cryptoS.algo.SHA256
-                    });
-                    var s = cryptoS.AES.decrypt(l, n, {
-                        iv: a,
-                        padding: cryptoS.pad.Pkcs7,
-                        mode: cryptoS.mode.CBC
-                    }).toString(cryptoS.enc.Utf8);
-                    if (!s) {
-                        throw Error("Decryption failed: Invalid key or malformed data.");
-                    }
-                    return JSON.parse(s);
-                };
-                _i = 0, _a = [1, 2];
-                _b.label = 2;
-            case 2:
-                if (!(_i < _a.length)) return [3, 5];
-                serverID = _a[_i];
-                urlDirect = "".concat(DOMAIN, "/api/server?id=").concat(movieInfo.tmdb_id, "&sr=").concat(serverID, "&ep=").concat(movieInfo.episode, "&ss=").concat(movieInfo.season);
-                if (movieInfo.type == "movie") {
-                    urlDirect = "".concat(DOMAIN, "/api/server?id=").concat(movieInfo.tmdb_id, "&sr=").concat(serverID);
-                }
-                libs.log({ urlDirect: urlDirect }, PROVIDER, "URL DIRECT");
-                return [4, libs.request_get(urlDirect, headers, false)];
-            case 3:
-                dataDirect = _b.sent();
-                libs.log({ dataDirect: dataDirect }, PROVIDER, "DATA DIRECT");
-                if (!dataDirect.data) {
-                    return [3, 4];
-                }
-                t = libs.string_atob(dataDirect.data);
-                a = JSON.parse(t);
-                libs.log({ a: a }, PROVIDER, "A DATA");
-                decryptData = decryptWithPassword(a);
-                libs.log({ decryptData: decryptData }, PROVIDER, "DECRYPT DATA");
-                if (!decryptData.url) {
-                    return [3, 4];
-                }
-                if (decryptData.url.indexOf("https://") != -1 && decryptData.url.indexOf(".m3u8") != -1) {
-                    libs.embed_callback(decryptData.url, PROVIDER, PROVIDER, 'hls', callback, 1, [], [{ file: decryptData.url, quality: 1080 }], headers, {
-                        type: "m3u8"
-                    });
-                    return [3, 4];
-                }
-                if (!_.startsWith(decryptData.url, "/")) {
-                    return [3, 4];
-                }
-                if (decryptData.url.indexOf("/api/embed-proxy") == -1) {
-                    return [3, 4];
-                }
-                directUrl = "".concat(DOMAIN).concat(decryptData.url);
-                libs.embed_callback(directUrl, PROVIDER, PROVIDER, 'hls', callback, 1, [], [{ file: directUrl, quality: 1080 }], headers, {
-                    type: "m3u8"
-                });
-                _b.label = 4;
-            case 4:
-                _i++;
-                return [3, 2];
-            case 5: return [3, 7];
-            case 6:
-                e_1 = _b.sent();
-                libs.log({ e: e_1 }, PROVIDER, "ERROR");
-                return [3, 7];
-            case 7: return [2];
-        }
+
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// TOMAUTOEMBED â Embed URL Provider (DHFLIX)
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Strategy: returns embed URL instead of extracting m3u8.
+// HTTP scraping no longer works (Cloudflare Turnstile).
+// The RN app opens the embed URL in HiddenWebViewExtractor which
+// solves Turnstile automatically and captures the real m3u8.
+//
+// PROVIDER_ID:  TomAutoEmbed
+// Display Name: AutoEmbed
+// Source:       https://player.autoembed.cc
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+source.getResource = function (movieInfo, config, callback) {
+  return __awaiter(_this, void 0, void 0, function () {
+    var PROVIDER, DOMAINS, embedUrl, _di;
+    return __generator(this, function (_a) {
+      switch (_a.label) {
+        case 0:
+          PROVIDER = 'TomAutoEmbed';
+          DOMAINS = ["https://player.autoembed.cc","https://tom.autoembed.cc"];
+          _di = 0;
+
+          embedUrl = movieInfo.type === 'tv'
+            ? DOMAINS[_di] + "/embed/tv/" + movieInfo.tmdb_id + "/" + movieInfo.season + "/" + movieInfo.episode + ""
+            : DOMAINS[_di] + "/embed/movie/" + movieInfo.tmdb_id + "";
+
+          libs.log({ embedUrl: embedUrl, type: movieInfo.type }, PROVIDER, 'EMBED');
+
+          libs.embed_callback(
+            embedUrl,
+            PROVIDER,
+            'AutoEmbed',
+            'embed',  // â WebView will extract real m3u8
+            callback,
+            1,
+            [],       // subs (captured by WebView)
+            [],       // qualities (captured by WebView)
+            {
+              'Referer': DOMAINS[_di] + '/',
+              'User-Agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
+            }
+          );
+
+          return [2, true];
+      }
     });
-}); };
+  });
+};

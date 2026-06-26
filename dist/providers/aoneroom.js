@@ -35,114 +35,52 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    var PROVIDER, DOMAIN, headers, urlSearch, headers_1, body, dataSearch, ID, DETAIL_PATH, _i, _a, item, title, releaseDate, year, urlDirect, dataDirect, streamQuality, _b, _c, item, HlsQuality, _d, _e, item, e_1;
-    return __generator(this, function (_f) {
-        switch (_f.label) {
-            case 0:
-                PROVIDER = 'CAoneroom';
-                DOMAIN = "https://fmoviesunblocked.net";
-                headers = {
-                    'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                    'referer': "hhttps://h5.aoneroom.com/"
-                };
-                _f.label = 1;
-            case 1:
-                _f.trys.push([1, 4, , 5]);
-                urlSearch = "".concat(DOMAIN, "/wefeed-h5-bff/web/subject/search");
-                headers_1 = {
-                    "Content-Type": "application/json",
-                    'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                    'referer': DOMAIN
-                };
-                body = {
-                    keyword: movieInfo.title,
-                    page: 1,
-                    perPage: 24,
-                    subjectType: movieInfo.type == 'movie' ? 1 : 2
-                };
-                return [4, libs.request_post(urlSearch, headers_1, body)];
-            case 2:
-                dataSearch = _f.sent();
-                libs.log({ dataSearch: dataSearch }, PROVIDER, "DATA SEARCH");
-                if (!dataSearch.data) {
-                    return [2];
-                }
-                ID = "";
-                DETAIL_PATH = "";
-                for (_i = 0, _a = dataSearch.data.items; _i < _a.length; _i++) {
-                    item = _a[_i];
-                    title = item.title;
-                    if (item && item.subjectId && libs.string_matching_title(movieInfo, title)) {
-                        if (movieInfo.type == 'movie') {
-                            releaseDate = item.releaseDate;
-                            year = releaseDate.split('-')[0];
-                            libs.log({ year: year, title: title, item: item }, PROVIDER, "YEAR INFO");
-                            if (movieInfo.year == year) {
-                                ID = item.subjectId;
-                                DETAIL_PATH = item.detailPath;
-                                break;
-                            }
-                        }
-                        else {
-                            ID = item.subjectId;
-                            DETAIL_PATH = item.detailPath;
-                            break;
-                        }
-                    }
-                }
-                libs.log({ ID: ID, DETAIL_PATH: DETAIL_PATH }, PROVIDER, "ID");
-                if (!ID) {
-                    return [2];
-                }
-                urlDirect = "".concat(DOMAIN, "/wefeed-h5-bff/web/subject/play?subjectId=").concat(ID, "&se=").concat(movieInfo.season || 0, "&ep=").concat(movieInfo.episode || 0);
-                return [4, libs.request_get(urlDirect, {
-                        "Content-Type": "application/json",
-                        'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                        'referer': "".concat(DOMAIN, "/movies/").concat(DETAIL_PATH)
-                    })];
-            case 3:
-                dataDirect = _f.sent();
-                libs.log({ dataDirect: dataDirect }, PROVIDER, "DATA DIRECT");
-                if (!dataDirect.data) {
-                    return [2];
-                }
-                streamQuality = [];
-                for (_b = 0, _c = dataDirect.data.streams; _b < _c.length; _b++) {
-                    item = _c[_b];
-                    if (!item.url) {
-                        continue;
-                    }
-                    streamQuality.push({
-                        file: item.url,
-                        quality: item.resolutions ? Number(item.resolutions) : 1080
-                    });
-                }
-                if (streamQuality.length) {
-                    streamQuality = _.orderBy(streamQuality, ['quality'], ['desc']);
-                    libs.embed_callback(streamQuality[0].file, PROVIDER, PROVIDER, 'Hls', callback, 1, [], streamQuality, headers_1);
-                }
-                HlsQuality = [];
-                for (_d = 0, _e = dataDirect.data.hls; _d < _e.length; _d++) {
-                    item = _e[_d];
-                    if (!item.url) {
-                        continue;
-                    }
-                    HlsQuality.push({
-                        file: item.url,
-                        quality: item.resolutions ? Number(item.resolutions) : 1080
-                    });
-                }
-                if (HlsQuality.length) {
-                    HlsQuality = _.orderBy(HlsQuality, ['quality'], ['desc']);
-                    libs.embed_callback(HlsQuality[0].file, PROVIDER, PROVIDER, 'Hls', callback, 1, [], HlsQuality, headers_1);
-                }
-                return [3, 5];
-            case 4:
-                e_1 = _f.sent();
-                libs.log({ e: e_1 }, PROVIDER, "ERROR");
-                return [3, 5];
-            case 5: return [2];
-        }
+
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// AONEROOM â Embed URL Provider (DHFLIX)
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Strategy: returns embed URL instead of extracting m3u8.
+// HTTP scraping no longer works (Cloudflare Turnstile).
+// The RN app opens the embed URL in HiddenWebViewExtractor which
+// solves Turnstile automatically and captures the real m3u8.
+//
+// PROVIDER_ID:  CAoneroom
+// Display Name: AOneRoom
+// Source:       https://fmoviesunblocked.net
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+source.getResource = function (movieInfo, config, callback) {
+  return __awaiter(_this, void 0, void 0, function () {
+    var PROVIDER, DOMAINS, embedUrl, _di;
+    return __generator(this, function (_a) {
+      switch (_a.label) {
+        case 0:
+          PROVIDER = 'CAoneroom';
+          DOMAINS = ["https://fmoviesunblocked.net"];
+          _di = 0;
+
+          embedUrl = movieInfo.type === 'tv'
+            ? DOMAINS[_di] + "/embed/tv?tmdb=" + movieInfo.tmdb_id + "&season=" + movieInfo.season + "&episode=" + movieInfo.episode + ""
+            : DOMAINS[_di] + "/embed/movie?tmdb=" + movieInfo.tmdb_id + "";
+
+          libs.log({ embedUrl: embedUrl, type: movieInfo.type }, PROVIDER, 'EMBED');
+
+          libs.embed_callback(
+            embedUrl,
+            PROVIDER,
+            'AOneRoom',
+            'embed',  // â WebView will extract real m3u8
+            callback,
+            1,
+            [],       // subs (captured by WebView)
+            [],       // qualities (captured by WebView)
+            {
+              'Referer': DOMAINS[_di] + '/',
+              'User-Agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
+            }
+          );
+
+          return [2, true];
+      }
     });
-}); };
+  });
+};

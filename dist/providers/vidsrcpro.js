@@ -35,101 +35,52 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    var PROVIDER, DOMAIN, headers, urlSearch, htmlSearch, textSearch, hashEncode, hashDecode, mEncrypt, firstDecode, secondDecode, _i, secondDecode_1, item, urlDirect, dataDirect, tracks, _a, _b, itemTrack, label, urlDirect, e_1;
-    return __generator(this, function (_c) {
-        switch (_c.label) {
-            case 0:
-                PROVIDER = 'AVidsrcPro';
-                DOMAIN = "https://embed.su";
-                headers = {
-                    'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                    'Referer': "https://embed.su/",
-                    'Origin': "https://embed.su",
-                };
-                _c.label = 1;
-            case 1:
-                _c.trys.push([1, 8, , 9]);
-                urlSearch = '';
-                if (movieInfo.type == 'tv') {
-                    urlSearch = "".concat(DOMAIN, "/embed/tv/").concat(movieInfo.tmdb_id, "/").concat(movieInfo.season, "/").concat(movieInfo.episode);
-                }
-                else {
-                    urlSearch = "".concat(DOMAIN, "/embed/movie/").concat(movieInfo.tmdb_id);
-                }
-                libs.log({ urlSearch: urlSearch }, PROVIDER, 'URLSEARCH');
-                return [4, fetch(urlSearch, {
-                        method: 'GET',
-                        headers: headers,
-                    })];
-            case 2:
-                htmlSearch = _c.sent();
-                return [4, htmlSearch.text()];
-            case 3:
-                textSearch = _c.sent();
-                hashEncode = textSearch.match(/JSON\.parse\(atob\(\`([^\`]+)/i);
-                hashEncode = hashEncode ? hashEncode[1] : "";
-                libs.log({ hashEncode: hashEncode }, PROVIDER, "HASH ENCODE");
-                if (!hashEncode) {
-                    return [2];
-                }
-                hashDecode = JSON.parse(libs.string_atob(hashEncode));
-                libs.log({ hashDecode: hashDecode }, PROVIDER, "HASH DECODE");
-                mEncrypt = hashDecode.hash;
-                if (!mEncrypt) {
-                    return [2];
-                }
-                firstDecode = libs.string_atob(mEncrypt).split(".").map(function (item) { return item.split("").reverse().join(""); });
-                secondDecode = JSON.parse(libs.string_atob(firstDecode.join("").split("").reverse().join("")));
-                libs.log({ secondDecode: secondDecode }, PROVIDER, 'M DECRYPT');
-                if (!secondDecode || secondDecode.length == 0) {
-                    return [2];
-                }
-                _i = 0, secondDecode_1 = secondDecode;
-                _c.label = 4;
-            case 4:
-                if (!(_i < secondDecode_1.length)) return [3, 7];
-                item = secondDecode_1[_i];
-                if (item.name.toLowerCase() != "viper") {
-                    return [3, 6];
-                }
-                urlDirect = "".concat(DOMAIN, "/api/e/").concat(item.hash);
-                return [4, libs.request_get(urlDirect, headers, false)];
-            case 5:
-                dataDirect = _c.sent();
-                libs.log({ dataDirect: dataDirect, urlDirect: urlDirect }, PROVIDER, 'DATA DIRECT');
-                if (!dataDirect.source) {
-                    return [3, 6];
-                }
-                tracks = [];
-                try {
-                    for (_a = 0, _b = dataDirect.subtitles; _a < _b.length; _a++) {
-                        itemTrack = _b[_a];
-                        label = itemTrack.label.match(/^([A-z]+)/i);
-                        label = label ? label[1] : "";
-                        if (!label) {
-                            continue;
-                        }
-                        tracks.push({
-                            file: itemTrack.file,
-                            label: label
-                        });
-                    }
-                }
-                catch (etrack) { }
-                libs.log({ tracks: tracks }, PROVIDER, 'TRACKS');
-                urlDirect = dataDirect.source;
-                libs.embed_callback(urlDirect, PROVIDER, PROVIDER, 'Hls', callback, 1, tracks, [{ file: urlDirect, quality: 1080 }], headers);
-                return [2];
-            case 6:
-                _i++;
-                return [3, 4];
-            case 7: return [3, 9];
-            case 8:
-                e_1 = _c.sent();
-                libs.log({ e: e_1 }, PROVIDER, "ERROR");
-                return [3, 9];
-            case 9: return [2];
-        }
+
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// VIDSRCPRO â Embed URL Provider (DHFLIX)
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Strategy: returns embed URL instead of extracting m3u8.
+// HTTP scraping no longer works (Cloudflare Turnstile).
+// The RN app opens the embed URL in HiddenWebViewExtractor which
+// solves Turnstile automatically and captures the real m3u8.
+//
+// PROVIDER_ID:  AVidsrcPro
+// Display Name: Embed.su
+// Source:       https://embed.su
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+source.getResource = function (movieInfo, config, callback) {
+  return __awaiter(_this, void 0, void 0, function () {
+    var PROVIDER, DOMAINS, embedUrl, _di;
+    return __generator(this, function (_a) {
+      switch (_a.label) {
+        case 0:
+          PROVIDER = 'AVidsrcPro';
+          DOMAINS = ["https://embed.su"];
+          _di = 0;
+
+          embedUrl = movieInfo.type === 'tv'
+            ? DOMAINS[_di] + "/embed/tv/" + movieInfo.tmdb_id + "/" + movieInfo.season + "/" + movieInfo.episode + ""
+            : DOMAINS[_di] + "/embed/movie/" + movieInfo.tmdb_id + "";
+
+          libs.log({ embedUrl: embedUrl, type: movieInfo.type }, PROVIDER, 'EMBED');
+
+          libs.embed_callback(
+            embedUrl,
+            PROVIDER,
+            'Embed.su',
+            'embed',  // â WebView will extract real m3u8
+            callback,
+            1,
+            [],       // subs (captured by WebView)
+            [],       // qualities (captured by WebView)
+            {
+              'Referer': DOMAINS[_di] + '/',
+              'User-Agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
+            }
+          );
+
+          return [2, true];
+      }
     });
-}); };
+  });
+};

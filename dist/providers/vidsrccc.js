@@ -35,143 +35,52 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    function _0x35fb63(_0x2bbed3, _0x58fa9b) {
-        var _0x20e08e = [];
-        var _0x3b4750 = 0;
-        var _0x29527d;
-        var _0xc68cb0 = "";
-        var _0x344511;
-        for (_0x344511 = 0; _0x344511 < 256; _0x344511++) {
-            _0x20e08e[_0x344511] = _0x344511;
-        }
-        for (_0x344511 = 0; _0x344511 < 256; _0x344511++) {
-            _0x3b4750 = (_0x3b4750 + _0x20e08e[_0x344511] + _0x58fa9b.charCodeAt(_0x344511 % _0x58fa9b.length)) % 256;
-            _0x29527d = _0x20e08e[_0x344511];
-            _0x20e08e[_0x344511] = _0x20e08e[_0x3b4750];
-            _0x20e08e[_0x3b4750] = _0x29527d;
-        }
-        _0x344511 = 0;
-        _0x3b4750 = 0;
-        for (var _0x35d1b8 = 0; _0x35d1b8 < _0x2bbed3.length; _0x35d1b8++) {
-            _0x344511 = (_0x344511 + 1) % 256;
-            _0x3b4750 = (_0x3b4750 + _0x20e08e[_0x344511]) % 256;
-            _0x29527d = _0x20e08e[_0x344511];
-            _0x20e08e[_0x344511] = _0x20e08e[_0x3b4750];
-            _0x20e08e[_0x3b4750] = _0x29527d;
-            _0xc68cb0 += String.fromCharCode(_0x2bbed3.charCodeAt(_0x35d1b8) ^ _0x20e08e[(_0x20e08e[_0x344511] + _0x20e08e[_0x3b4750]) % 256]);
-        }
-        return _0xc68cb0;
-    }
-    function _0x2dc7d6(_0x288bb5) {
-        var _0xd5131b = libs.string_btoa(_0x288bb5);
-        return _0xd5131b.replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
-    }
-    var PROVIDER, DOMAIN, headers, urlDetail, dataDetail, textDetail, userID, v, reqVrf, vrf, apiIDUrl, srcIds, _i, _a, item, directUrl, res, tracks, _b, _c, item_1, lang, parseLang, e_1;
-    return __generator(this, function (_d) {
-        switch (_d.label) {
-            case 0:
-                PROVIDER = 'VidsrcCC';
-                DOMAIN = "https://vidsrc.cc";
-                headers = {
-                    'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
-                    'Referer': "https://vidsrc.cc/",
-                    'Origin': DOMAIN,
-                };
-                _d.label = 1;
-            case 1:
-                _d.trys.push([1, 11, , 12]);
-                urlDetail = "".concat(DOMAIN, "/v2/embed/movie/").concat(movieInfo.tmdb_id, "?autoPlay=false");
-                if (movieInfo.type == 'tv') {
-                    urlDetail = "".concat(DOMAIN, "/v2/embed/tv/").concat(movieInfo.tmdb_id, "/").concat(movieInfo.season, "/").concat(movieInfo.episode, "?autoPlay=false");
-                }
-                libs.log({ urlDetail: urlDetail }, PROVIDER, "URL DETAIL");
-                return [4, fetch(urlDetail, {
-                        headers: headers
-                    })];
-            case 2:
-                dataDetail = _d.sent();
-                return [4, dataDetail.text()];
-            case 3:
-                textDetail = _d.sent();
-                userID = textDetail.match(/userId *\= *\"([^\"]+)/i);
-                userID = userID ? userID[1] : '';
-                libs.log({ userID: userID }, PROVIDER, "USER ID");
-                if (!userID) {
-                    return [2];
-                }
-                v = textDetail.match(/var *v *\= *\"([^\"]+)/i);
-                v = v ? v[1] : '';
-                libs.log({ v: v }, PROVIDER, "V");
-                if (!v) {
-                    return [2];
-                }
-                return [4, fetch("https://aquariumtv.app/vidsrccc?id=".concat(movieInfo.tmdb_id, "&user_id=").concat("BxRJ3LYEj2".split("").reverse().join("") + "_" + userID))];
-            case 4:
-                reqVrf = _d.sent();
-                return [4, reqVrf.text()];
-            case 5:
-                vrf = _d.sent();
-                libs.log({ vrf: vrf }, PROVIDER, "VRF");
-                if (!vrf) {
-                    return [2];
-                }
-                apiIDUrl = "".concat(DOMAIN, "/api/").concat(movieInfo.tmdb_id, "/servers?id=").concat(movieInfo.tmdb_id, "&type=movie&v=").concat(v, "&vrf=").concat(vrf, "&imdbId=").concat(movieInfo.imdb_id);
-                return [4, libs.request_get(apiIDUrl, headers)];
-            case 6:
-                srcIds = _d.sent();
-                libs.log({ srcIds: srcIds }, PROVIDER, "SRC IDS");
-                if (!srcIds || !srcIds.data || !srcIds.data.length) {
-                    return [2];
-                }
-                _i = 0, _a = srcIds.data;
-                _d.label = 7;
-            case 7:
-                if (!(_i < _a.length)) return [3, 10];
-                item = _a[_i];
-                directUrl = "".concat(DOMAIN, "/api/source/").concat(item.hash);
-                return [4, libs.request_get(directUrl, headers)];
-            case 8:
-                res = _d.sent();
-                libs.log({ res: res }, PROVIDER, 'RES FINAL');
-                if (!res || !res.data) {
-                    return [3, 9];
-                }
-                tracks = [];
-                for (_b = 0, _c = res.data.subtitles || []; _b < _c.length; _b++) {
-                    item_1 = _c[_b];
-                    lang = item_1.label;
-                    if (!lang) {
-                        continue;
-                    }
-                    libs.log({ lang: lang, item: item_1 }, PROVIDER, "TRACK ITEM");
-                    parseLang = lang.match(/([A-z0-9]+)/i);
-                    parseLang = parseLang ? parseLang[1].trim() : '';
-                    if (!parseLang) {
-                        continue;
-                    }
-                    tracks.push({
-                        file: item_1.file,
-                        kind: 'captions',
-                        label: parseLang
-                    });
-                }
-                if (!res.data.source) {
-                    return [3, 9];
-                }
-                libs.embed_callback(res.data.source, PROVIDER, PROVIDER, 'Hls', callback, 1, tracks, [{ "file": res.data.source, "quality": 1080 }], headers, {
-                    type: "m3u8"
-                });
-                _d.label = 9;
-            case 9:
-                _i++;
-                return [3, 7];
-            case 10: return [3, 12];
-            case 11:
-                e_1 = _d.sent();
-                libs.log({ e: e_1 }, PROVIDER, "ERROR");
-                return [3, 12];
-            case 12: return [2];
-        }
+
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// VIDSRCCC â Embed URL Provider (DHFLIX)
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Strategy: returns embed URL instead of extracting m3u8.
+// HTTP scraping no longer works (Cloudflare Turnstile).
+// The RN app opens the embed URL in HiddenWebViewExtractor which
+// solves Turnstile automatically and captures the real m3u8.
+//
+// PROVIDER_ID:  VidsrcCC
+// Display Name: VidsrcCC
+// Source:       https://vidsrc.cc
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+source.getResource = function (movieInfo, config, callback) {
+  return __awaiter(_this, void 0, void 0, function () {
+    var PROVIDER, DOMAINS, embedUrl, _di;
+    return __generator(this, function (_a) {
+      switch (_a.label) {
+        case 0:
+          PROVIDER = 'VidsrcCC';
+          DOMAINS = ["https://vidsrc.cc"];
+          _di = 0;
+
+          embedUrl = movieInfo.type === 'tv'
+            ? DOMAINS[_di] + "/v2/embed/tv/" + movieInfo.tmdb_id + "/" + movieInfo.season + "/" + movieInfo.episode + ""
+            : DOMAINS[_di] + "/v2/embed/movie/" + movieInfo.tmdb_id + "";
+
+          libs.log({ embedUrl: embedUrl, type: movieInfo.type }, PROVIDER, 'EMBED');
+
+          libs.embed_callback(
+            embedUrl,
+            PROVIDER,
+            'VidsrcCC',
+            'embed',  // â WebView will extract real m3u8
+            callback,
+            1,
+            [],       // subs (captured by WebView)
+            [],       // qualities (captured by WebView)
+            {
+              'Referer': DOMAINS[_di] + '/',
+              'User-Agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
+            }
+          );
+
+          return [2, true];
+      }
     });
-}); };
+  });
+};

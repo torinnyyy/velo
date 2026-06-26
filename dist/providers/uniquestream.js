@@ -35,71 +35,52 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    var PROVIDER, DOMAIN, urlSearch, parseSearch, postID, urlEmbed, parseEmbed, iframeData, iframeUrl, htmlDirect, text, directUrl;
+
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// UNIQUESTREAM â Embed URL Provider (DHFLIX)
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Strategy: returns embed URL instead of extracting m3u8.
+// HTTP scraping no longer works (Cloudflare Turnstile).
+// The RN app opens the embed URL in HiddenWebViewExtractor which
+// solves Turnstile automatically and captures the real m3u8.
+//
+// PROVIDER_ID:  DUniqueStream
+// Display Name: UniqueStream
+// Source:       https://uniquestream.net
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+source.getResource = function (movieInfo, config, callback) {
+  return __awaiter(_this, void 0, void 0, function () {
+    var PROVIDER, DOMAINS, embedUrl, _di;
     return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0:
-                PROVIDER = 'DUniqueStream';
-                DOMAIN = "https://uniquestream.net";
-                urlSearch = '';
-                if (movieInfo.type == 'tv') {
-                    urlSearch = "".concat(DOMAIN, "/episodes/").concat(libs.url_slug_search(movieInfo), "-season-").concat(movieInfo.season, "-episode-").concat(movieInfo.episode);
-                }
-                else {
-                    urlSearch = "".concat(DOMAIN, "/movies/").concat(libs.url_slug_search(movieInfo), "-").concat(movieInfo.year);
-                }
-                libs.log({ urlSearch: urlSearch }, PROVIDER, 'URL SEARCH');
-                return [4, libs.request_get(urlSearch, {}, true)];
-            case 1:
-                parseSearch = _a.sent();
-                if (typeof parseSearch !== 'function') {
-                    console.warn('[DUniqueStream] parseSearch is not a function — request likely failed | url=' + urlSearch);
-                    return [2];
-                }
-                postID = parseSearch("input[name='postid']").val();
-                libs.log({ postID: postID }, PROVIDER, 'POST ID');
-                if (!postID) {
-                    return [2];
-                }
-                urlEmbed = "".concat(DOMAIN, "/wp-json/zetaplayer/v2/").concat(postID, "/").concat(movieInfo.type == 'tv' ? 'ep' : 'mv', "/1");
-                return [4, libs.request_get(urlEmbed)];
-            case 2:
-                parseEmbed = _a.sent();
-                libs.log({ urlEmbed: urlEmbed, parseEmbed: parseEmbed }, PROVIDER, 'EMBED INFO');
-                iframeData = parseEmbed.embed_url;
-                iframeUrl = iframeData.match(/src\=\"([^\"]+)/i);
-                iframeUrl = iframeUrl ? iframeUrl[1] : '';
-                libs.log({ iframeUrl: iframeUrl }, PROVIDER, 'IFRAME URL');
-                if (!iframeUrl) {
-                    return [2];
-                }
-                if (_.startsWith(iframeUrl, '/')) {
-                    iframeUrl = "https:".concat(iframeUrl);
-                }
-                return [4, fetch(iframeUrl, {
-                        headers: {
-                            'referer': "".concat(DOMAIN, "/"),
-                            'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
-                        }
-                    })];
-            case 3:
-                htmlDirect = _a.sent();
-                return [4, htmlDirect.text()];
-            case 4:
-                text = _a.sent();
-                directUrl = text.match(/let *url *\= *\'([^\']+)/i);
-                directUrl = directUrl ? directUrl[1] : '';
-                libs.log({ directUrl: directUrl }, PROVIDER, 'DIRECT URL');
-                if (!directUrl) {
-                    return [2];
-                }
-                libs.embed_callback(directUrl, PROVIDER, PROVIDER, 'hls', callback, 1, [], [{ file: directUrl, quality: 1080 }], {
-                    Origin: "https://hls.uniquestream.net",
-                    Referer: "https://hls.uniquestream.net/",
-                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
-                });
-                return [2, true];
-        }
+      switch (_a.label) {
+        case 0:
+          PROVIDER = 'DUniqueStream';
+          DOMAINS = ["https://uniquestream.net"];
+          _di = 0;
+
+          embedUrl = movieInfo.type === 'tv'
+            ? DOMAINS[_di] + "/tv/" + movieInfo.tmdb_id + "/" + movieInfo.season + "/" + movieInfo.episode + ""
+            : DOMAINS[_di] + "/movie/" + movieInfo.tmdb_id + "";
+
+          libs.log({ embedUrl: embedUrl, type: movieInfo.type }, PROVIDER, 'EMBED');
+
+          libs.embed_callback(
+            embedUrl,
+            PROVIDER,
+            'UniqueStream',
+            'embed',  // â WebView will extract real m3u8
+            callback,
+            1,
+            [],       // subs (captured by WebView)
+            [],       // qualities (captured by WebView)
+            {
+              'Referer': DOMAINS[_di] + '/',
+              'User-Agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
+            }
+          );
+
+          return [2, true];
+      }
     });
-}); };
+  });
+};
