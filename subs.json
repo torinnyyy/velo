@@ -1,10 +1,11 @@
 {
-  "subs": [
-    "dist/subs/libre.js",
-        "dist/subs/opensubtitles.js",
-    "dist/subs/subsource.js",
-"dist/subs/podnapisi.js",
-"dist/subs/ytssubs.js",
-"dist/subs/subscene.js"
-  ]
+	"subs": [
+		"dist/subs/wyzie.js",
+		"dist/subs/opensubtitles.js",
+		"dist/subs/subsource.js",
+		"dist/subs/podnapisi.js",
+		"dist/subs/ytssubs.js",
+		"dist/subs/subscene.js",
+		"dist/subs/libre.js"
+	]
 }
