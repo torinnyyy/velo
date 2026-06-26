@@ -37,16 +37,16 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var _this = this;
 
 // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-// MOVIESAPI â Embed URL Provider (DHFLIX)
+// VIDSRCPM â Embed URL Provider (DHFLIX)
 // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 // Strategy: returns embed URL instead of extracting m3u8.
 // HTTP scraping no longer works (Cloudflare Turnstile).
 // The RN app opens the embed URL in HiddenWebViewExtractor which
 // solves Turnstile automatically and captures the real m3u8.
 //
-// PROVIDER_ID:  MMoviesApi
-// Display Name: MoviesAPI
-// Source:       https://moviesapi.to
+// PROVIDER_ID:  PVIDSRCPM
+// Display Name: VidsrcPM
+// Source:       https://vidsrc.pm
 // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 source.getResource = function (movieInfo, config, callback) {
   return __awaiter(_this, void 0, void 0, function () {
@@ -54,20 +54,20 @@ source.getResource = function (movieInfo, config, callback) {
     return __generator(this, function (_a) {
       switch (_a.label) {
         case 0:
-          PROVIDER = 'MMoviesApi';
-          DOMAINS = ["https://moviesapi.to"];
+          PROVIDER = 'PVIDSRCPM';
+          DOMAINS = ["https://vidsrc.pm"];
           _di = 0;
 
           embedUrl = movieInfo.type === 'tv'
-            ? DOMAINS[_di] + "/tv/" + movieInfo.tmdb_id + "-" + movieInfo.season + "-" + movieInfo.episode + ""
-            : DOMAINS[_di] + "/movie/" + movieInfo.tmdb_id + "";
+            ? DOMAINS[_di] + "/embed/tv/" + movieInfo.tmdb_id + "/" + movieInfo.season + "/" + movieInfo.episode + ""
+            : DOMAINS[_di] + "/embed/movie/" + movieInfo.tmdb_id + "";
 
           libs.log({ embedUrl: embedUrl, type: movieInfo.type }, PROVIDER, 'EMBED');
 
           libs.embed_callback(
             embedUrl,
             PROVIDER,
-            'MoviesAPI',
+            'VidsrcPM',
             'embed',  // â WebView will extract real m3u8
             callback,
             1,

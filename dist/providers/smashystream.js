@@ -35,22 +35,52 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-source.getResource = function (movieInfo, config, callback) { return __awaiter(_this, void 0, void 0, function () {
-    var PROVIDER, DOMAIN, domainWeb;
+
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// SMASHYSTREAM â Embed URL Provider (DHFLIX)
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Strategy: returns embed URL instead of extracting m3u8.
+// HTTP scraping no longer works (Cloudflare Turnstile).
+// The RN app opens the embed URL in HiddenWebViewExtractor which
+// solves Turnstile automatically and captures the real m3u8.
+//
+// PROVIDER_ID:  SSmashyStream
+// Display Name: SmashyStream
+// Source:       https://player.smashystream.com
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+source.getResource = function (movieInfo, config, callback) {
+  return __awaiter(_this, void 0, void 0, function () {
+    var PROVIDER, DOMAINS, embedUrl, _di;
     return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0:
-                PROVIDER = 'TSmashyStream';
-                DOMAIN = "https://embed.smashystream.com";
-                domainWeb = "https://player.smashy.stream/movie/".concat(movieInfo.tmdb_id);
-                if (movieInfo.type == 'tv') {
-                    domainWeb = "https://player.smashy.stream/tv/".concat(movieInfo.tmdb_id, "?s=").concat(movieInfo.season, "&e=").concat(movieInfo.episode);
-                }
-                libs.log({ domainWeb: domainWeb }, PROVIDER, "DOMAIN WEB");
-                return [4, libs.embed_redirect(domainWeb, '', movieInfo, PROVIDER, callback, '')];
-            case 1:
-                _a.sent();
-                return [2];
-        }
+      switch (_a.label) {
+        case 0:
+          PROVIDER = 'SSmashyStream';
+          DOMAINS = ["https://player.smashystream.com"];
+          _di = 0;
+
+          embedUrl = movieInfo.type === 'tv'
+            ? DOMAINS[_di] + "/playere.php?tmdb=" + movieInfo.tmdb_id + "&season=" + movieInfo.season + "&episode=" + movieInfo.episode + ""
+            : DOMAINS[_di] + "/playere.php?tmdb=" + movieInfo.tmdb_id + "";
+
+          libs.log({ embedUrl: embedUrl, type: movieInfo.type }, PROVIDER, 'EMBED');
+
+          libs.embed_callback(
+            embedUrl,
+            PROVIDER,
+            'SmashyStream',
+            'embed',  // â WebView will extract real m3u8
+            callback,
+            1,
+            [],       // subs (captured by WebView)
+            [],       // qualities (captured by WebView)
+            {
+              'Referer': DOMAINS[_di] + '/',
+              'User-Agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
+            }
+          );
+
+          return [2, true];
+      }
     });
-}); };
+  });
+};
