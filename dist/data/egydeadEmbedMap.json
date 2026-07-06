@@ -2,7 +2,7 @@
   "_meta": {
     "description": "Static TMDB → egydead embed URLs map. Manually maintained for v1 pilot. Each entry lists per-host embed URLs; the extractor picks the right port from hostExtractors/ based on the host name.",
     "version": 1,
-    "updated": "2026-07-05",
+    "updated": "2026-07-06",
     "referrer": "https://tv9.egydead.live/",
     "note": "Later iterations will replace this with a live fetch: POST tv9.egydead.live/{slug}/ body='View=1' → parse <ul class='serversList'>. Kept static now so we can integration-test the host extractors on real content without also debugging the egydead scraper."
   },
@@ -11,8 +11,9 @@
       "title": "Avatar: Fire and Ash",
       "slug": "avatar-3-fire-and-ash-2025-1080p-bluray",
       "servers": [
-        { "host": "voe",     "url": "https://voe.sx/e/zmj0e18jnx7e" },
-        { "host": "mixdrop", "url": "https://mixdrop.top/e/ow4gwodntlkej4z" }
+        { "host": "voe",      "url": "https://voe.sx/e/zmj0e18jnx7e" },
+        { "host": "mixdrop",  "url": "https://mixdrop.top/e/ow4gwodntlkej4z" },
+        { "host": "streamix", "url": "https://vidaraa.cc/e/LZ4qPBRZ29sVB" }
       ]
     }
   },
