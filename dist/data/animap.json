@@ -57,6 +57,69 @@
       ]
     },
 
+    "223564": {
+      "title": "The 100 Girlfriends Who Really, Really, Really, Really, REALLY Love You",
+      "tmdb_type": "tv",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 12,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Kimi no Koto ga Dai Dai Dai Dai Daisuki na Hyakunin no Kanojo",
+            "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You"
+          ],
+          "ids": {
+            "mal_id": 54714,
+            "anilist_id": 162694,
+            "kitsu_id": 47179,
+            "anidb_id": 17906,
+            "animeplanet_id": "the-100-girlfriends-who-really-really-really-really-really-love-you",
+            "thetvdb_id": 429310
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 13,
+          "to": 24,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Kimi no Koto ga Dai Dai Dai Dai Daisuki na Hyakunin no Kanojo (2025)",
+            "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You Season 2"
+          ],
+          "ids": {
+            "mal_id": 57616,
+            "anilist_id": 172258,
+            "kitsu_id": 48348,
+            "anidb_id": 18343,
+            "animeplanet_id": "the-100-girlfriends-who-really-really-really-really-really-love-you-season-2",
+            "thetvdb_id": 429310
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 25,
+          "to": 30,
+          "episode_offset": 1,
+          "season_number": 3,
+          "titles": [
+            "Kimi no Koto ga Dai Dai Dai Dai Daisuki na Hyakunin no Kanojo (2026)",
+            "Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo 3rd Season",
+            "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You Season 3"
+          ],
+          "ids": {
+            "mal_id": 62811,
+            "anilist_id": 200637,
+            "anidb_id": 19663,
+            "thetvdb_id": 429310
+          }
+        }
+      ]
+    },
+
     "95479": {
       "title": "Jujutsu Kaisen",
       "tmdb_type": "tv",
