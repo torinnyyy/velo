@@ -16,6 +16,9 @@
             "Ore dake Level Up na Ken",
             "Solo Leveling"
           ],
+          "slug_titles": [
+            "Solo Leveling"
+          ],
           "ids": {
             "mal_id": 52299,
             "anilist_id": 151807,
@@ -56,7 +59,6 @@
         }
       ]
     },
-
     "223564": {
       "title": "The 100 Girlfriends Who Really, Really, Really, Really, REALLY Love You",
       "tmdb_type": "tv",
@@ -119,7 +121,6 @@
         }
       ]
     },
-
     "95479": {
       "title": "Jujutsu Kaisen",
       "tmdb_type": "tv",
@@ -196,6 +197,735 @@
             "animeplanet_id": "jujutsu-kaisen-the-culling-game",
             "thetvdb_id": 377543,
             "imdb_id": "tt12343534"
+          }
+        }
+      ]
+    },
+    "65942": {
+      "title": "Re:ZERO -Starting Life in Another World-",
+      "tmdb_type": "tv",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 25,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Re:Zero - Starting Life in Another World",
+            "Re Zero kara Hajimeru Isekai Seikatsu",
+            "Re:ゼロから始める異世界生活",
+            "Re:Zero — жизнь с нуля в другом мире"
+          ],
+          "ids": {
+            "mal_id": 31240,
+            "anilist_id": 21355,
+            "kitsu_id": 11209,
+            "anidb_id": 11370,
+            "anisearch_id": 10572,
+            "livechart_id": 1723,
+            "animeplanet_id": "re-zero-starting-life-in-another-world",
+            "thetvdb_id": 305089,
+            "imdb_id": "tt5607616"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 26,
+          "to": 38,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Re:Zero - Starting Life in Another World (2020)",
+            "Re:ZERO -Starting Life in Another World- 2",
+            "rezero s2p1",
+            "Re:ゼロから始める異世界生活 (2020)"
+          ],
+          "ids": {
+            "mal_id": 39587,
+            "anilist_id": 108632,
+            "kitsu_id": 42198,
+            "anidb_id": 14792,
+            "anisearch_id": 14302,
+            "livechart_id": 9387,
+            "animeplanet_id": "re-zero-starting-life-in-another-world-season-2",
+            "thetvdb_id": 305089,
+            "imdb_id": "tt5607616"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 39,
+          "to": 50,
+          "episode_offset": 1,
+          "season_number": 3,
+          "titles": [
+            "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2",
+            "Re:Zero - Starting Life in Another World 2nd Season (Part 2)",
+            "Re:Zero - Starting Life in Another World (2021)"
+          ],
+          "slug_titles": [
+            "Re Zero Starting Life in Another World"
+          ],
+          "ids": {
+            "mal_id": 42203,
+            "anilist_id": 119661,
+            "kitsu_id": 43247,
+            "anidb_id": 15593,
+            "anisearch_id": 15319,
+            "livechart_id": 10009,
+            "animeplanet_id": "re-zero-starting-life-in-another-world-season-2-part-ii",
+            "thetvdb_id": 305089,
+            "imdb_id": "tt5607616"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 51,
+          "to": 66,
+          "episode_offset": 1,
+          "season_number": 4,
+          "titles": [
+            "Re:Zero - Starting Life in Another World (2024)",
+            "Re:ZERO -Starting Life in Another World- Season 3",
+            "rezero s3",
+            "Re：从零开始的异世界生活 第三季"
+          ],
+          "ids": {
+            "mal_id": 54857,
+            "anilist_id": 163134,
+            "kitsu_id": 47235,
+            "anidb_id": 17947,
+            "anisearch_id": 18302,
+            "livechart_id": 11908,
+            "animeplanet_id": "rezero-starting-life-in-another-world-season-3",
+            "thetvdb_id": 305089,
+            "imdb_id": "tt5607616"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 67,
+          "to": 81,
+          "episode_offset": 1,
+          "season_number": 5,
+          "titles": [
+            "Re:Zero - Starting Life in Another World (2026)",
+            "Re:ZERO -Starting Life in Another World- Season 4",
+            "Re:ゼロから始める異世界生活 (2026)",
+            "Re:ZERO -Starting Life in Another World- 4"
+          ],
+          "ids": {
+            "mal_id": 61316,
+            "anilist_id": 189046,
+            "kitsu_id": 49746,
+            "anidb_id": 19242,
+            "anisearch_id": 20366,
+            "livechart_id": 13115,
+            "animeplanet_id": "rezero-starting-life-in-another-world-season-4",
+            "thetvdb_id": 305089,
+            "imdb_id": "tt5607616"
+          }
+        }
+      ]
+    },
+    "209867": {
+      "title": "Frieren: Beyond Journey's End",
+      "tmdb_type": "tv",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 28,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Frieren: Beyond Journey's End",
+            "Sousou no Frieren",
+            "Frieren e a Jornada para o Além",
+            "Frieren: Nach dem Ende der Reise"
+          ],
+          "ids": {
+            "mal_id": 52991,
+            "anilist_id": 154587,
+            "kitsu_id": 46474,
+            "anidb_id": 17617,
+            "anisearch_id": 17669,
+            "livechart_id": 11376,
+            "animeplanet_id": "frieren-beyond-journeys-end",
+            "thetvdb_id": 424536,
+            "imdb_id": "tt22248376"
+          },
+          "slug_titles": [
+            "Frieren: Beyond Journey's End"
+          ]
+        },
+        {
+          "tmdb_season": 1,
+          "from": 29,
+          "to": 38,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Sousou no Frieren S2",
+            "Frieren: Beyond Journey's End Season 2",
+            "Frieren: Beyond Journey's End (2026)",
+            "Frieren: Nach dem Ende der Reise Staffel 2"
+          ],
+          "ids": {
+            "mal_id": 59978,
+            "anilist_id": 182255,
+            "kitsu_id": 49240,
+            "anidb_id": 18886,
+            "anisearch_id": 19635,
+            "livechart_id": 12860,
+            "animeplanet_id": "frieren-beyond-journeys-end-season-2",
+            "thetvdb_id": 424536
+          },
+          "slug_titles": [
+            "Frieren: Beyond Journey's End"
+          ]
+        }
+      ]
+    },
+    "259140": {
+      "title": "Ranma1/2",
+      "tmdb_type": "tv",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 12,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Ranma 1/2",
+            "Ranma1/2 (2024)",
+            "Ranma 1/2 (2024)"
+          ],
+          "ids": {
+            "mal_id": 59145,
+            "anilist_id": 178533,
+            "kitsu_id": 48981,
+            "anidb_id": 18700,
+            "anisearch_id": 19375,
+            "livechart_id": 12717,
+            "animeplanet_id": "ranma-12-2024",
+            "thetvdb_id": 451479,
+            "imdb_id": "tt32766897"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 13,
+          "to": 24,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Ranma 1/2 (2024) 2nd Season",
+            "Ranma 1/2 (2024) Season 2",
+            "Ranma 1/2 (2025)"
+          ],
+          "ids": {
+            "mal_id": 60564,
+            "anilist_id": 185731,
+            "kitsu_id": 49433,
+            "anidb_id": 19067,
+            "anisearch_id": 19989,
+            "livechart_id": 12987,
+            "animeplanet_id": "ranma-12-season-2",
+            "thetvdb_id": 451479,
+            "imdb_id": "tt32766897"
+          }
+        }
+      ]
+    },
+    "220542": {
+      "title": "The Apothecary Diaries",
+      "tmdb_type": "tv",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 24,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "The Apothecary Diaries",
+            "Kusuriya no Hitorigoto",
+            "Zapiski zielarki",
+            "Yao Wu Shaonu de Ninan"
+          ],
+          "ids": {
+            "mal_id": 54492,
+            "anilist_id": 161645,
+            "kitsu_id": 47083,
+            "anidb_id": 17870,
+            "anisearch_id": 18232,
+            "livechart_id": 10701,
+            "animeplanet_id": "the-apothecary-diaries",
+            "thetvdb_id": 431162,
+            "imdb_id": "tt26743760"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 25,
+          "to": 48,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "The Apothecary Diaries (2025)",
+            "The Apothecary Diaries Season 2",
+            "Kusuriya no Hitorigoto 2nd Season",
+            "Diários de uma Apotecária (2025)"
+          ],
+          "ids": {
+            "mal_id": 58514,
+            "anilist_id": 176301,
+            "kitsu_id": 48649,
+            "anidb_id": 18562,
+            "anisearch_id": 19138,
+            "livechart_id": 12609,
+            "animeplanet_id": "the-apothecary-diaries-2nd-season",
+            "thetvdb_id": 431162,
+            "imdb_id": "tt26743760"
+          }
+        }
+      ]
+    },
+    "120089": {
+      "title": "SPY x FAMILY",
+      "tmdb_type": "tv",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 12,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Spy x Family",
+            "SPY×FAMILY",
+            "SPY x FAMILY ซีซั่น 2",
+            "Семья шпиона"
+          ],
+          "ids": {
+            "mal_id": 50265,
+            "anilist_id": 140960,
+            "kitsu_id": 45398,
+            "anidb_id": 16947,
+            "anisearch_id": 16717,
+            "livechart_id": 10456,
+            "animeplanet_id": "spy-x-family",
+            "thetvdb_id": 405920,
+            "imdb_id": "tt13706018"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 13,
+          "to": 25,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Spy x Family Part 2",
+            "Spy x Family (2022)",
+            "SPY×FAMILY Part 2"
+          ],
+          "slug_titles": [
+            "Spy x Family"
+          ],
+          "ids": {
+            "mal_id": 50602,
+            "anilist_id": 142838,
+            "kitsu_id": 45619,
+            "anidb_id": 17061,
+            "anisearch_id": 16940,
+            "livechart_id": 10954,
+            "animeplanet_id": "spy-x-family-part-ii",
+            "thetvdb_id": 405920,
+            "imdb_id": "tt13706018"
+          }
+        }
+      ]
+    },
+    "240411": {
+      "title": "Dan Da Dan",
+      "tmdb_type": "tv",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 12,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Dan Da Dan",
+            "ดันดาดัน",
+            "DAN DA DAN: FIRST ENCOUNTER"
+          ],
+          "ids": {
+            "mal_id": 57334,
+            "anilist_id": 171018,
+            "kitsu_id": 48269,
+            "anidb_id": 18290,
+            "anisearch_id": 18878,
+            "livechart_id": 12428,
+            "animeplanet_id": "dandadan",
+            "thetvdb_id": 432832,
+            "imdb_id": "tt30217403"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 13,
+          "to": 24,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Dan Da Dan (2025)",
+            "DAN DA DAN Season 2",
+            "Dandadan 2nd Season",
+            "Dan Da Dan: Evil Eye"
+          ],
+          "ids": {
+            "mal_id": 60543,
+            "anilist_id": 185660,
+            "kitsu_id": 49425,
+            "anidb_id": 19060,
+            "anisearch_id": 19952,
+            "livechart_id": 12979,
+            "animeplanet_id": "dandadan-2nd-season",
+            "thetvdb_id": 432832,
+            "imdb_id": "tt30217403"
+          }
+        }
+      ]
+    },
+    "210879": {
+      "title": "Rurouni Kenshin",
+      "tmdb_type": "tv",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 24,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Rurouni Kenshin (2023)",
+            "Rurouni Kenshin",
+            "kenshin s2",
+            "Kenshin le vagabond (2023)"
+          ],
+          "ids": {
+            "mal_id": 50613,
+            "anilist_id": 142877,
+            "kitsu_id": 45616,
+            "anidb_id": 17065,
+            "anisearch_id": 16951,
+            "livechart_id": 10958,
+            "animeplanet_id": "rurouni-kenshin-2023",
+            "thetvdb_id": 413578,
+            "imdb_id": "tt22249034"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 25,
+          "to": 47,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Rurouni Kenshin: Kyoto Disturbance",
+            "Rurouni Kenshin -Kyoto Disturbance-",
+            "Rurouni Kenshin: Meiji Kenkaku Romantan - Kyoto Douran"
+          ],
+          "slug_titles": [
+            "Rurouni Kenshin 2023"
+          ],
+          "ids": {
+            "mal_id": 57554,
+            "anilist_id": 171637,
+            "kitsu_id": 48393,
+            "anidb_id": 18323,
+            "anisearch_id": 18930,
+            "livechart_id": 12458,
+            "animeplanet_id": "rurouni-kenshin-kyoto-disturbance",
+            "thetvdb_id": 413578,
+            "imdb_id": "tt22249034"
+          }
+        }
+      ]
+    },
+    "94664": {
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "tmdb_type": "tv",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 11,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Mushoku Tensei: Isekai Ittara Honki Dasu",
+            "Mushoku Tensei: Jobless Reincarnation"
+          ],
+          "ids": {
+            "mal_id": 39535,
+            "anilist_id": 108465,
+            "kitsu_id": 42323,
+            "anidb_id": 14758,
+            "anisearch_id": 14254,
+            "livechart_id": 9357,
+            "animeplanet_id": "mushoku-tensei-jobless-reincarnation",
+            "thetvdb_id": 371310,
+            "imdb_id": "tt13293588"
+          },
+          "slug_titles": [
+            "Mushoku Tensei: Jobless Reincarnation"
+          ]
+        },
+        {
+          "tmdb_season": 1,
+          "from": 12,
+          "to": 23,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Mushoku Tensei: Isekai Ittara Honki Dasu (2021)",
+            "Mushoku Tensei: Jobless Reincarnation Part 2",
+            "Mushoku Tensei: Isekai Ittara Honki Dasu Part 2"
+          ],
+          "ids": {
+            "mal_id": 45576,
+            "anilist_id": 127720,
+            "kitsu_id": 43907,
+            "anidb_id": 15954,
+            "anisearch_id": 15862,
+            "livechart_id": 10297,
+            "animeplanet_id": "mushoku-tensei-jobless-reincarnation-part-ii",
+            "thetvdb_id": 371310,
+            "imdb_id": "tt13293588"
+          },
+          "slug_titles": [
+            "Mushoku Tensei: Jobless Reincarnation"
+          ]
+        }
+      ]
+    },
+    "123249": {
+      "title": "My Dress-Up Darling",
+      "tmdb_type": "tv",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 12,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "My Dress-Up Darling",
+            "Sexy Cosplay Doll",
+            "Projekt: cosplay",
+            "Nàng Nổi Loạn X Chàng Thợ May"
+          ],
+          "ids": {
+            "mal_id": 48736,
+            "anilist_id": 132405,
+            "kitsu_id": 44382,
+            "anidb_id": 16250,
+            "anisearch_id": 16193,
+            "livechart_id": 10531,
+            "animeplanet_id": "my-dress-up-darling",
+            "thetvdb_id": 401233,
+            "imdb_id": "tt15765670"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 13,
+          "to": 24,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "My Dress-Up Darling (2025)",
+            "My Dress-Up Darling Season 2",
+            "KiseKoi 2",
+            "Sono Bisque Doll wa Koi wo Suru Season 2"
+          ],
+          "ids": {
+            "mal_id": 53065,
+            "anilist_id": 154768,
+            "kitsu_id": 46492,
+            "anidb_id": 17630,
+            "anisearch_id": 17703,
+            "livechart_id": 11514,
+            "animeplanet_id": "my-dress-up-darling-season-2",
+            "thetvdb_id": 401233,
+            "imdb_id": "tt15765670"
+          }
+        }
+      ]
+    },
+    "131041": {
+      "title": "BLUE LOCK",
+      "tmdb_type": "tv",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 24,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Blue Lock"
+          ],
+          "ids": {
+            "mal_id": 49596,
+            "anilist_id": 137822,
+            "kitsu_id": 44973,
+            "anidb_id": 16519,
+            "anisearch_id": 16520,
+            "livechart_id": 10687,
+            "animeplanet_id": "blue-lock",
+            "thetvdb_id": 408629,
+            "imdb_id": "tt15222080"
+          },
+          "slug_titles": [
+            "Blue Lock"
+          ]
+        },
+        {
+          "tmdb_season": 1,
+          "from": 25,
+          "to": 38,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Blue Lock Season 2",
+            "Blue Lock vs. U-20 Japan",
+            "BLUE LOCK Season 2"
+          ],
+          "ids": {
+            "mal_id": 54865,
+            "anilist_id": 163146,
+            "kitsu_id": 47245,
+            "anidb_id": 17954,
+            "anisearch_id": 18315,
+            "livechart_id": 11911,
+            "animeplanet_id": "blue-lock-vs-u-20-japan",
+            "thetvdb_id": 408629,
+            "imdb_id": "tt15222080"
+          },
+          "slug_titles": [
+            "Blue Lock"
+          ]
+        }
+      ]
+    },
+    "117465": {
+      "title": "Hell's Paradise",
+      "tmdb_type": "tv",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 13,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Hell's Paradise",
+            "Jigokuraku",
+            "Piekielny Raj",
+            "Địa ngục cực lạc:"
+          ],
+          "ids": {
+            "mal_id": 46569,
+            "anilist_id": 128893,
+            "kitsu_id": 44012,
+            "anidb_id": 16012,
+            "anisearch_id": 15915,
+            "livechart_id": 10371,
+            "animeplanet_id": "hells-paradise-jigokuraku",
+            "thetvdb_id": 402474,
+            "imdb_id": "tt13911284"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 14,
+          "to": 25,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Hell's Paradise Season 2",
+            "Jigokuraku (2026)",
+            "Jigokuraku 2nd Season",
+            "Hell's Paradise: Jigokuraku Season 2"
+          ],
+          "ids": {
+            "mal_id": 55825,
+            "anilist_id": 166613,
+            "kitsu_id": 47679,
+            "anidb_id": 18090,
+            "anisearch_id": 18505,
+            "livechart_id": 12236,
+            "animeplanet_id": "hells-paradise-jigokuraku-season-2",
+            "thetvdb_id": 402474,
+            "imdb_id": "tt13911284"
+          }
+        }
+      ]
+    },
+    "278043": {
+      "title": "You and I Are Polar Opposites",
+      "tmdb_type": "tv",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 12,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "You and I Are Polar Opposites",
+            "Seihantai na Kimi to Boku",
+            "ลุ้นรักฉบับคู่ต่างขั้ว",
+            "Cậu Và Tớ Là Hai Thái Cực Đối Lập"
+          ],
+          "ids": {
+            "mal_id": 60371,
+            "anilist_id": 184951,
+            "kitsu_id": 49372,
+            "anidb_id": 19010,
+            "anisearch_id": 19963,
+            "livechart_id": 12939,
+            "animeplanet_id": "you-and-i-are-polar-opposites",
+            "thetvdb_id": 457078,
+            "imdb_id": "tt36034547"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 13,
+          "to": 20,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "You and I Are Polar Opposites (2026)",
+            "You and I Are Polar Opposites Season 2",
+            "Seihantai na Kimi to Boku (2026)",
+            "Seihantai na Kimi to Boku 2nd Season"
+          ],
+          "ids": {
+            "mal_id": 63832,
+            "anilist_id": 210031,
+            "anidb_id": 19983,
+            "thetvdb_id": 457078,
+            "imdb_id": "tt36034547"
           }
         }
       ]
