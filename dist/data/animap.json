@@ -1,0 +1,94 @@
+{
+  "_meta": {
+    "description": "خريطة يدوية للأنميات التي يدمج TMDB مواسمها في موسم واحد بينما تفصلها قواعد الأنمي (MAL/AniList/ani.zip). لكل عمل نطاقات حلقات؛ كل نطاق يحمل معرّفات الموسم الحقيقي ورقم الحلقة المحلّي المقابل.",
+    "version": 1,
+    "updated": "2026-08-02",
+    "url": "https://raw.githubusercontent.com/torinnyyy/velo/master/dist/data/animap.json",
+    "why": "api.ani.zip/mappings?themoviedb_id={id} يُرجع الموسم الأوّل فقط. مثال Solo Leveling: TMDB يعرض S1 بـ 25 حلقة، لكن الاستعلام يُرجع 12 حلقة (mal_id=52299). الحلقات 13-25 تنتمي لـ mal_id=58567 ولا يمكن الوصول إليها عبر TMDB إطلاقاً.",
+    "verified": "كل الأرقام أدناه مُستخرجة من api.ani.zip مباشرة بتاريخ 2026-08-02 — لا تُدخل قيماً تقديرية.",
+
+    "lookup": "المفتاح = tmdb_id (نص). ابحث عن أول نطاق يحقّق from <= episode <= to ضمن نفس الموسم (tmdb_season).",
+    "episode_mapping": "episode_local = episode - from + episode_offset. مع episode_offset=1 (الافتراضي) يعني أن الحلقة `from` تقابل الحلقة 1 في الموسم الحقيقي.",
+    "fallback": "أي عمل غير مذكور هنا، أو حلقة خارج كل النطاقات → استعمل السلوك الحالي (استعلام ani.zip بـ themoviedb_id). هذا الملف إضافة تصحيحية لا بديل.",
+    "ids_note": "استعمل ما يلزم مصدرك: mal_id/anilist_id لأغلب المصادر، anidb_id/kitsu_id/animeplanet_id عند الحاجة. thetvdb_id مشترك بين المواسم لذا لا يصلح وحده للتمييز.",
+
+    "schema": {
+      "entries[tmdb_id]": {
+        "title": "اسم للتوثيق فقط — لا يُستخدم في المطابقة",
+        "tmdb_type": "tv | movie",
+        "note": "اختياري: سبب الإدراج",
+        "ranges[]": {
+          "tmdb_season": "رقم الموسم كما يراه TMDB (عادةً 1)",
+          "from": "أول حلقة في ترقيم TMDB (شامل)",
+          "to": "آخر حلقة في ترقيم TMDB (شامل)",
+          "episode_offset": "رقم الحلقة في الموسم الحقيقي المقابل لـ from — الافتراضي 1",
+          "season_number": "رقم الموسم الحقيقي (توثيقي)",
+          "titles[]": "عناوين بديلة للبحث النصّي (x-jat أولاً ثم en) — مفيدة لمصادر تبحث بالاسم",
+          "ids": "معرّفات الموسم الحقيقي: mal_id, anilist_id, kitsu_id, anidb_id, anisearch_id, livechart_id, animeplanet_id, thetvdb_id"
+        }
+      }
+    },
+
+    "how_to_add": [
+      "1. GET https://api.ani.zip/mappings?themoviedb_id={tmdb} — سجّل عدد الحلقات المُعاد (= طول الموسم الأوّل).",
+      "2. إن كان TMDB يعرض حلقات أكثر، فالباقي ينتمي لمواسم أخرى: ابحث عن mal_id للموسم التالي.",
+      "3. GET https://api.ani.zip/mappings?mal_id={next} — تحقّق أن episodes[1].absoluteEpisodeNumber يساوي (to السابق + 1).",
+      "4. أضِف نطاقاً جديداً بالمعرّفات كاملة. النطاقات يجب ألّا تتداخل وأن تكون مرتّبة تصاعدياً.",
+      "5. لا تُضِف عملاً لا يحتاج تصحيحاً (مثل Jujutsu Kaisen tmdb=95479 أو Frieren tmdb=209867 — TMDB و ani.zip متطابقان فيهما)."
+    ]
+  },
+
+  "entries": {
+    "127532": {
+      "title": "Solo Leveling",
+      "tmdb_type": "tv",
+      "note": "TMDB يدمج الموسمين في S1 (25 حلقة). ani.zip يفصلهما: 12 + 13. تحقّق 2026-08-02: absoluteEpisodeNumber للموسم الثاني يبدأ بـ 13 وينتهي بـ 25.",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 12,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Ore dake Level Up na Ken",
+            "Solo Leveling"
+          ],
+          "ids": {
+            "mal_id": 52299,
+            "anilist_id": 151807,
+            "kitsu_id": 46231,
+            "anidb_id": 17495,
+            "anisearch_id": 17496,
+            "livechart_id": 11320,
+            "animeplanet_id": "solo-leveling",
+            "thetvdb_id": 389597,
+            "imdb_id": "tt21209876"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 13,
+          "to": 25,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Ore dake Level Up na Ken Season 2",
+            "Solo Leveling Season 2: Arise from the Shadow"
+          ],
+          "ids": {
+            "mal_id": 58567,
+            "anilist_id": 176496,
+            "kitsu_id": 48671,
+            "anidb_id": 18576,
+            "anisearch_id": 19152,
+            "livechart_id": 12618,
+            "animeplanet_id": "solo-leveling-season-2-arise-from-the-shadow",
+            "thetvdb_id": 389597,
+            "imdb_id": "tt21209876"
+          }
+        }
+      ]
+    }
+  }
+}
