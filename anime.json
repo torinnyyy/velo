@@ -1,8 +1,0 @@
-{
-	"providers": [		
-		"dist/providers/anime/9anime.js",
-		"dist/providers/anime/sudatchi.js",
-"dist/providers/anime/gogoanime.js",
-"dist/providers/anime/miruro.js"
-	]
-}
