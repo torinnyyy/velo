@@ -1,0 +1,7711 @@
+{
+ "version": 1,
+ "generated_at": "2026-08-13T01:19:07Z",
+ "source": "moviebox.ph",
+ "note": "التركي المدبلج فقط — الحلقات تُستعرض من هذه الخريطة لا من TMDB",
+ "counts": {
+  "series": 312,
+  "variants": 325,
+  "total_dub_episodes": 31942
+ },
+ "series": {
+  "5362": {
+   "title": "Endless Love",
+   "original": "Kınalı Kar",
+   "tmdb_episodes": 90,
+   "tmdb_seasons": 3,
+   "dub_episodes": 394,
+   "variants": [
+    {
+     "id": "3020828842425467112",
+     "path": "endless-love-mdblj-ll-rby-cU3KpNxq9B3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 132,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,105,106,107,110,111,112,115,116,117,118,119,121,122,124,125,126,127,128,129,130,131,132"
+      },
+      {
+       "se": 2,
+       "maxEp": 147,
+       "allEp": "4,8,9,13,14,20,23,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147"
+      }
+     ]
+    },
+    {
+     "id": "3675418691975398184",
+     "path": "kinali-kar-mdblj-ll-rby-QQNLbbjsvn4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 115,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "7723": {
+   "title": "The Promise",
+   "original": "Yemin",
+   "tmdb_episodes": 503,
+   "tmdb_seasons": 4,
+   "dub_episodes": 836,
+   "variants": [
+    {
+     "id": "5769247272051557160",
+     "path": "yemin-mdblj-ll-rby-MuHlRvfdbS6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 836,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "15604": {
+   "title": "Remember Darling",
+   "original": "Hatırla Sevgili",
+   "tmdb_episodes": 68,
+   "tmdb_seasons": 2,
+   "dub_episodes": 102,
+   "variants": [
+    {
+     "id": "3081541675488002856",
+     "path": "hatirla-sevgili-mdblj-ll-rby-6niTIgBuDF3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 102,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "17635": {
+   "title": "Forbidden Love",
+   "original": "Aşk-ı Memnu",
+   "tmdb_episodes": 79,
+   "tmdb_seasons": 2,
+   "dub_episodes": 160,
+   "variants": [
+    {
+     "id": "1074769000325956600",
+     "path": "forbidden-love-mdblj-ll-rby-s07UCX6soh1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 160,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,81,82,84,85,86,88,89,90,92,93,94,95,97,98,99,100,101,102,104,105,106,107,109,111,112,113,115,116,117,118,120,121,122,123,124,125,126,128,129,130,132,133,134,136,137,139,140,143,144,145,146,147,148,149,150,151,152,154,160"
+      }
+     ]
+    }
+   ]
+  },
+  "18395": {
+   "title": "Mercy",
+   "original": "Mercy",
+   "tmdb_episodes": 22,
+   "tmdb_seasons": 1,
+   "dub_episodes": 129,
+   "variants": [
+    {
+     "id": "3227616193284638096",
+     "path": "mercy-mdblj-ll-rby-88QPq41wqQ3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 100,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 29,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "32519": {
+   "title": "Ezel",
+   "original": "Ezel",
+   "tmdb_episodes": 71,
+   "tmdb_seasons": 2,
+   "dub_episodes": 122,
+   "variants": [
+    {
+     "id": "8938077166697333544",
+     "path": "ezel-mdblj-ll-rby-cqYsyPgugEa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 35,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 87,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "32836": {
+   "title": "Back Streets",
+   "original": "Arka Sokaklar",
+   "tmdb_episodes": 752,
+   "tmdb_seasons": 20,
+   "dub_episodes": 94,
+   "variants": [
+    {
+     "id": "8315076286213407528",
+     "path": "back-streets-mdblj-ll-rby-e9dPHXw8fU9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 94,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94"
+      }
+     ]
+    }
+   ]
+  },
+  "34899": {
+   "title": "The Magnificent Century",
+   "original": "Muhteşem Yüzyıl",
+   "tmdb_episodes": 139,
+   "tmdb_seasons": 4,
+   "dub_episodes": 374,
+   "variants": [
+    {
+     "id": "4226403759863251416",
+     "path": "the-magnificent-century-mdblj-ll-rby-YOWdyhoYc25",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 55,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 97,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 110,
+       "allEp": ""
+      },
+      {
+       "se": 4,
+       "maxEp": 112,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "39176": {
+   "title": "Behzat Ç.: An Ankara Policeman",
+   "original": "Behzat Ç.: Bir Ankara Polisiyesi",
+   "tmdb_episodes": 105,
+   "tmdb_seasons": 4,
+   "dub_episodes": 9,
+   "variants": [
+    {
+     "id": "4837042143921324200",
+     "path": "behzat-c-bir-ankara-polisiyesi-mdblj-ll-rby-Slvk6tFHjL5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 9,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "39322": {
+   "title": "Daydreamers",
+   "original": "Kavak Yelleri",
+   "tmdb_episodes": 170,
+   "tmdb_seasons": 5,
+   "dub_episodes": 408,
+   "variants": [
+    {
+     "id": "5896658679478239464",
+     "path": "daydreamer-mdblj-ll-rby-wCZ25N4LA17",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 161,
+       "allEp": ""
+      }
+     ]
+    },
+    {
+     "id": "8956790871781949504",
+     "path": "kavak-yelleri-mdblj-ll-rby-YuQgr6ecEFa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 47,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 200,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,190,191,192,193,194,195,196,197,198,199,200"
+      }
+     ]
+    }
+   ]
+  },
+  "42099": {
+   "title": "North South",
+   "original": "Kuzey Güney",
+   "tmdb_episodes": 80,
+   "tmdb_seasons": 2,
+   "dub_episodes": 214,
+   "variants": [
+    {
+     "id": "4499524647226147608",
+     "path": "kuzey-guney-mdblj-ll-rby-UgswjFYRnm5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 114,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 100,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "44671": {
+   "title": "Red Scarf",
+   "original": "Al Yazmalım",
+   "tmdb_episodes": 37,
+   "tmdb_seasons": 1,
+   "dub_episodes": 95,
+   "variants": [
+    {
+     "id": "7820929372411805864",
+     "path": "al-yazmalim-mdblj-ll-rby-8Yeq5rfWJj9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 95,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "47686": {
+   "title": "Menekse and Halil",
+   "original": "Menekşe ile Halil",
+   "tmdb_episodes": 36,
+   "tmdb_seasons": 1,
+   "dub_episodes": 76,
+   "variants": [
+    {
+     "id": "360274585998296464",
+     "path": "menekse-and-halil-mdblj-ll-rby-kuAPy7O3Cq",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 76,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "47711": {
+   "title": "The Girl Named Feriha",
+   "original": "Adını Feriha Koydum",
+   "tmdb_episodes": 80,
+   "tmdb_seasons": 3,
+   "dub_episodes": 167,
+   "variants": [
+    {
+     "id": "7823605996030756240",
+     "path": "adini-feriha-koydum-mdblj-ll-rby-8sIWATicWj9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 64,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 75,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 28,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "47713": {
+   "title": "Genco",
+   "original": "Genco",
+   "tmdb_episodes": 51,
+   "tmdb_seasons": 1,
+   "dub_episodes": 102,
+   "variants": [
+    {
+     "id": "5638988129509016344",
+     "path": "genco-mdblj-ll-rby-0gSQggMCyI6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 102,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "47745": {
+   "title": "Karadayi",
+   "original": "Karadayı",
+   "tmdb_episodes": 115,
+   "tmdb_seasons": 3,
+   "dub_episodes": 268,
+   "variants": [
+    {
+     "id": "7123390399657771800",
+     "path": "karadayi-mdblj-ll-rby-6R3gzECcdu8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 92,
+       "allEp": "2,4,14,61,62,71,87,92"
+      },
+      {
+       "se": 2,
+       "maxEp": 65,
+       "allEp": "34,51,65"
+      },
+      {
+       "se": 3,
+       "maxEp": 111,
+       "allEp": "52,59,97,99,111"
+      }
+     ]
+    }
+   ]
+  },
+  "47923": {
+   "title": "Love Is in the Air",
+   "original": "Yer Gök Aşk",
+   "tmdb_episodes": 122,
+   "tmdb_seasons": 3,
+   "dub_episodes": 120,
+   "variants": [
+    {
+     "id": "1998505129942597800",
+     "path": "love-is-in-the-air-mdblj-ll-rby-qxGzmxPaDn2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 120,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "48037": {
+   "title": "Umutsuz Ev Kadınları",
+   "original": "Umutsuz Ev Kadınları",
+   "tmdb_episodes": 154,
+   "tmdb_seasons": 3,
+   "dub_episodes": 247,
+   "variants": [
+    {
+     "id": "642446653080879912",
+     "path": "umutsuz-ev-kadinlari-mdblj-ll-rby-mjqacBzpsL",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 25,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 63,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 40,
+       "allEp": ""
+      },
+      {
+       "se": 4,
+       "maxEp": 55,
+       "allEp": ""
+      },
+      {
+       "se": 5,
+       "maxEp": 64,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "48041": {
+   "title": "20 Minutes",
+   "original": "20 Dakika",
+   "tmdb_episodes": 25,
+   "tmdb_seasons": 1,
+   "dub_episodes": 64,
+   "variants": [
+    {
+     "id": "2307483290510442728",
+     "path": "20-dakika-mdblj-ll-rby-W5qy6ktisK2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 64,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "48092": {
+   "title": "I Wish I Were A Cloud",
+   "original": "Bir Bulut Olsam",
+   "tmdb_episodes": 29,
+   "tmdb_seasons": 2,
+   "dub_episodes": 50,
+   "variants": [
+    {
+     "id": "927281737326019032",
+     "path": "bir-bulut-olsam-mdblj-ll-rby-gUkxhZwXu61",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 50,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "48428": {
+   "title": "All My Children",
+   "original": "Bütün  Çocuklarim",
+   "tmdb_episodes": 45,
+   "tmdb_seasons": 1,
+   "dub_episodes": 86,
+   "variants": [
+    {
+     "id": "8289356510216470696",
+     "path": "butun-cocuklarim-mdblj-ll-rby-CJJNLS7llS9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 86,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86"
+      }
+     ]
+    }
+   ]
+  },
+  "48513": {
+   "title": "Küçük Sırlar",
+   "original": "Küçük Sırlar",
+   "tmdb_episodes": 55,
+   "tmdb_seasons": 2,
+   "dub_episodes": 11,
+   "variants": [
+    {
+     "id": "1136456557425739392",
+     "path": "little-secrets-mdblj-ll-rby-S9xjRZWYWl1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 11,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "48732": {
+   "title": "Dangerous Beauty",
+   "original": "Eve Düşen Yıldırım",
+   "tmdb_episodes": 22,
+   "tmdb_seasons": 2,
+   "dub_episodes": 50,
+   "variants": [
+    {
+     "id": "1454572329635383200",
+     "path": "eve-dusen-yildirim-mdblj-ll-rby-oevHMyjXrJ1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 50,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "49071": {
+   "title": "Valley of the Wolves: Ambush",
+   "original": "Kurtlar Vadisi: Pusu",
+   "tmdb_episodes": 300,
+   "tmdb_seasons": 10,
+   "dub_episodes": 475,
+   "variants": [
+    {
+     "id": "2330907286228665744",
+     "path": "valley-of-the-wolves-ambush-mdblj-ll-rby-4Ijv5UXzbM2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 300,
+       "allEp": ""
+      },
+      {
+       "se": 8,
+       "maxEp": 84,
+       "allEp": "18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84"
+      },
+      {
+       "se": 9,
+       "maxEp": 91,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "49400": {
+   "title": "Kalbim Seni Seçti",
+   "original": "Kalbim Seni Seçti",
+   "tmdb_episodes": 23,
+   "tmdb_seasons": 1,
+   "dub_episodes": 55,
+   "variants": [
+    {
+     "id": "6019463133184540904",
+     "path": "kalbim-seni-secti-mdblj-ll-rby-YY5m44IcFa7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 55,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55"
+      }
+     ]
+    }
+   ]
+  },
+  "49489": {
+   "title": "Ihlamurlar Altinda",
+   "original": "Ihlamurlar Altinda",
+   "tmdb_episodes": 150,
+   "tmdb_seasons": 2,
+   "dub_episodes": 150,
+   "variants": [
+    {
+     "id": "588192351319900632",
+     "path": "under-the-trees-mdblj-ll-rby-4ULnWbuVrH",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 150,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "49513": {
+   "title": "Azize",
+   "original": "Azize",
+   "tmdb_episodes": 18,
+   "tmdb_seasons": 1,
+   "dub_episodes": 18,
+   "variants": [
+    {
+     "id": "1387223256704368872",
+     "path": "azize-mdblj-ll-rby-AQ95zmPutE1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 18,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "49514": {
+   "title": "Kampüsistan",
+   "original": "Kampüsistan",
+   "tmdb_episodes": 44,
+   "tmdb_seasons": 1,
+   "dub_episodes": 54,
+   "variants": [
+    {
+     "id": "2472533179979237280",
+     "path": "kampusistan-mdblj-ll-rby-8yJzub9eEW2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 54,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "49595": {
+   "title": "Yol Arkadaşım",
+   "original": "Yol Arkadaşım",
+   "tmdb_episodes": 41,
+   "tmdb_seasons": 2,
+   "dub_episodes": 91,
+   "variants": [
+    {
+     "id": "4563223753869722392",
+     "path": "yol-arkadasim-mdblj-ll-rby-kwFyV91C5r5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 91,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "49616": {
+   "title": "Kırık Kanatlar",
+   "original": "Kırık Kanatlar",
+   "tmdb_episodes": 36,
+   "tmdb_seasons": 2,
+   "dub_episodes": 62,
+   "variants": [
+    {
+     "id": "7561110376721825960",
+     "path": "kirik-kanatlar-mdblj-ll-rby-M4SDAjSXx09",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 62,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "49809": {
+   "title": "Son Bahar",
+   "original": "Son Bahar",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 2,
+   "dub_episodes": 82,
+   "variants": [
+    {
+     "id": "3322120832599606120",
+     "path": "son-bahar-mdblj-ll-rby-uRdA4fClpX3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 82,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "49880": {
+   "title": "Kod Adı",
+   "original": "Kod Adı",
+   "tmdb_episodes": 10,
+   "tmdb_seasons": 1,
+   "dub_episodes": 26,
+   "variants": [
+    {
+     "id": "3425468912656417560",
+     "path": "kod-adi-mdblj-ll-rby-iHzUb9pG254",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 26,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "49887": {
+   "title": "Dila Hanim",
+   "original": "Dila Hanım",
+   "tmdb_episodes": 62,
+   "tmdb_seasons": 2,
+   "dub_episodes": 99,
+   "variants": [
+    {
+     "id": "5583605728817856744",
+     "path": "dila-hanim-mdblj-ll-rby-gwIXw2mYsE6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 99,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "49915": {
+   "title": "Huzur Sokağı",
+   "original": "Huzur Sokağı",
+   "tmdb_episodes": 67,
+   "tmdb_seasons": 2,
+   "dub_episodes": 170,
+   "variants": [
+    {
+     "id": "143400315465908456",
+     "path": "huzur-sokagi-mdblj-ll-rby-qvHY8Y2MAa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 140,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,116,117,119,120,121,122,123,124,126,127,128,129,131,132,133,134,135,136,137,138,139,140"
+      },
+      {
+       "se": 2,
+       "maxEp": 30,
+       "allEp": "1,2,4,5,6,7,9,10,11,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30"
+      }
+     ]
+    }
+   ]
+  },
+  "49933": {
+   "title": "Love Undercover",
+   "original": "Ruhun Duymaz",
+   "tmdb_episodes": 9,
+   "tmdb_seasons": 1,
+   "dub_episodes": 45,
+   "variants": [
+    {
+     "id": "7251806760712241944",
+     "path": "ruhun-duymaz-mdblj-ll-rby-SPKcFHOlHD8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 45,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "50231": {
+   "title": "Merhaba Hayat",
+   "original": "Merhaba Hayat",
+   "tmdb_episodes": 13,
+   "tmdb_seasons": 1,
+   "dub_episodes": 25,
+   "variants": [
+    {
+     "id": "9184789983784223080",
+     "path": "merhaba-hayat-mdblj-ll-rby-445xmk0ruWa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 25,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "50236": {
+   "title": "Black Rose",
+   "original": "Karagül",
+   "tmdb_episodes": 124,
+   "tmdb_seasons": 4,
+   "dub_episodes": 250,
+   "variants": [
+    {
+     "id": "1389674755317449512",
+     "path": "karagul-mdblj-ll-rby-Egud3nXIEE1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 57,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 78,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 63,
+       "allEp": ""
+      },
+      {
+       "se": 4,
+       "maxEp": 52,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "50528": {
+   "title": "Serçe Sarayı",
+   "original": "Serçe Sarayı",
+   "tmdb_episodes": 13,
+   "tmdb_seasons": 1,
+   "dub_episodes": 28,
+   "variants": [
+    {
+     "id": "410825148481372760",
+     "path": "serce-sarayi-mdblj-ll-rby-OX7cA7bAlu",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 28,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "50734": {
+   "title": "İffet",
+   "original": "İffet",
+   "tmdb_episodes": 113,
+   "tmdb_seasons": 2,
+   "dub_episodes": 113,
+   "variants": [
+    {
+     "id": "5500922454409709472",
+     "path": "iffet-mdblj-ll-rby-EuntUCyhmy6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 113,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "52874": {
+   "title": "Berivan",
+   "original": "Berivan",
+   "tmdb_episodes": 3,
+   "tmdb_seasons": 2,
+   "dub_episodes": 66,
+   "variants": [
+    {
+     "id": "6691772712127709544",
+     "path": "berivan-mdblj-ll-rby-kKIiLdbokY7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 66,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "60929": {
+   "title": "Black Money Love",
+   "original": "Kara Para Aşk",
+   "tmdb_episodes": 54,
+   "tmdb_seasons": 2,
+   "dub_episodes": 270,
+   "variants": [
+    {
+     "id": "1207232790920577832",
+     "path": "black-money-love-mdblj-ll-rby-mrQlghC8br1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 164,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,103,104,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,122,123,125,126,129,130,131,132,133,134,135,136,139,140,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164"
+      },
+      {
+       "se": 2,
+       "maxEp": 45,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45"
+      },
+      {
+       "se": 3,
+       "maxEp": 61,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,56,57,58,59,60,61"
+      }
+     ]
+    }
+   ]
+  },
+  "60930": {
+   "title": "Magnificent Century: Kösem",
+   "original": "Muhteşem Yüzyıl: Kösem",
+   "tmdb_episodes": 60,
+   "tmdb_seasons": 2,
+   "dub_episodes": 391,
+   "variants": [
+    {
+     "id": "2210834019405760416",
+     "path": "the-magnificent-century-kosem-mdblj-ll-rby-coLXQHSDjD2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 219,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,53,54,55,56,57,58,59,60,61,63,64,65,66,67,68,69,70,71,73,74,75,76,77,78,79,80,82,83,84,85,86,87,88,89,90,92,93,95,96,97,98,99,100,101,103,104,105,107,109,110,111,113,114,115,116,117,119,120,121,123,124,125,126,127,128,129,132,133,134,135,136,137,139,142,143,144,145,146,147,148,149,151,153,154,155,156,157,158,159,161,163,165,166,167,168,169,170,171,173,175,176,177,178,179,180,183,185,186,187,188,189,190,193,195,196,197,198,199,200,201,202,204,205,206,207,208,209,210,211,212,214,215,216,217,219"
+      },
+      {
+       "se": 2,
+       "maxEp": 172,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "61867": {
+   "title": "Medcezir",
+   "original": "Medcezir",
+   "tmdb_episodes": 77,
+   "tmdb_seasons": 2,
+   "dub_episodes": 38,
+   "variants": [
+    {
+     "id": "855205324352112456",
+     "path": "medcezir-mdblj-ll-rby-iV6MLjFQa11",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 38,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,27,28,29,30,31,34,35,36,37,38"
+      }
+     ]
+    }
+   ]
+  },
+  "61963": {
+   "title": "Waiting for the Sun",
+   "original": "Güneşi Beklerken",
+   "tmdb_episodes": 54,
+   "tmdb_seasons": 1,
+   "dub_episodes": 121,
+   "variants": [
+    {
+     "id": "4705366435265218480",
+     "path": "waiting-for-the-sun-mdblj-ll-rby-GfnlbMWCAB5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 46,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 75,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75"
+      }
+     ]
+    }
+   ]
+  },
+  "62217": {
+   "title": "Cherry Season",
+   "original": "Kiraz Mevsimi",
+   "tmdb_episodes": 59,
+   "tmdb_seasons": 2,
+   "dub_episodes": 141,
+   "variants": [
+    {
+     "id": "2403081428499055064",
+     "path": "cherry-season-mdblj-ll-rby-aHZcv9A8wR2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 55,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 86,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,86"
+      }
+     ]
+    }
+   ]
+  },
+  "62553": {
+   "title": "Kurt Seyit & Sura",
+   "original": "Kurt Seyit ve Şura",
+   "tmdb_episodes": 21,
+   "tmdb_seasons": 2,
+   "dub_episodes": 46,
+   "variants": [
+    {
+     "id": "2244267968983089960",
+     "path": "kurt-seyit-and-sura-mdblj-ll-rby-UulvB8OLMF2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 46,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "63030": {
+   "title": "Filinta: An Ottoman Policeman",
+   "original": "Filinta: Bir Osmanlı Polisiyesi",
+   "tmdb_episodes": 56,
+   "tmdb_seasons": 2,
+   "dub_episodes": 164,
+   "variants": [
+    {
+     "id": "5655848040809250984",
+     "path": "filinta-mdblj-ll-rby-YyypfskQNJ6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 164,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "63549": {
+   "title": "Love for Rent",
+   "original": "Kiralık Aşk",
+   "tmdb_episodes": 69,
+   "tmdb_seasons": 2,
+   "dub_episodes": 212,
+   "variants": [
+    {
+     "id": "291678666881385256",
+     "path": "love-for-rent-mdblj-ll-rby-2rhtUugTxl",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 90,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 122,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "64164": {
+   "title": "Sun's Daughters",
+   "original": "Güneşin Kızları",
+   "tmdb_episodes": 39,
+   "tmdb_seasons": 1,
+   "dub_episodes": 39,
+   "variants": [
+    {
+     "id": "8739448209296218368",
+     "path": "girls-of-the-sun-mdblj-ll-rby-UGxFeEsLApa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 39,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "64388": {
+   "title": "War of the Roses",
+   "original": "Güllerin Savaşı",
+   "tmdb_episodes": 68,
+   "tmdb_seasons": 2,
+   "dub_episodes": 186,
+   "variants": [
+    {
+     "id": "4478155374062879160",
+     "path": "gullerin-savasi-mdblj-ll-rby-KzqdZCWZNk5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 104,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 32,
+       "allEp": "1,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32"
+      },
+      {
+       "se": 3,
+       "maxEp": 50,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "64535": {
+   "title": "Bandits Cannot Rule The World",
+   "original": "Eşkıya Dünyaya Hükümdar Olmaz",
+   "tmdb_episodes": 199,
+   "tmdb_seasons": 6,
+   "dub_episodes": 1251,
+   "variants": [
+    {
+     "id": "2762971375479522072",
+     "path": "eskiya-dunyaya-hukumdar-olmaz-mdblj-ll-rby-W1kamuar6i3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 498,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 191,
+       "allEp": "115,117,119,120,121,123,126,127,129,131,133,134,135,137,139,141,142,143,145,147,149,151,153,154,155,157,159,160,161,162,163,164,165,166,167,168,169,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,190,191"
+      },
+      {
+       "se": 3,
+       "maxEp": 290,
+       "allEp": "192,193,194,195,196,197,198,199,200,201,202,217,221,223,224,225,226,227,228,229,230,231,233,234,235,236,237,238,239,240,241,250,263,264,268,270,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290"
+      },
+      {
+       "se": 4,
+       "maxEp": 88,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,17,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,84,85,86,88"
+      },
+      {
+       "se": 5,
+       "maxEp": 75,
+       "allEp": "5,6,7,8,9,10,11,12,13,14,16,18,19,20,22,32,42,43,44,45,46,47,48,49,51,52,53,54,55,56,57,58,59,60,61,62,65,66,67,69,71,72,73,74,75"
+      },
+      {
+       "se": 6,
+       "maxEp": 109,
+       "allEp": "41,45,55,57,58,59,60,61,62,63,64,65,66,67,69,70,71,72,73,74,75,76,77,78,79,80,85,88,91,92,109"
+      }
+     ]
+    }
+   ]
+  },
+  "65556": {
+   "title": "Lovebird",
+   "original": "Çalıkuşu",
+   "tmdb_episodes": 30,
+   "tmdb_seasons": 1,
+   "dub_episodes": 88,
+   "variants": [
+    {
+     "id": "5212894347057939424",
+     "path": "lovebird-mdblj-ll-rby-8kWH9hU65d6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 88,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "66017": {
+   "title": "Resurrection: Ertugrul",
+   "original": "Diriliş: Ertuğrul",
+   "tmdb_episodes": 150,
+   "tmdb_seasons": 5,
+   "dub_episodes": 500,
+   "variants": [
+    {
+     "id": "5194317039933997416",
+     "path": "dirilis-ertugrul-mdblj-ll-rby-K7KGKmG1Ib6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 500,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "66071": {
+   "title": "Sweet Revenge",
+   "original": "Tatlı İntikam",
+   "tmdb_episodes": 30,
+   "tmdb_seasons": 1,
+   "dub_episodes": 30,
+   "variants": [
+    {
+     "id": "2315194038317729608",
+     "path": "tatli-intikam-mdblj-ll-rby-geHdxm1C1L2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 30,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "67110": {
+   "title": "We Need to Break Up",
+   "original": "N'olur Ayrılalım",
+   "tmdb_episodes": 5,
+   "tmdb_seasons": 1,
+   "dub_episodes": 14,
+   "variants": [
+    {
+     "id": "6379663142443958632",
+     "path": "nolur-ayrilalim-mdblj-ll-rby-UIsxMdlVgB7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 14,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "67144": {
+   "title": "Yunus Emre",
+   "original": "Yunus Emre: Aşkın Yolculuğu",
+   "tmdb_episodes": 44,
+   "tmdb_seasons": 2,
+   "dub_episodes": 57,
+   "variants": [
+    {
+     "id": "1516666149302403864",
+     "path": "yunus-emre-mdblj-ll-rby-yBQsN4wl2O1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 23,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 34,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "67611": {
+   "title": "High Society",
+   "original": "Yüksek Sosyete",
+   "tmdb_episodes": 26,
+   "tmdb_seasons": 1,
+   "dub_episodes": 76,
+   "variants": [
+    {
+     "id": "6070047265132003688",
+     "path": "yuksek-sosyete-mdblj-ll-rby-4C8gF4CSoe7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 76,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "67643": {
+   "title": "Winter Sun",
+   "original": "Kış Güneşi",
+   "tmdb_episodes": 18,
+   "tmdb_seasons": 1,
+   "dub_episodes": 50,
+   "variants": [
+    {
+     "id": "9170302818576646376",
+     "path": "winter-sun-mdblj-ll-rby-uxHcYEd5qVa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 50,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "68388": {
+   "title": "Insider",
+   "original": "İçerde",
+   "tmdb_episodes": 39,
+   "tmdb_seasons": 1,
+   "dub_episodes": 134,
+   "variants": [
+    {
+     "id": "4746455167615254760",
+     "path": "insider-mdblj-ll-rby-STwq1XwOCE5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 24,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 33,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 77,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "68848": {
+   "title": "Brave and Beautiful",
+   "original": "Cesur ve Güzel",
+   "tmdb_episodes": 32,
+   "tmdb_seasons": 1,
+   "dub_episodes": 120,
+   "variants": [
+    {
+     "id": "4831284104605877192",
+     "path": "brave-and-beautiful-mdblj-ll-rby-mfwspXBkTK5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 120,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "69238": {
+   "title": "Broken Pieces",
+   "original": "Paramparça",
+   "tmdb_episodes": 98,
+   "tmdb_seasons": 3,
+   "dub_episodes": 247,
+   "variants": [
+    {
+     "id": "2702277749510733880",
+     "path": "broken-pieces-mdblj-ll-rby-YI3ZrazsCd3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 48,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 121,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,103,105,106,107,108,112,113,115,118,120,121"
+      },
+      {
+       "se": 3,
+       "maxEp": 78,
+       "allEp": "1,2,4,6,9,10,11,14,16,17,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78"
+      }
+     ]
+    }
+   ]
+  },
+  "69270": {
+   "title": "Adı Mutluluk",
+   "original": "Adı Mutluluk",
+   "tmdb_episodes": 17,
+   "tmdb_seasons": 1,
+   "dub_episodes": 34,
+   "variants": [
+    {
+     "id": "3795470380882608360",
+     "path": "adi-mutluluk-mdblj-ll-rby-Ox68auginw4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 34,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "69322": {
+   "title": "Çilek Kokusu",
+   "original": "Çilek Kokusu",
+   "tmdb_episodes": 23,
+   "tmdb_seasons": 1,
+   "dub_episodes": 62,
+   "variants": [
+    {
+     "id": "8375103024020210472",
+     "path": "cilek-kokusu-mdblj-ll-rby-M2lnklL3GY9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 62,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "69535": {
+   "title": "Heart of the City",
+   "original": "Bu Şehir Arkandan Gelecek",
+   "tmdb_episodes": 60,
+   "tmdb_seasons": 1,
+   "dub_episodes": 60,
+   "variants": [
+    {
+     "id": "753829379997843688",
+     "path": "bu-sehir-arkandan-gelecek-mdblj-ll-rby-YCkN3YSxGT",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 60,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "69786": {
+   "title": "Innocent",
+   "original": "Masum",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 8,
+   "variants": [
+    {
+     "id": "8529089627490238936",
+     "path": "masum-mdblj-ll-rby-en0fLQTj3aa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "70788": {
+   "title": "Payitaht: Abdulhamid",
+   "original": "Payitaht: Abdülhamid",
+   "tmdb_episodes": 154,
+   "tmdb_seasons": 5,
+   "dub_episodes": 56,
+   "variants": [
+    {
+     "id": "3357268405408728992",
+     "path": "payitaht-abdulhamid-mdblj-ll-rby-y37viY8k004",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 56,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "70798": {
+   "title": "Bride of Istanbul",
+   "original": "İstanbullu Gelin",
+   "tmdb_episodes": 87,
+   "tmdb_seasons": 3,
+   "dub_episodes": 261,
+   "variants": [
+    {
+     "id": "8569816010092694960",
+     "path": "bride-of-istanbul-mdblj-ll-rby-WNm6DEAQ3da",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 261,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "70926": {
+   "title": "Gumus",
+   "original": "Gümüş",
+   "tmdb_episodes": 100,
+   "tmdb_seasons": 3,
+   "dub_episodes": 154,
+   "variants": [
+    {
+     "id": "6356887858586206680",
+     "path": "gumus-mdblj-ll-rby-CtTUPz3CAz7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 154,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "70929": {
+   "title": "A Part of Me",
+   "original": "Kaderimin Yazıldığı Gün",
+   "tmdb_episodes": 106,
+   "tmdb_seasons": 2,
+   "dub_episodes": 158,
+   "variants": [
+    {
+     "id": "8484359707765998992",
+     "path": "kaderimin-yazildigi-gun-mdblj-ll-rby-USZkTwmsK6a",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 38,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 48,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 45,
+       "allEp": ""
+      },
+      {
+       "se": 4,
+       "maxEp": 27,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "71096": {
+   "title": "Söz",
+   "original": "Söz",
+   "tmdb_episodes": 84,
+   "tmdb_seasons": 3,
+   "dub_episodes": 342,
+   "variants": [
+    {
+     "id": "7105998324729611664",
+     "path": "soz-mdblj-ll-rby-aTnpaqXxVs8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 342,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,225,226,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,279,280,281,282,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342"
+      }
+     ]
+    }
+   ]
+  },
+  "71558": {
+   "title": "Yıldızlar Şahidim",
+   "original": "Yıldızlar Şahidim",
+   "tmdb_episodes": 4,
+   "tmdb_seasons": 1,
+   "dub_episodes": 12,
+   "variants": [
+    {
+     "id": "712105525063944096",
+     "path": "yildizlar-sahidim-mdblj-ll-rby-8WBdu6XrBQ",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 12,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "71591": {
+   "title": "New Bride",
+   "original": "Yeni Gelin",
+   "tmdb_episodes": 63,
+   "tmdb_seasons": 3,
+   "dub_episodes": 237,
+   "variants": [
+    {
+     "id": "649971583423086272",
+     "path": "yeni-gelin-s2-mdblj-ll-rby-ciSKxdmS0M",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 2,
+       "maxEp": 34,
+       "allEp": ""
+      }
+     ]
+    },
+    {
+     "id": "5681620593364403384",
+     "path": "yeni-gelin-mdblj-ll-rby-6vQW9HISHL6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 169,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,102,103,104,105,106,107,108,109,110,112,113,114,115,116,118,119,120,122,124,125,126,127,129,131,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169"
+      },
+      {
+       "se": 2,
+       "maxEp": 34,
+       "allEp": "1,2,3,4,5,6,7,8,9,11,12,13,14,15,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34"
+      }
+     ]
+    }
+   ]
+  },
+  "72893": {
+   "title": "Ateşböceği",
+   "original": "Ateşböceği",
+   "tmdb_episodes": 17,
+   "tmdb_seasons": 1,
+   "dub_episodes": 51,
+   "variants": [
+    {
+     "id": "8302306970485277480",
+     "path": "atesbocegi-mdblj-ll-rby-61BsVZxEiT9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 51,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "73506": {
+   "title": "Full Moon",
+   "original": "Dolunay",
+   "tmdb_episodes": 26,
+   "tmdb_seasons": 1,
+   "dub_episodes": 81,
+   "variants": [
+    {
+     "id": "3022245013402125496",
+     "path": "dolunay-mdblj-ll-rby-0Ua2rhGUfB3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 81,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "73933": {
+   "title": "Our Story",
+   "original": "Bizim Hikaye",
+   "tmdb_episodes": 70,
+   "tmdb_seasons": 2,
+   "dub_episodes": 200,
+   "variants": [
+    {
+     "id": "9218529013478605672",
+     "path": "our-story-mdblj-ll-rby-uX6DIRyXYYa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 107,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 93,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "74660": {
+   "title": "Stiletto Vendetta",
+   "original": "Ufak Tefek Cinayetler",
+   "tmdb_episodes": 54,
+   "tmdb_seasons": 2,
+   "dub_episodes": 138,
+   "variants": [
+    {
+     "id": "8907873994599186904",
+     "path": "ufak-tefek-cinayetler-mdblj-ll-rby-U6BL33L92Ca",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 99,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 39,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "74823": {
+   "title": "The Pit",
+   "original": "Çukur",
+   "tmdb_episodes": 131,
+   "tmdb_seasons": 4,
+   "dub_episodes": 714,
+   "variants": [
+    {
+     "id": "6202404275860506000",
+     "path": "the-pit-mdblj-ll-rby-6lzritN4bo7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 427,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 77,
+       "allEp": "27,35,36,37,54,56,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,75,76,77"
+      },
+      {
+       "se": 3,
+       "maxEp": 83,
+       "allEp": "1,2,3,4,5,7,8,10,11,14,16,18,19,20,21,22,23,24,25,26,27,33,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,78,79,80,81,82,83"
+      },
+      {
+       "se": 4,
+       "maxEp": 127,
+       "allEp": "11,14,18,20,22,23,24,32,33,34,35,36,38,39,51,52,56,57,60,69,70,72,78,79,80,89,91,92,97,98,100,123,124,125,126,127"
+      }
+     ]
+    }
+   ]
+  },
+  "76500": {
+   "title": "Al Maharib",
+   "original": "Savaşçı",
+   "tmdb_episodes": 109,
+   "tmdb_seasons": 5,
+   "dub_episodes": 183,
+   "variants": [
+    {
+     "id": "763474708313555176",
+     "path": "savasci-mdblj-ll-rby-EwUUInMIoU",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 183,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "76530": {
+   "title": "Price Of Passion",
+   "original": "Siyah Beyaz Aşk",
+   "tmdb_episodes": 32,
+   "tmdb_seasons": 1,
+   "dub_episodes": 32,
+   "variants": [
+    {
+     "id": "2243529382247776352",
+     "path": "price-of-passion-mdblj-ll-rby-a9kj7U4oJF2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 32,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "76560": {
+   "title": "Mrs. Fazilet and Her Daughters",
+   "original": "Fazilet Hanım ve Kızları",
+   "tmdb_episodes": 50,
+   "tmdb_seasons": 2,
+   "dub_episodes": 174,
+   "variants": [
+    {
+     "id": "3605903168820888024",
+     "path": "mrs-fazilet-and-her-daughters-mdblj-ll-rby-GlySypD4ni4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 43,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 131,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "76661": {
+   "title": "Victorious Mehmets",
+   "original": "Mehmetçik: Kut'ül-Amare",
+   "tmdb_episodes": 34,
+   "tmdb_seasons": 2,
+   "dub_episodes": 22,
+   "variants": [
+    {
+     "id": "6244284673762494368",
+     "path": "mehmetcik-kutul-amare-mdblj-ll-rby-Yi6OwmbTgr7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 22,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "76783": {
+   "title": "Cennet",
+   "original": "Cennet’in Gözyaşları",
+   "tmdb_episodes": 36,
+   "tmdb_seasons": 1,
+   "dub_episodes": 125,
+   "variants": [
+    {
+     "id": "978978987357733656",
+     "path": "cennetin-gozyaslari-mdblj-ll-rby-g84b64wJja1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 30,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 30,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 30,
+       "allEp": ""
+      },
+      {
+       "se": 4,
+       "maxEp": 35,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "77474": {
+   "title": "Adi: Zehra",
+   "original": "Adı: Zehra",
+   "tmdb_episodes": 14,
+   "tmdb_seasons": 1,
+   "dub_episodes": 8,
+   "variants": [
+    {
+     "id": "3578597897056781712",
+     "path": "adi-zehra-mdblj-ll-rby-MKR11N01mg4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "77532": {
+   "title": "Woman",
+   "original": "Kadın",
+   "tmdb_episodes": 81,
+   "tmdb_seasons": 3,
+   "dub_episodes": 469,
+   "variants": [
+    {
+     "id": "5887375289667179992",
+     "path": "woman-mdblj-ll-rby-Q4NXuvXeU07",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 97,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 95,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 50,
+       "allEp": ""
+      }
+     ]
+    },
+    {
+     "id": "5858288894965433296",
+     "path": "kadin-mdblj-ll-rby-yfXMwdz1LY6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 97,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 80,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80"
+      },
+      {
+       "se": 3,
+       "maxEp": 50,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "77994": {
+   "title": "Persona",
+   "original": "Şahsiyet",
+   "tmdb_episodes": 22,
+   "tmdb_seasons": 2,
+   "dub_episodes": 22,
+   "variants": [
+    {
+     "id": "8710025039229453088",
+     "path": "persona-mdblj-ll-rby-qbRrSer0qna",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 12,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 10,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "78058": {
+   "title": "The Yard",
+   "original": "Avlu",
+   "tmdb_episodes": 44,
+   "tmdb_seasons": 3,
+   "dub_episodes": 81,
+   "variants": [
+    {
+     "id": "5716965494150807912",
+     "path": "the-yard-mdblj-ll-rby-CLIMHuhLjO6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 81,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "79026": {
+   "title": "The Protector",
+   "original": "Hakan: Muhafız",
+   "tmdb_episodes": 32,
+   "tmdb_seasons": 4,
+   "dub_episodes": 32,
+   "variants": [
+    {
+     "id": "3020914382604829912",
+     "path": "the-protector-mdblj-ll-rby-qRgJlMPO9B3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 10,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 8,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 7,
+       "allEp": ""
+      },
+      {
+       "se": 4,
+       "maxEp": 7,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "79125": {
+   "title": "Siyah İnci",
+   "original": "Siyah İnci",
+   "tmdb_episodes": 20,
+   "tmdb_seasons": 1,
+   "dub_episodes": 67,
+   "variants": [
+    {
+     "id": "7379068634557464744",
+     "path": "black-pearl-mdblj-ll-rby-mPcNhmbd6N8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 67,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "80229": {
+   "title": "Don't Let Go of My Hand",
+   "original": "Elimi Bırakma",
+   "tmdb_episodes": 59,
+   "tmdb_seasons": 2,
+   "dub_episodes": 25,
+   "variants": [
+    {
+     "id": "8345444708788879392",
+     "path": "dont-let-go-of-my-hand-mdblj-ll-rby-CVLKu4YduW9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 2,
+       "maxEp": 25,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "80387": {
+   "title": "It's Up to Us",
+   "original": "Darısı Başımıza",
+   "tmdb_episodes": 5,
+   "tmdb_seasons": 1,
+   "dub_episodes": 15,
+   "variants": [
+    {
+     "id": "2109083426664890536",
+     "path": "darisi-basimiza-mdblj-ll-rby-IgdPEsICNv2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 15,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "80664": {
+   "title": "My First Love",
+   "original": "4N1K İlk Aşk",
+   "tmdb_episodes": 12,
+   "tmdb_seasons": 1,
+   "dub_episodes": 13,
+   "variants": [
+    {
+     "id": "7606839065321030440",
+     "path": "4n1k-mdblj-ll-rby-UMIQow1pV39",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 13,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "80982": {
+   "title": "The Cliff",
+   "original": "Uçurum",
+   "tmdb_episodes": 24,
+   "tmdb_seasons": 2,
+   "dub_episodes": 55,
+   "variants": [
+    {
+     "id": "8551383325255025448",
+     "path": "ucurum-mdblj-ll-rby-GRUtVTqqHba",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 55,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "81312": {
+   "title": "Nefes Nefese",
+   "original": "Nefes Nefese",
+   "tmdb_episodes": 10,
+   "tmdb_seasons": 1,
+   "dub_episodes": 30,
+   "variants": [
+    {
+     "id": "7234725160379975056",
+     "path": "nefes-nefese-mdblj-ll-rby-GjZrbyj7rC8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 30,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "81611": {
+   "title": "Koca Koca Yalanlar",
+   "original": "Koca Koca Yalanlar",
+   "tmdb_episodes": 12,
+   "tmdb_seasons": 1,
+   "dub_episodes": 19,
+   "variants": [
+    {
+     "id": "8594158725622106016",
+     "path": "koca-koca-yalanlar-mdblj-ll-rby-UwiSpOXkRea",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 19,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "82328": {
+   "title": "Bitter Lands",
+   "original": "Bir Zamanlar Çukurova",
+   "tmdb_episodes": 141,
+   "tmdb_seasons": 4,
+   "dub_episodes": 507,
+   "variants": [
+    {
+     "id": "1217999208779843488",
+     "path": "bitter-lands-mdblj-ll-rby-2lYTl6RrYr1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 133,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 101,
+       "allEp": "1,2,3,4,5,6,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101"
+      },
+      {
+       "se": 3,
+       "maxEp": 139,
+       "allEp": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,104,105,106,110,111,113,118,122,126,127,128,129,130,131,133,135,137,139"
+      },
+      {
+       "se": 4,
+       "maxEp": 134,
+       "allEp": "2,3,7,8,9,12,14,15,16,17,19,20,21,23,24,25,32,34,36,38,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134"
+      }
+     ]
+    }
+   ]
+  },
+  "82621": {
+   "title": "One Liter Tear",
+   "original": "Bir Litre Gözyaşı",
+   "tmdb_episodes": 15,
+   "tmdb_seasons": 1,
+   "dub_episodes": 45,
+   "variants": [
+    {
+     "id": "3799230770242276264",
+     "path": "bir-litre-gozyasi-mdblj-ll-rby-0S5Muf4wEw4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 45,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "83028": {
+   "title": "Heartbeat",
+   "original": "Kalp Atışı",
+   "tmdb_episodes": 28,
+   "tmdb_seasons": 1,
+   "dub_episodes": 110,
+   "variants": [
+    {
+     "id": "3733231013363943328",
+     "path": "heartbeat-mdblj-ll-rby-Eo2C9wJeMr4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 110,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "83058": {
+   "title": "Kayıtdışı",
+   "original": "Kayıtdışı",
+   "tmdb_episodes": 25,
+   "tmdb_seasons": 1,
+   "dub_episodes": 25,
+   "variants": [
+    {
+     "id": "7332341589400324000",
+     "path": "kayitdisi-mdblj-ll-rby-YeK9BwxcEJ8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 25,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "83584": {
+   "title": "Crash",
+   "original": "Çarpışma",
+   "tmdb_episodes": 24,
+   "tmdb_seasons": 1,
+   "dub_episodes": 85,
+   "variants": [
+    {
+     "id": "2280112048048586920",
+     "path": "crash-mdblj-ll-rby-o23zAf7WqI2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 85,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "83738": {
+   "title": "Wings of Love",
+   "original": "Bana Sevmeyi Anlat",
+   "tmdb_episodes": 22,
+   "tmdb_seasons": 1,
+   "dub_episodes": 85,
+   "variants": [
+    {
+     "id": "5347846246566871848",
+     "path": "wings-of-love-mdblj-ll-rby-8I0P39Wb3n6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 85,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "84213": {
+   "title": "Benim Hâlâ Umudum Var",
+   "original": "Benim Hâlâ Umudum Var",
+   "tmdb_episodes": 33,
+   "tmdb_seasons": 1,
+   "dub_episodes": 60,
+   "variants": [
+    {
+     "id": "4382332100868015288",
+     "path": "benim-hala-umudum-var-mdblj-ll-rby-uDWQqaU7Jd5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 60,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "84346": {
+   "title": "Dayan Yüreğim",
+   "original": "Dayan Yüreğim",
+   "tmdb_episodes": 13,
+   "tmdb_seasons": 1,
+   "dub_episodes": 41,
+   "variants": [
+    {
+     "id": "1558058364041576616",
+     "path": "dayan-yuregim-mdblj-ll-rby-ocWCfehV5R1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 41,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "84347": {
+   "title": "My Father's Sins",
+   "original": "Babamın Günahları",
+   "tmdb_episodes": 4,
+   "tmdb_seasons": 1,
+   "dub_episodes": 12,
+   "variants": [
+    {
+     "id": "6866219027967477664",
+     "path": "babamin-gunahlari-mdblj-ll-rby-if5hcr4mdb8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 12,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "84575": {
+   "title": "Steppe",
+   "original": "Bozkır",
+   "tmdb_episodes": 18,
+   "tmdb_seasons": 2,
+   "dub_episodes": 10,
+   "variants": [
+    {
+     "id": "4600919410516312296",
+     "path": "the-steppe-mdblj-ll-rby-YQpAJk6gSt5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 10,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "84606": {
+   "title": "The Secrets of Life",
+   "original": "Hayat Sırları",
+   "tmdb_episodes": 11,
+   "tmdb_seasons": 1,
+   "dub_episodes": 33,
+   "variants": [
+    {
+     "id": "3325741421310657320",
+     "path": "the-secrets-of-life-mdblj-ll-rby-weHTJJIVFX3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 33,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "85545": {
+   "title": "Halka",
+   "original": "Halka",
+   "tmdb_episodes": 19,
+   "tmdb_seasons": 1,
+   "dub_episodes": 61,
+   "variants": [
+    {
+     "id": "2592028103685849256",
+     "path": "halka-mdblj-ll-rby-YEf8kk0wt53",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 61,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "85606": {
+   "title": "Kardeş Çocukları",
+   "original": "Kardeş Çocukları",
+   "tmdb_episodes": 21,
+   "tmdb_seasons": 2,
+   "dub_episodes": 65,
+   "variants": [
+    {
+     "id": "8824625158896894312",
+     "path": "sisters-mdblj-ll-rby-Iqm1YBmSSva",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 65,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "87175": {
+   "title": "A Love Story",
+   "original": "Bir Aşk Hikayesi",
+   "tmdb_episodes": 36,
+   "tmdb_seasons": 1,
+   "dub_episodes": 30,
+   "variants": [
+    {
+     "id": "1252716803822944856",
+     "path": "a-s-k-mdblj-ll-rby-KTEZAPhsxu1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 30,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "87467": {
+   "title": "Better Together",
+   "original": "Bir Aile Hikayesi",
+   "tmdb_episodes": 18,
+   "tmdb_seasons": 2,
+   "dub_episodes": 50,
+   "variants": [
+    {
+     "id": "5741565967310668248",
+     "path": "bir-aile-hikayesi-mdblj-ll-rby-iBW7uCQq8Q6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 50,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "87504": {
+   "title": "İlişki Durumu: Karışık",
+   "original": "İlişki Durumu: Karışık",
+   "tmdb_episodes": 44,
+   "tmdb_seasons": 2,
+   "dub_episodes": 114,
+   "variants": [
+    {
+     "id": "6300135466406920664",
+     "path": "iliski-durumu-karisik-mdblj-ll-rby-6Zlr3TBGov7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 114,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "87572": {
+   "title": "Kaçak Gelinler",
+   "original": "Kaçak Gelinler",
+   "tmdb_episodes": 29,
+   "tmdb_seasons": 1,
+   "dub_episodes": 82,
+   "variants": [
+    {
+     "id": "8940494305572045608",
+     "path": "kacak-gelinler-mdblj-ll-rby-QYHEQUDyrEa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 82,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "87623": {
+   "title": "Hercai",
+   "original": "Hercai",
+   "tmdb_episodes": 69,
+   "tmdb_seasons": 3,
+   "dub_episodes": 327,
+   "variants": [
+    {
+     "id": "2677976927629099176",
+     "path": "hercai-mdblj-ll-rby-MIOjsz5aPb3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 256,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 71,
+       "allEp": "12,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71"
+      }
+     ]
+    }
+   ]
+  },
+  "88024": {
+   "title": "Ruthless City",
+   "original": "Zalim İstanbul",
+   "tmdb_episodes": 39,
+   "tmdb_seasons": 2,
+   "dub_episodes": 136,
+   "variants": [
+    {
+     "id": "189194974762778792",
+     "path": "cruel-istanbul-mdblj-ll-rby-aVSjVCVvYd",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 136,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "88794": {
+   "title": "Kuzgun",
+   "original": "Kuzgun",
+   "tmdb_episodes": 21,
+   "tmdb_seasons": 2,
+   "dub_episodes": 71,
+   "variants": [
+    {
+     "id": "261001880149573992",
+     "path": "kuzgun-mdblj-ll-rby-Cn65Qsgohj",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 71,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "89349": {
+   "title": "Güzel Köylü",
+   "original": "Güzel Köylü",
+   "tmdb_episodes": 52,
+   "tmdb_seasons": 1,
+   "dub_episodes": 106,
+   "variants": [
+    {
+     "id": "1999624845096534376",
+     "path": "guzel-koylu-mdblj-ll-rby-8Is7AKMiIn2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 106,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "89671": {
+   "title": "Afili Aşk",
+   "original": "Afili Aşk",
+   "tmdb_episodes": 38,
+   "tmdb_seasons": 1,
+   "dub_episodes": 136,
+   "variants": [
+    {
+     "id": "5190888762678591960",
+     "path": "afili-ask-mdblj-ll-rby-gGHiECbksb6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 136,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "90210": {
+   "title": "Kimse Bilmez",
+   "original": "Kimse Bilmez",
+   "tmdb_episodes": 27,
+   "tmdb_seasons": 1,
+   "dub_episodes": 81,
+   "variants": [
+    {
+     "id": "6325824456078361368",
+     "path": "love-and-secrets-mdblj-ll-rby-oOt0lXglix7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 81,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "90271": {
+   "title": "My Sweet Lie",
+   "original": "Benim Tatlı Yalanım",
+   "tmdb_episodes": 28,
+   "tmdb_seasons": 1,
+   "dub_episodes": 168,
+   "variants": [
+    {
+     "id": "7216002136826954776",
+     "path": "benim-tatli-yalanim-mdblj-ll-rby-STk4MdIm3B8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 84,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,75,76,77,78,79,80,81,82,83,84"
+      }
+     ]
+    },
+    {
+     "id": "1907591323805172184",
+     "path": "my-sweet-lie-mdblj-ll-rby-SHykTZSMUg2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 84,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "92630": {
+   "title": "I'll  Tell You A Secret",
+   "original": "Sana Bir Sır Vereceğim",
+   "tmdb_episodes": 22,
+   "tmdb_seasons": 1,
+   "dub_episodes": 45,
+   "variants": [
+    {
+     "id": "3976793042442487184",
+     "path": "sana-bir-sir-verecegim-mdblj-ll-rby-cyQjNCLKLJ4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 45,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "92967": {
+   "title": "Mucize Doktor",
+   "original": "Mucize Doktor",
+   "tmdb_episodes": 64,
+   "tmdb_seasons": 2,
+   "dub_episodes": 170,
+   "variants": [
+    {
+     "id": "3853948594000642408",
+     "path": "a-miracle-mdblj-ll-rby-wAggLdM7HA4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 170,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "93196": {
+   "title": "Çocuk",
+   "original": "Çocuk",
+   "tmdb_episodes": 18,
+   "tmdb_seasons": 1,
+   "dub_episodes": 54,
+   "variants": [
+    {
+     "id": "6992313220464084896",
+     "path": "cocuk-mdblj-ll-rby-0q7TlpRRwk8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 54,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "93216": {
+   "title": "Kuzey Yıldızı: İlk Aşk",
+   "original": "Kuzey Yıldızı: İlk Aşk",
+   "tmdb_episodes": 64,
+   "tmdb_seasons": 2,
+   "dub_episodes": 333,
+   "variants": [
+    {
+     "id": "4914110899641794728",
+     "path": "kuzey-yildizi-mdblj-ll-rby-eBNKd8aG0R5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 216,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 117,
+       "allEp": "2,3,4,5,6,7,8,9,11,12,13,14,15,17,18,19,20,21,22,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117"
+      }
+     ]
+    }
+   ]
+  },
+  "93666": {
+   "title": "Sevdim Seni Bir Kere",
+   "original": "Sevdim Seni Bir Kere",
+   "tmdb_episodes": 1,
+   "tmdb_seasons": 1,
+   "dub_episodes": 154,
+   "variants": [
+    {
+     "id": "7428010508449973648",
+     "path": "sevdim-seni-bir-kere-mdblj-ll-rby-2t81HuKmIQ8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 154,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "94607": {
+   "title": "My Name is Melek",
+   "original": "Benim Adım Melek",
+   "tmdb_episodes": 66,
+   "tmdb_seasons": 2,
+   "dub_episodes": 403,
+   "variants": [
+    {
+     "id": "3884526012369175952",
+     "path": "benim-adim-melek-mdblj-ll-rby-w6LAOOyaXC4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 246,
+       "allEp": ""
+      }
+     ]
+    },
+    {
+     "id": "2882249357703761312",
+     "path": "my-name-is-melek-mdblj-ll-rby-AWiDQfqJUq3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 157,
+       "allEp": "17,58,93,96,100,102,107,157"
+      }
+     ]
+    }
+   ]
+  },
+  "95603": {
+   "title": "Kuruluş Osman",
+   "original": "Kuruluş Osman",
+   "tmdb_episodes": 194,
+   "tmdb_seasons": 6,
+   "dub_episodes": 259,
+   "variants": [
+    {
+     "id": "3036881128075445096",
+     "path": "establishment-osman-mdblj-ll-rby-elnZPhLWkC3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 92,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 37,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 34,
+       "allEp": ""
+      },
+      {
+       "se": 4,
+       "maxEp": 32,
+       "allEp": ""
+      },
+      {
+       "se": 5,
+       "maxEp": 34,
+       "allEp": ""
+      },
+      {
+       "se": 6,
+       "maxEp": 30,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "95679": {
+   "title": "The Pigeon",
+   "original": "Güvercin",
+   "tmdb_episodes": 16,
+   "tmdb_seasons": 1,
+   "dub_episodes": 51,
+   "variants": [
+    {
+     "id": "6710671117986006200",
+     "path": "guvercin-mdblj-ll-rby-wE6eOfAWIZ7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 51,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "96305": {
+   "title": "The Ambassador's Daughter",
+   "original": "Sefirin Kızı",
+   "tmdb_episodes": 52,
+   "tmdb_seasons": 2,
+   "dub_episodes": 152,
+   "variants": [
+    {
+     "id": "4070704117277147496",
+     "path": "the-ambassadors-daughter-mdblj-ll-rby-aXZseLORHQ4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 52,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,40,41,42,43,44,45,46,47,48,49,50,51,52"
+      },
+      {
+       "se": 2,
+       "maxEp": 100,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100"
+      }
+     ]
+    }
+   ]
+  },
+  "96348": {
+   "title": "The Gift",
+   "original": "Atiye",
+   "tmdb_episodes": 24,
+   "tmdb_seasons": 3,
+   "dub_episodes": 24,
+   "variants": [
+    {
+     "id": "1644893394356814296",
+     "path": "atiye-mdblj-ll-rby-636qjD0DvX1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 8,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "96663": {
+   "title": "Baharı Beklerken",
+   "original": "Baharı Beklerken",
+   "tmdb_episodes": 99,
+   "tmdb_seasons": 1,
+   "dub_episodes": 174,
+   "variants": [
+    {
+     "id": "4177573221723784216",
+     "path": "bahari-beklerken-mdblj-ll-rby-QCyr6hrkBY4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 174,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174"
+      }
+     ]
+    }
+   ]
+  },
+  "96775": {
+   "title": "My Home My Destiny",
+   "original": "Doğduğun Ev Kaderindir",
+   "tmdb_episodes": 43,
+   "tmdb_seasons": 2,
+   "dub_episodes": 138,
+   "variants": [
+    {
+     "id": "8340965799317964176",
+     "path": "my-home-my-destiny-mdblj-ll-rby-q1mgim8I9W9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 138,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "97293": {
+   "title": "The Choice",
+   "original": "Babil",
+   "tmdb_episodes": 20,
+   "tmdb_seasons": 2,
+   "dub_episodes": 41,
+   "variants": [
+    {
+     "id": "4404788526353712528",
+     "path": "the-choice-mdblj-ll-rby-oGdPb8EYnf5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 10,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 31,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "97296": {
+   "title": "Zemheri",
+   "original": "Zemheri",
+   "tmdb_episodes": 10,
+   "tmdb_seasons": 1,
+   "dub_episodes": 35,
+   "variants": [
+    {
+     "id": "8632591467376165336",
+     "path": "zemheri-mdblj-ll-rby-IcFgCMlmHha",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 35,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "97852": {
+   "title": "Ramo",
+   "original": "Ramo",
+   "tmdb_episodes": 40,
+   "tmdb_seasons": 2,
+   "dub_episodes": 138,
+   "variants": [
+    {
+     "id": "6556726295957750120",
+     "path": "ramo-mdblj-ll-rby-iFaQGkjSlO7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 138,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "99815": {
+   "title": "Aleph",
+   "original": "Alef",
+   "tmdb_episodes": 16,
+   "tmdb_seasons": 2,
+   "dub_episodes": 16,
+   "variants": [
+    {
+     "id": "6050375215404695720",
+     "path": "alef-mdblj-ll-rby-AgpqHBwMWc7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "99934": {
+   "title": "Come and Love",
+   "original": "Gel Dese Aşk",
+   "tmdb_episodes": 4,
+   "tmdb_seasons": 1,
+   "dub_episodes": 16,
+   "variants": [
+    {
+     "id": "9107289807188886928",
+     "path": "gel-dese-ask-mdblj-ll-rby-EkWL2g0uLQa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 16,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "100628": {
+   "title": "Baraj",
+   "original": "Baraj",
+   "tmdb_episodes": 39,
+   "tmdb_seasons": 1,
+   "dub_episodes": 61,
+   "variants": [
+    {
+     "id": "3939562474382545232",
+     "path": "baraj-mdblj-ll-rby-0Cv80BKe1H4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 61,
+       "allEp": "1,2,3,4,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61"
+      }
+     ]
+    }
+   ]
+  },
+  "100897": {
+   "title": "Love 101",
+   "original": "Aşk 101",
+   "tmdb_episodes": 16,
+   "tmdb_seasons": 2,
+   "dub_episodes": 16,
+   "variants": [
+    {
+     "id": "8343645996349538472",
+     "path": "love-101-mdblj-ll-rby-082glJcZlW9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "104877": {
+   "title": "Love Is in the Air",
+   "original": "Sen Çal Kapımı",
+   "tmdb_episodes": 52,
+   "tmdb_seasons": 2,
+   "dub_episodes": 153,
+   "variants": [
+    {
+     "id": "82810627705766680",
+     "path": "love-is-in-the-air-mdblj-ll-rby-WTzGrxXg76",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 115,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,104,106,107,108,109,111,115"
+      },
+      {
+       "se": 2,
+       "maxEp": 38,
+       "allEp": "3,5,10,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38"
+      }
+     ]
+    }
+   ]
+  },
+  "105052": {
+   "title": "Mr. Wrong",
+   "original": "Bay Yanlış",
+   "tmdb_episodes": 14,
+   "tmdb_seasons": 1,
+   "dub_episodes": 40,
+   "variants": [
+    {
+     "id": "2233631293496508888",
+     "path": "bay-yanlis-mdblj-ll-rby-IEXE7vp30F2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 40,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,26,27,40"
+      }
+     ]
+    }
+   ]
+  },
+  "107214": {
+   "title": "Litle Bride",
+   "original": "Küçük Gelin",
+   "tmdb_episodes": 95,
+   "tmdb_seasons": 3,
+   "dub_episodes": 179,
+   "variants": [
+    {
+     "id": "8540465174791292304",
+     "path": "litle-bride-mdblj-ll-rby-KBveUJ6qTaa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 24,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 80,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 75,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "107415": {
+   "title": "Aile Şirketi",
+   "original": "Aile Şirketi",
+   "tmdb_episodes": 39,
+   "tmdb_seasons": 3,
+   "dub_episodes": 39,
+   "variants": [
+    {
+     "id": "1159857033902965096",
+     "path": "aile-sirketi-mdblj-ll-rby-af3oxvL9Gn1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 13,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 13,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 13,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "107729": {
+   "title": "In Between",
+   "original": "半熟戀人",
+   "tmdb_episodes": 15,
+   "tmdb_seasons": 1,
+   "dub_episodes": 150,
+   "variants": [
+    {
+     "id": "4854156729602425640",
+     "path": "in-between-mdblj-ll-rby-4Er9zlx5AM5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 74,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 45,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 31,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "108179": {
+   "title": "The Agency",
+   "original": "Menajerimi Ara",
+   "tmdb_episodes": 45,
+   "tmdb_seasons": 1,
+   "dub_episodes": 133,
+   "variants": [
+    {
+     "id": "7587478864579150056",
+     "path": "the-agency-mdblj-ll-rby-C3kZykuJu29",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 133,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "108373": {
+   "title": "Kocamın Ailesi",
+   "original": "Kocamın Ailesi",
+   "tmdb_episodes": 57,
+   "tmdb_seasons": 2,
+   "dub_episodes": 152,
+   "variants": [
+    {
+     "id": "8909511914200487696",
+     "path": "kocamin-ailesi-mdblj-ll-rby-yvjeDxRE9Ca",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 152,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "108382": {
+   "title": "Ariza",
+   "original": "Arıza",
+   "tmdb_episodes": 30,
+   "tmdb_seasons": 1,
+   "dub_episodes": 30,
+   "variants": [
+    {
+     "id": "9171496888204411112",
+     "path": "ariza-mdblj-ll-rby-0ocrqVhyvVa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 30,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "108904": {
+   "title": "The Red Room",
+   "original": "Kırmızı Oda",
+   "tmdb_episodes": 61,
+   "tmdb_seasons": 2,
+   "dub_episodes": 210,
+   "variants": [
+    {
+     "id": "7243107837030138648",
+     "path": "the-red-room-mdblj-ll-rby-s0JJ1hFv3D8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 210,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "109101": {
+   "title": "Hanım Köylü",
+   "original": "Hanım Köylü",
+   "tmdb_episodes": 13,
+   "tmdb_seasons": 1,
+   "dub_episodes": 39,
+   "variants": [
+    {
+     "id": "266249161954264992",
+     "path": "hanim-koylu-mdblj-ll-rby-KTefQNhqFj",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 39,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39"
+      }
+     ]
+    }
+   ]
+  },
+  "109535": {
+   "title": "Happily Ever After",
+   "original": "İyi Günde Kötü Günde",
+   "tmdb_episodes": 6,
+   "tmdb_seasons": 1,
+   "dub_episodes": 18,
+   "variants": [
+    {
+     "id": "4409842294111831968",
+     "path": "iyi-gunde-kotu-gunde-mdblj-ll-rby-edXMWxI7Lf5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 18,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "109905": {
+   "title": "The Innocents",
+   "original": "Masumlar Apartmanı",
+   "tmdb_episodes": 71,
+   "tmdb_seasons": 2,
+   "dub_episodes": 38,
+   "variants": [
+    {
+     "id": "5153837419845796312",
+     "path": "the-innocents-mdblj-ll-rby-KlDndX3DI86",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 38,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "109914": {
+   "title": "Göç Zamanı",
+   "original": "Göç Zamanı",
+   "tmdb_episodes": 15,
+   "tmdb_seasons": 1,
+   "dub_episodes": 44,
+   "variants": [
+    {
+     "id": "8593281727659918120",
+     "path": "goc-zamani-mdblj-ll-rby-upNxSLVjNea",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 44,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "110068": {
+   "title": "Tatar Ramazan: Ben Bu Oyunu Bozarım",
+   "original": "Tatar Ramazan: Ben Bu Oyunu Bozarım",
+   "tmdb_episodes": 26,
+   "tmdb_seasons": 2,
+   "dub_episodes": 47,
+   "variants": [
+    {
+     "id": "1508615525163828624",
+     "path": "tatar-ramazan-ben-bu-oyunu-bozarim-mdblj-ll-rby-EYgs8kstrN1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 47,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "110069": {
+   "title": "Bitmeyen Şarkı",
+   "original": "Bitmeyen Şarkı",
+   "tmdb_episodes": 32,
+   "tmdb_seasons": 1,
+   "dub_episodes": 69,
+   "variants": [
+    {
+     "id": "7415048468949255096",
+     "path": "bitmeyen-sarki-mdblj-ll-rby-2jdRhw20LP8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 69,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "110562": {
+   "title": "A Woman Scorned",
+   "original": "Sadakatsiz",
+   "tmdb_episodes": 60,
+   "tmdb_seasons": 2,
+   "dub_episodes": 149,
+   "variants": [
+    {
+     "id": "7397360109997146280",
+     "path": "the-unfaithful-mdblj-ll-rby-GrlSB2fZrO8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 78,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 71,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "110655": {
+   "title": "The Great Seljuks",
+   "original": "Uyanış: Büyük Selçuklu",
+   "tmdb_episodes": 34,
+   "tmdb_seasons": 1,
+   "dub_episodes": 325,
+   "variants": [
+    {
+     "id": "2514024350764908776",
+     "path": "uyanis-buyuk-selcuklu-mdblj-ll-rby-KbkWTv0gIZ2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 120,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,105,106,107,109,110,113,115,116,117,118,119,120"
+      },
+      {
+       "se": 2,
+       "maxEp": 90,
+       "allEp": "4,8,11,12,14,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90"
+      }
+     ]
+    },
+    {
+     "id": "4363726600505117720",
+     "path": "the-great-seljuks-guardians-of-justice-mdblj-ll-rby-ylgwQTFUlc5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 115,
+       "allEp": "87,91,114,115"
+      }
+     ]
+    }
+   ]
+  },
+  "111414": {
+   "title": "Flames of Fate",
+   "original": "Alev Alev",
+   "tmdb_episodes": 28,
+   "tmdb_seasons": 1,
+   "dub_episodes": 90,
+   "variants": [
+    {
+     "id": "6853247402099753320",
+     "path": "flames-of-fate-mdblj-ll-rby-et9iQGDWfa8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 90,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "111685": {
+   "title": "An Anatolian Tale",
+   "original": "Gönül Dağı",
+   "tmdb_episodes": 221,
+   "tmdb_seasons": 6,
+   "dub_episodes": 45,
+   "variants": [
+    {
+     "id": "7227481165459243816",
+     "path": "an-anatolian-tale-mdblj-ll-rby-0qVpqXiWTB8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 45,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "111980": {
+   "title": "The Trusted",
+   "original": "Maraşlı",
+   "tmdb_episodes": 26,
+   "tmdb_seasons": 1,
+   "dub_episodes": 80,
+   "variants": [
+    {
+     "id": "6060930527031428496",
+     "path": "marasli-mdblj-ll-rby-YKEWSMO7Jd7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 80,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "112745": {
+   "title": "Ethos",
+   "original": "Bir Başkadır",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 8,
+   "variants": [
+    {
+     "id": "9008079086308180136",
+     "path": "ethos-mdblj-ll-rby-WtmOGS36rJa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "115464": {
+   "title": "Last Summer",
+   "original": "Son Yaz",
+   "tmdb_episodes": 26,
+   "tmdb_seasons": 2,
+   "dub_episodes": 94,
+   "variants": [
+    {
+     "id": "4723317044920336744",
+     "path": "last-summer-mdblj-ll-rby-wM64fkdQUC5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 60,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 34,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "115601": {
+   "title": "The Void",
+   "original": "Hükümsüz",
+   "tmdb_episodes": 10,
+   "tmdb_seasons": 1,
+   "dub_episodes": 9,
+   "variants": [
+    {
+     "id": "2399226767828571256",
+     "path": "the-void-mdblj-ll-rby-ez0uOG0ueR2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 9,
+       "allEp": "6,9"
+      }
+     ]
+    }
+   ]
+  },
+  "115970": {
+   "title": "50M²",
+   "original": "50M²",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 8,
+   "variants": [
+    {
+     "id": "6745135195605158280",
+     "path": "50m2-mdblj-ll-rby-K5R0rF1Ng28",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": "1,2,3,4,5,6,8"
+      }
+     ]
+    }
+   ]
+  },
+  "117343": {
+   "title": "Bonkis",
+   "original": "Bonkis",
+   "tmdb_episodes": 15,
+   "tmdb_seasons": 2,
+   "dub_episodes": 15,
+   "variants": [
+    {
+     "id": "412807052550095016",
+     "path": "bonkis-mdblj-ll-rby-oeHiBEXEuu",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 7,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "117829": {
+   "title": "Innocence",
+   "original": "Masumiyet",
+   "tmdb_episodes": 13,
+   "tmdb_seasons": 1,
+   "dub_episodes": 24,
+   "variants": [
+    {
+     "id": "7245913401472830488",
+     "path": "masumiyet-mdblj-ll-rby-WpgwdOkmgD8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 11,
+       "allEp": "11"
+      }
+     ]
+    },
+    {
+     "id": "3569296441002574296",
+     "path": "masumiyet-mdblj-ll-rby-SRxVjrLpFf4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 13,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "118888": {
+   "title": "Wolf 2039",
+   "original": "Börü 2039",
+   "tmdb_episodes": 6,
+   "tmdb_seasons": 1,
+   "dub_episodes": 6,
+   "variants": [
+    {
+     "id": "8152007716697948520",
+     "path": "wolf-2039-mdblj-ll-rby-UyPrKlthcI9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 6,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "119267": {
+   "title": "My Siblings",
+   "original": "Kardeşlerim",
+   "tmdb_episodes": 132,
+   "tmdb_seasons": 4,
+   "dub_episodes": 512,
+   "variants": [
+    {
+     "id": "594488154900628248",
+     "path": "kardeslerim-mdblj-ll-rby-SHk1plfLUH",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 132,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,104,107,112,122,125,127,128,132"
+      },
+      {
+       "se": 2,
+       "maxEp": 130,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 122,
+       "allEp": ""
+      },
+      {
+       "se": 4,
+       "maxEp": 128,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,128"
+      }
+     ]
+    }
+   ]
+  },
+  "119806": {
+   "title": "The Shadow Team",
+   "original": "Teşkilat",
+   "tmdb_episodes": 187,
+   "tmdb_seasons": 7,
+   "dub_episodes": 70,
+   "variants": [
+    {
+     "id": "159503762766398864",
+     "path": "the-shadow-team-mdblj-ll-rby-alGBNbNwMb",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 70,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "121435": {
+   "title": "Chrysalis",
+   "original": "Camdaki Kız",
+   "tmdb_episodes": 82,
+   "tmdb_seasons": 3,
+   "dub_episodes": 503,
+   "variants": [
+    {
+     "id": "2186283597110431136",
+     "path": "chrysalis-mdblj-ll-rby-WJqHPKwcvB2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 30,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 117,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,106,107,108,110,111,112,113,114,117"
+      },
+      {
+       "se": 3,
+       "maxEp": 103,
+       "allEp": "4,5,9,15,16,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103"
+      }
+     ]
+    },
+    {
+     "id": "639981548011489184",
+     "path": "chrysalis-mdblj-ll-rby-Wb3yE2A7hL",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 30,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 120,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,119,120"
+      },
+      {
+       "se": 3,
+       "maxEp": 103,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103"
+      }
+     ]
+    }
+   ]
+  },
+  "121461": {
+   "title": "The forbidden apple",
+   "original": "التفاحة المحرمة",
+   "tmdb_episodes": 1,
+   "tmdb_seasons": 1,
+   "dub_episodes": 501,
+   "variants": [
+    {
+     "id": "1971780400317874408",
+     "path": "forbidden-apple-mdblj-ll-rby-qBOiyG3MEl2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 36,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 104,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,102,103,104"
+      },
+      {
+       "se": 3,
+       "maxEp": 81,
+       "allEp": ""
+      },
+      {
+       "se": 4,
+       "maxEp": 99,
+       "allEp": ""
+      },
+      {
+       "se": 5,
+       "maxEp": 95,
+       "allEp": ""
+      },
+      {
+       "se": 6,
+       "maxEp": 86,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "122186": {
+   "title": "Dogu",
+   "original": "Doğu",
+   "tmdb_episodes": 32,
+   "tmdb_seasons": 4,
+   "dub_episodes": 8,
+   "variants": [
+    {
+     "id": "3883956465345904872",
+     "path": "dogu-mdblj-ll-rby-EqD1KCPyUC4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "123725": {
+   "title": "Yeşilçam",
+   "original": "Yeşilçam",
+   "tmdb_episodes": 20,
+   "tmdb_seasons": 2,
+   "dub_episodes": 20,
+   "variants": [
+    {
+     "id": "7220998444901958424",
+     "path": "yesilcam-mdblj-ll-rby-WNqpI1tfqB8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 10,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 10,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "123732": {
+   "title": "Kağıt Ev",
+   "original": "Kağıt Ev",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 24,
+   "variants": [
+    {
+     "id": "2679334137294718352",
+     "path": "kagit-ev-mdblj-ll-rby-qty9z0unVb3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 24,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "125262": {
+   "title": "Glass Ceiling",
+   "original": "Cam Tavanlar",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 8,
+   "variants": [
+    {
+     "id": "6485289238794831248",
+     "path": "glass-ceilings-mdblj-ll-rby-0i7vFSZG4J7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "125527": {
+   "title": "Twist of Fate",
+   "original": "Baht Oyunu",
+   "tmdb_episodes": 17,
+   "tmdb_seasons": 1,
+   "dub_episodes": 58,
+   "variants": [
+    {
+     "id": "4303505913249499040",
+     "path": "twist-of-fate-mdblj-ll-rby-aThAIVm6U75",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 58,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "126248": {
+   "title": "Wounded Heart",
+   "original": "Kalp Yarası",
+   "tmdb_episodes": 32,
+   "tmdb_seasons": 1,
+   "dub_episodes": 107,
+   "variants": [
+    {
+     "id": "1332032230629295416",
+     "path": "kalp-yarasi-mdblj-ll-rby-Yg7MMoKIoA1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 107,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "126255": {
+   "title": "Be My Sunshine",
+   "original": "Ada Masalı",
+   "tmdb_episodes": 25,
+   "tmdb_seasons": 1,
+   "dub_episodes": 59,
+   "variants": [
+    {
+     "id": "4202104965206262568",
+     "path": "be-my-sunshine-mdblj-ll-rby-82JymnuGp05",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 59,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,59"
+      }
+     ]
+    }
+   ]
+  },
+  "127588": {
+   "title": "Love, Reason, Get Even",
+   "original": "Aşk Mantık İntikam",
+   "tmdb_episodes": 42,
+   "tmdb_seasons": 1,
+   "dub_episodes": 102,
+   "variants": [
+    {
+     "id": "3012428573589340952",
+     "path": "love-reason-get-even-mdblj-ll-rby-itQCUlcXwA3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 102,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,102"
+      }
+     ]
+    }
+   ]
+  },
+  "131814": {
+   "title": "Broken Lives",
+   "original": "Kırık Hayatlar",
+   "tmdb_episodes": 100,
+   "tmdb_seasons": 1,
+   "dub_episodes": 17,
+   "variants": [
+    {
+     "id": "2302458522371590048",
+     "path": "broken-lives-mdblj-ll-rby-gkMjJsDh5K2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 17,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "131906": {
+   "title": "Deeply",
+   "original": "İlk ve Son",
+   "tmdb_episodes": 20,
+   "tmdb_seasons": 3,
+   "dub_episodes": 4,
+   "variants": [
+    {
+     "id": "5401095342907607808",
+     "path": "first-and-last-mdblj-ll-rby-CjM6BlA4Zq6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 4,
+       "allEp": "4"
+      }
+     ]
+    }
+   ]
+  },
+  "132752": {
+   "title": "Barbaroslar",
+   "original": "Barbaroslar: Akdeniz'in Kılıcı",
+   "tmdb_episodes": 32,
+   "tmdb_seasons": 1,
+   "dub_episodes": 48,
+   "variants": [
+    {
+     "id": "6180605358328219552",
+     "path": "barbaroslar-mdblj-ll-rby-QIbdUiLezm7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 48,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "132961": {
+   "title": "One of Us",
+   "original": "İçimizden Biri",
+   "tmdb_episodes": 6,
+   "tmdb_seasons": 1,
+   "dub_episodes": 18,
+   "variants": [
+    {
+     "id": "6495321182886660000",
+     "path": "icimizden-biri-mdblj-ll-rby-Grh9LSFDOJ7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 18,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "133020": {
+   "title": "The Liar",
+   "original": "Yalancı",
+   "tmdb_episodes": 10,
+   "tmdb_seasons": 1,
+   "dub_episodes": 29,
+   "variants": [
+    {
+     "id": "2080636861831153040",
+     "path": "yalanci-mdblj-ll-rby-Y0vfDJ0lHt2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 29,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "133033": {
+   "title": "Uzak Şehrin Masalı",
+   "original": "Uzak Şehrin Masalı",
+   "tmdb_episodes": 5,
+   "tmdb_seasons": 1,
+   "dub_episodes": 10,
+   "variants": [
+    {
+     "id": "3831723478273721112",
+     "path": "uzak-sehrin-masali-mdblj-ll-rby-WN2DXAIk3z4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 10,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "133490": {
+   "title": "Family Secrets",
+   "original": "Yargı",
+   "tmdb_episodes": 95,
+   "tmdb_seasons": 3,
+   "dub_episodes": 293,
+   "variants": [
+    {
+     "id": "1178161703482262712",
+     "path": "yargi-mdblj-ll-rby-Eap6RtzZ1p1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 109,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 88,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 96,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,20,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96"
+      }
+     ]
+    }
+   ]
+  },
+  "134155": {
+   "title": "Evlilik Hakkında Her Şey",
+   "original": "Evlilik Hakkında Her Şey",
+   "tmdb_episodes": 33,
+   "tmdb_seasons": 1,
+   "dub_episodes": 99,
+   "variants": [
+    {
+     "id": "7797085775568799120",
+     "path": "evlilik-hakkinda-her-sey-mdblj-ll-rby-63iTGxBJYh9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 99,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,70,71,72,99"
+      }
+     ]
+    }
+   ]
+  },
+  "134840": {
+   "title": "Kanunsuz Topraklar",
+   "original": "Kanunsuz Topraklar",
+   "tmdb_episodes": 16,
+   "tmdb_seasons": 1,
+   "dub_episodes": 52,
+   "variants": [
+    {
+     "id": "4371334785566917080",
+     "path": "kanunsuz-topraklar-mdblj-ll-rby-0KDPrg6LUc5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 52,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "136125": {
+   "title": "The Club",
+   "original": "Kulüp",
+   "tmdb_episodes": 20,
+   "tmdb_seasons": 2,
+   "dub_episodes": 20,
+   "variants": [
+    {
+     "id": "8375665973973714320",
+     "path": "the-club-mdblj-ll-rby-gG18poCDIY9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 10,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 10,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "136506": {
+   "title": "The Warrior Princess",
+   "original": "Destan",
+   "tmdb_episodes": 28,
+   "tmdb_seasons": 1,
+   "dub_episodes": 28,
+   "variants": [
+    {
+     "id": "1612447218538004952",
+     "path": "destan-mdblj-ll-rby-kGg9Qvz17V1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 28,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "137519": {
+   "title": "Sana Söz",
+   "original": "Sana Söz",
+   "tmdb_episodes": 7,
+   "tmdb_seasons": 1,
+   "dub_episodes": 21,
+   "variants": [
+    {
+     "id": "2972068113073717416",
+     "path": "sana-soz-mdblj-ll-rby-4SIOnOp6yx3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 21,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "137659": {
+   "title": "My Life",
+   "original": "Benim Hayatım",
+   "tmdb_episodes": 6,
+   "tmdb_seasons": 1,
+   "dub_episodes": 18,
+   "variants": [
+    {
+     "id": "2124828433174725800",
+     "path": "benim-hayatim-mdblj-ll-rby-uriV88GJXw2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 18,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "137713": {
+   "title": "The Bad Penny",
+   "original": "Üç Kuruş",
+   "tmdb_episodes": 28,
+   "tmdb_seasons": 1,
+   "dub_episodes": 28,
+   "variants": [
+    {
+     "id": "2146690710064480728",
+     "path": "the-bad-penny-mdblj-ll-rby-6hFO6MHRzy2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 28,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "137840": {
+   "title": "Aziz",
+   "original": "Aziz",
+   "tmdb_episodes": 28,
+   "tmdb_seasons": 1,
+   "dub_episodes": 84,
+   "variants": [
+    {
+     "id": "1304220711606781328",
+     "path": "aziz-mdblj-ll-rby-kkN2H0nlly1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 84,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,34,35,38,39,40,42,43,44,45,46,47,49,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,69,70,72,74,76,77,79,80,81,82,83,84"
+      }
+     ]
+    }
+   ]
+  },
+  "138071": {
+   "title": "Elbet Bir Gün",
+   "original": "Elbet Bir Gün",
+   "tmdb_episodes": 6,
+   "tmdb_seasons": 1,
+   "dub_episodes": 12,
+   "variants": [
+    {
+     "id": "1181214360077746536",
+     "path": "elbet-bir-gun-mdblj-ll-rby-E8UYbdpYfp1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 12,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "138072": {
+   "title": "Fandom",
+   "original": "Fandom",
+   "tmdb_episodes": 26,
+   "tmdb_seasons": 2,
+   "dub_episodes": 25,
+   "variants": [
+    {
+     "id": "5402793240653349096",
+     "path": "fandom-mdblj-ll-rby-Sbc10NIQ6r6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 12,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 13,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "138171": {
+   "title": "Alparslan: The Great Seljuks",
+   "original": "Alparslan: Büyük Selçuklu",
+   "tmdb_episodes": 61,
+   "tmdb_seasons": 2,
+   "dub_episodes": 330,
+   "variants": [
+    {
+     "id": "778607974041403752",
+     "path": "alparslan-the-great-seljuks-mdblj-ll-rby-wsg6L022wV",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 91,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 114,
+       "allEp": ""
+      }
+     ]
+    },
+    {
+     "id": "1736968582736628744",
+     "path": "alparslan-the-great-seljuks-mdblj-ll-rby-qZQJuXJkj42",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 91,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 34,
+       "allEp": "5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34"
+      }
+     ]
+    }
+   ]
+  },
+  "152500": {
+   "title": "Annemizi Saklarken",
+   "original": "Annemizi Saklarken",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 25,
+   "variants": [
+    {
+     "id": "1376061014659269800",
+     "path": "annemizi-saklarken-mdblj-ll-rby-CNHJEPbnED1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 25,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "153515": {
+   "title": "Mahkum",
+   "original": "Mahkum",
+   "tmdb_episodes": 31,
+   "tmdb_seasons": 2,
+   "dub_episodes": 93,
+   "variants": [
+    {
+     "id": "8644989148174189752",
+     "path": "mahkum-mdblj-ll-rby-yrRteUN8Cia",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 72,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,33,34,35,36,37,38,39,41,42,45,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,67,68,69,70,71,72"
+      },
+      {
+       "se": 2,
+       "maxEp": 21,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "154610": {
+   "title": "Baba",
+   "original": "Baba",
+   "tmdb_episodes": 30,
+   "tmdb_seasons": 2,
+   "dub_episodes": 98,
+   "variants": [
+    {
+     "id": "1553840637437427880",
+     "path": "baba-mdblj-ll-rby-wIkeQMBBMQ1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 49,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 49,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "156000": {
+   "title": "Erkek Severse",
+   "original": "Erkek Severse",
+   "tmdb_episodes": 26,
+   "tmdb_seasons": 1,
+   "dub_episodes": 26,
+   "variants": [
+    {
+     "id": "7568140654069825704",
+     "path": "erkek-severse-mdblj-ll-rby-UKHa3ica419",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 26,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "156416": {
+   "title": "Yalnız Kurt",
+   "original": "Yalnız Kurt",
+   "tmdb_episodes": 32,
+   "tmdb_seasons": 2,
+   "dub_episodes": 20,
+   "variants": [
+    {
+     "id": "2151370231552377624",
+     "path": "yalniz-kurt-mdblj-ll-rby-cmY9jnviVy2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 20,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "156621": {
+   "title": "Annem",
+   "original": "Annem",
+   "tmdb_episodes": 64,
+   "tmdb_seasons": 2,
+   "dub_episodes": 42,
+   "variants": [
+    {
+     "id": "4840078582720381288",
+     "path": "annem-mdblj-ll-rby-k8XfZFTBxL5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 42,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "157219": {
+   "title": "Midnight at the Pera Palace",
+   "original": "Pera Palas’ta Gece Yarısı",
+   "tmdb_episodes": 16,
+   "tmdb_seasons": 2,
+   "dub_episodes": 16,
+   "variants": [
+    {
+     "id": "5994911038536385936",
+     "path": "midnight-at-the-pera-palace-mdblj-ll-rby-kEJjBFSKQ87",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "157858": {
+   "title": "Dreams and Lives",
+   "original": "Hayaller ve Hayatlar",
+   "tmdb_episodes": 26,
+   "tmdb_seasons": 1,
+   "dub_episodes": 26,
+   "variants": [
+    {
+     "id": "7932439642677592872",
+     "path": "hayaller-ve-hayatlar-mdblj-ll-rby-e7S6ehMEYr9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 26,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "158339": {
+   "title": "Three Sisters",
+   "original": "Üç Kız Kardeş",
+   "tmdb_episodes": 84,
+   "tmdb_seasons": 3,
+   "dub_episodes": 363,
+   "variants": [
+    {
+     "id": "7183553476906336616",
+     "path": "uc-kiz-kardes-mdblj-ll-rby-omthNmzKEy8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 252,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 111,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111"
+      }
+     ]
+    }
+   ]
+  },
+  "158809": {
+   "title": "Wild Abandon",
+   "original": "Uysallar",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 8,
+   "variants": [
+    {
+     "id": "7918054342820004272",
+     "path": "wild-abandon-mdblj-ll-rby-ONWlq0VLUq9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": "2,3,4,5,6,7,8"
+      }
+     ]
+    }
+   ]
+  },
+  "194871": {
+   "title": "Ağır Roman: Yeni Dünya",
+   "original": "Ağır Roman: Yeni Dünya",
+   "tmdb_episodes": 10,
+   "tmdb_seasons": 1,
+   "dub_episodes": 25,
+   "variants": [
+    {
+     "id": "4336332932408295592",
+     "path": "agir-roman-yeni-dunya-mdblj-ll-rby-E4YhK0Xrka5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 25,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "195368": {
+   "title": "Nasıl Fenomen Oldum",
+   "original": "Nasıl Fenomen Oldum",
+   "tmdb_episodes": 12,
+   "tmdb_seasons": 1,
+   "dub_episodes": 12,
+   "variants": [
+    {
+     "id": "4445246568526135768",
+     "path": "nasil-fenomen-oldum-mdblj-ll-rby-qjJWsE8hni5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 12,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "195930": {
+   "title": "Yakamoz S-245",
+   "original": "Yakamoz S-245",
+   "tmdb_episodes": 7,
+   "tmdb_seasons": 1,
+   "dub_episodes": 7,
+   "variants": [
+    {
+     "id": "3314179529874325848",
+     "path": "yakamoz-s-245-mdblj-ll-rby-kkT0D9BYOW3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 7,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "196437": {
+   "title": "The Blackboard",
+   "original": "Kara Tahta",
+   "tmdb_episodes": 20,
+   "tmdb_seasons": 1,
+   "dub_episodes": 55,
+   "variants": [
+    {
+     "id": "3895692652460868376",
+     "path": "kara-tahta-mdblj-ll-rby-8Ov9oMrjMD4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 55,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55"
+      }
+     ]
+    }
+   ]
+  },
+  "200680": {
+   "title": "İyilik",
+   "original": "İyilik",
+   "tmdb_episodes": 27,
+   "tmdb_seasons": 1,
+   "dub_episodes": 74,
+   "variants": [
+    {
+     "id": "8887125797866276768",
+     "path": "iyilik-mdblj-ll-rby-witCsp58vAa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 36,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 38,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "202010": {
+   "title": "As the Crow Flies",
+   "original": "Kus uçusu",
+   "tmdb_episodes": 24,
+   "tmdb_seasons": 3,
+   "dub_episodes": 24,
+   "variants": [
+    {
+     "id": "4169974624102613784",
+     "path": "as-the-crow-flies-mdblj-ll-rby-Eg0CCHJw2Y4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 8,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "203205": {
+   "title": "Love and Hate",
+   "original": "Seversin",
+   "tmdb_episodes": 20,
+   "tmdb_seasons": 1,
+   "dub_episodes": 20,
+   "variants": [
+    {
+     "id": "7669419281444389672",
+     "path": "seversin-mdblj-ll-rby-6hd4Vjl1y89",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 13,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 7,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "203699": {
+   "title": "Love On Duty",
+   "original": "Gizli Saklı",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 19,
+   "variants": [
+    {
+     "id": "1182592735342200208",
+     "path": "gizli-sakli-mdblj-ll-rby-8Mm8vhOhmp1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 19,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "204553": {
+   "title": "Balkan Ninnisi",
+   "original": "Balkan Ninnisi",
+   "tmdb_episodes": 25,
+   "tmdb_seasons": 1,
+   "dub_episodes": 75,
+   "variants": [
+    {
+     "id": "4822624935141064872",
+     "path": "balkan-ninnisi-mdblj-ll-rby-ckTthqKFfK5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 75,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "204634": {
+   "title": "İçimizdeki Ateş",
+   "original": "İçimizdeki Ateş",
+   "tmdb_episodes": 5,
+   "tmdb_seasons": 1,
+   "dub_episodes": 20,
+   "variants": [
+    {
+     "id": "8520151010273280168",
+     "path": "icimizdeki-ates-mdblj-ll-rby-oQSSTtGno9a",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 20,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "204925": {
+   "title": "Tozluyaka",
+   "original": "Tozluyaka",
+   "tmdb_episodes": 26,
+   "tmdb_seasons": 1,
+   "dub_episodes": 78,
+   "variants": [
+    {
+     "id": "5018863571443270104",
+     "path": "tozluyaka-mdblj-ll-rby-M2RR6FNrKY5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 78,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "205204": {
+   "title": "Oh Where",
+   "original": "Ah Nerede",
+   "tmdb_episodes": 7,
+   "tmdb_seasons": 1,
+   "dub_episodes": 21,
+   "variants": [
+    {
+     "id": "1041149772838699800",
+     "path": "oh-where-mdblj-ll-rby-gQ86KBztUe1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 21,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "205588": {
+   "title": "Hear Me",
+   "original": "Duy Beni",
+   "tmdb_episodes": 20,
+   "tmdb_seasons": 1,
+   "dub_episodes": 60,
+   "variants": [
+    {
+     "id": "34174830362724256",
+     "path": "hear-me-mdblj-ll-rby-coXli3jww2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 60,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "205593": {
+   "title": "Var Bunlar",
+   "original": "Var Bunlar",
+   "tmdb_episodes": 39,
+   "tmdb_seasons": 3,
+   "dub_episodes": 22,
+   "variants": [
+    {
+     "id": "916503097600622944",
+     "path": "var-bunlar-mdblj-ll-rby-6jsItZOAH51",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 13,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,13"
+      },
+      {
+       "se": 2,
+       "maxEp": 9,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "206127": {
+   "title": "Mükemmel Eşleşme",
+   "original": "Mükemmel Eşleşme",
+   "tmdb_episodes": 13,
+   "tmdb_seasons": 1,
+   "dub_episodes": 13,
+   "variants": [
+    {
+     "id": "1457278743147332536",
+     "path": "mukemmel-eslesme-mdblj-ll-rby-Ua7liuPlEJ1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 13,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "206180": {
+   "title": "Another Self",
+   "original": "Zeytin Ağacı",
+   "tmdb_episodes": 24,
+   "tmdb_seasons": 3,
+   "dub_episodes": 24,
+   "variants": [
+    {
+     "id": "8560346544044737304",
+     "path": "another-self-mdblj-ll-rby-ceamvoDtmca",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 8,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "209144": {
+   "title": "Perfect Tenant",
+   "original": "Kusursuz Kiracı",
+   "tmdb_episodes": 6,
+   "tmdb_seasons": 1,
+   "dub_episodes": 18,
+   "variants": [
+    {
+     "id": "5976171374669349672",
+     "path": "kusursuz-kiraci-mdblj-ll-rby-oOhMxnyVs77",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 18,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "209476": {
+   "title": "İkisini de Sevdim",
+   "original": "İkisini de Sevdim",
+   "tmdb_episodes": 3,
+   "tmdb_seasons": 1,
+   "dub_episodes": 12,
+   "variants": [
+    {
+     "id": "953199485008631208",
+     "path": "ikisini-de-sevdim-mdblj-ll-rby-UcCWat9Fp81",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 12,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "209793": {
+   "title": "Man on Pause",
+   "original": "Andropoz",
+   "tmdb_episodes": 6,
+   "tmdb_seasons": 1,
+   "dub_episodes": 6,
+   "variants": [
+    {
+     "id": "2678129072550592872",
+     "path": "man-on-pause-mdblj-ll-rby-iTjTraiRPb3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 6,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "210676": {
+   "title": "Ben Bu Cihana Sığmazam",
+   "original": "Ben Bu Cihana Sığmazam",
+   "tmdb_episodes": 68,
+   "tmdb_seasons": 2,
+   "dub_episodes": 119,
+   "variants": [
+    {
+     "id": "1442110464846170016",
+     "path": "ben-bu-cihana-sigmazam-mdblj-ll-rby-Ayg6trDSwI1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 119,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "210742": {
+   "title": "O Kız - That Girl",
+   "original": "O Kız",
+   "tmdb_episodes": 24,
+   "tmdb_seasons": 1,
+   "dub_episodes": 72,
+   "variants": [
+    {
+     "id": "790900514039939880",
+     "path": "o-kiz-mdblj-ll-rby-4MH9u4DkqW",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 10,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 8,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 10,
+       "allEp": ""
+      }
+     ]
+    },
+    {
+     "id": "3022891526239174824",
+     "path": "bir-kadin-tanidim-mdblj-ll-rby-qpkK8vgSiB3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 44,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "210865": {
+   "title": "Yalı Çapkını",
+   "original": "Yalı Çapkını",
+   "tmdb_episodes": 101,
+   "tmdb_seasons": 3,
+   "dub_episodes": 505,
+   "variants": [
+    {
+     "id": "8876236234704783264",
+     "path": "golden-boy-mdblj-ll-rby-MKVdLxSfHza",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 505,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "212796": {
+   "title": "Life Today",
+   "original": "Hayat Bugün",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 40,
+   "variants": [
+    {
+     "id": "3102487784313995432",
+     "path": "hayat-bugun-mdblj-ll-rby-enMregtqbH3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 40,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "212799": {
+   "title": "Trap",
+   "original": "Tuzak",
+   "tmdb_episodes": 26,
+   "tmdb_seasons": 1,
+   "dub_episodes": 122,
+   "variants": [
+    {
+     "id": "7958335340534972584",
+     "path": "trap-mdblj-ll-rby-MyzuKy8gTt9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 82,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 40,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "212818": {
+   "title": "El-Gomgoma El-Sakhena",
+   "original": "Sıcak Kafa",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 8,
+   "variants": [
+    {
+     "id": "112379106716697048",
+     "path": "hot-skull-mdblj-ll-rby-q9yp1cfHi8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "213059": {
+   "title": "Darmaduman",
+   "original": "Darmaduman",
+   "tmdb_episodes": 9,
+   "tmdb_seasons": 1,
+   "dub_episodes": 45,
+   "variants": [
+    {
+     "id": "4663525018486407768",
+     "path": "darmaduman-mdblj-ll-rby-O98JAaDZuy5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 45,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "214078": {
+   "title": "Shahmaran",
+   "original": "Şahmaran",
+   "tmdb_episodes": 14,
+   "tmdb_seasons": 2,
+   "dub_episodes": 14,
+   "variants": [
+    {
+     "id": "8436860393129132264",
+     "path": "shahmaran-mdblj-ll-rby-qfzEusqUe3a",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 6,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "214081": {
+   "title": "Creature",
+   "original": "Yaratılan",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 8,
+   "variants": [
+    {
+     "id": "7651644164152985504",
+     "path": "creature-mdblj-ll-rby-UwcbDpUBe79",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "215275": {
+   "title": "Çöp Adam",
+   "original": "Çöp Adam",
+   "tmdb_episodes": 30,
+   "tmdb_seasons": 2,
+   "dub_episodes": 95,
+   "variants": [
+    {
+     "id": "7569064656154101664",
+     "path": "the-stickman-mdblj-ll-rby-ICiVGRzo819",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 90,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 5,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "216913": {
+   "title": "Day Zero",
+   "original": "Sıfırıncı Gün",
+   "tmdb_episodes": 6,
+   "tmdb_seasons": 1,
+   "dub_episodes": 21,
+   "variants": [
+    {
+     "id": "4012454190260830376",
+     "path": "sifirinci-gun-mdblj-ll-rby-AG0l8885pM4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 21,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "218052": {
+   "title": "Taçsız Prenses",
+   "original": "Taçsız Prenses",
+   "tmdb_episodes": 13,
+   "tmdb_seasons": 1,
+   "dub_episodes": 65,
+   "variants": [
+    {
+     "id": "8637675196826141144",
+     "path": "tacsiz-prenses-mdblj-ll-rby-632YTGVD4ia",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 65,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "219446": {
+   "title": "The Family",
+   "original": "Aile",
+   "tmdb_episodes": 30,
+   "tmdb_seasons": 2,
+   "dub_episodes": 150,
+   "variants": [
+    {
+     "id": "8899596458748428520",
+     "path": "the-family-mdblj-ll-rby-qJgD6ogfqBa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 65,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 85,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "219447": {
+   "title": "Ego",
+   "original": "Ego",
+   "tmdb_episodes": 13,
+   "tmdb_seasons": 1,
+   "dub_episodes": 13,
+   "variants": [
+    {
+     "id": "6105007336848852368",
+     "path": "ego-erkege-guven-olmaz-mdblj-ll-rby-mP4k3KTZYg7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 13,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "219826": {
+   "title": "My Name Is Farah",
+   "original": "Adım Farah",
+   "tmdb_episodes": 27,
+   "tmdb_seasons": 2,
+   "dub_episodes": 135,
+   "variants": [
+    {
+     "id": "1654333801192981904",
+     "path": "my-name-is-farah-mdblj-ll-rby-eh3t0iIRcY1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 70,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 65,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "221244": {
+   "title": "Farewell Letter",
+   "original": "Veda Mektubu",
+   "tmdb_episodes": 24,
+   "tmdb_seasons": 1,
+   "dub_episodes": 96,
+   "variants": [
+    {
+     "id": "5716712606476419304",
+     "path": "veda-mektubu-mdblj-ll-rby-QkLgugtBiO6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 72,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 24,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "221735": {
+   "title": "Başım Belada",
+   "original": "Başım Belada",
+   "tmdb_episodes": 5,
+   "tmdb_seasons": 1,
+   "dub_episodes": 20,
+   "variants": [
+    {
+     "id": "4864547114484908392",
+     "path": "basim-belada-mdblj-ll-rby-gavkPTZFlN5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 20,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "222776": {
+   "title": "Zoraki Koca",
+   "original": "Zoraki Koca",
+   "tmdb_episodes": 26,
+   "tmdb_seasons": 1,
+   "dub_episodes": 50,
+   "variants": [
+    {
+     "id": "4455632143045247784",
+     "path": "zoraki-koca-mdblj-ll-rby-06j30weQ8j5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 50,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "222899": {
+   "title": "Miracle of Love",
+   "original": "Yüz Yıllık Mucize",
+   "tmdb_episodes": 13,
+   "tmdb_seasons": 1,
+   "dub_episodes": 36,
+   "variants": [
+    {
+     "id": "8075046772709772720",
+     "path": "miracle-of-love-mdblj-ll-rby-2D9DXLANvC9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 36,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "223239": {
+   "title": "Listen to Your Heart",
+   "original": "Dinle Sevgili",
+   "tmdb_episodes": 99,
+   "tmdb_seasons": 2,
+   "dub_episodes": 150,
+   "variants": [
+    {
+     "id": "760710123764465896",
+     "path": "dinle-sevgili-mdblj-ll-rby-UuFdVjK3cU",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 150,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150"
+      }
+     ]
+    }
+   ]
+  },
+  "224054": {
+   "title": "Gülcemal",
+   "original": "Gülcemal",
+   "tmdb_episodes": 13,
+   "tmdb_seasons": 1,
+   "dub_episodes": 39,
+   "variants": [
+    {
+     "id": "708272252256665656",
+     "path": "gulcemal-mdblj-ll-rby-EWZIBbsTjQ",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 39,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "224773": {
+   "title": "The Actress",
+   "original": "Aktris",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 8,
+   "variants": [
+    {
+     "id": "6103978193965170920",
+     "path": "actress-mdblj-ll-rby-Kz4qw6FhUg7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "225083": {
+   "title": "The Stranger",
+   "original": "الغريب",
+   "tmdb_episodes": 12,
+   "tmdb_seasons": 1,
+   "dub_episodes": 10,
+   "variants": [
+    {
+     "id": "512904864029100968",
+     "path": "the-estranged-mdblj-ll-rby-0kmz3LN6TB",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 10,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "226032": {
+   "title": "Gilani the Ascetic",
+   "original": "Hay Sultan",
+   "tmdb_episodes": 20,
+   "tmdb_seasons": 2,
+   "dub_episodes": 20,
+   "variants": [
+    {
+     "id": "4738978488546378536",
+     "path": "hay-sultan-mdblj-ll-rby-uzGb6Prz4E5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 20,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "226034": {
+   "title": "Yardımcı Oyuncu",
+   "original": "Yardımcı Oyuncu",
+   "tmdb_episodes": 10,
+   "tmdb_seasons": 1,
+   "dub_episodes": 10,
+   "variants": [
+    {
+     "id": "1697808962864792888",
+     "path": "yardimci-oyuncu-mdblj-ll-rby-EwqVhTWYp12",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 10,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "226054": {
+   "title": "Şebeke",
+   "original": "Şebeke",
+   "tmdb_episodes": 10,
+   "tmdb_seasons": 1,
+   "dub_episodes": 10,
+   "variants": [
+    {
+     "id": "1081484316984626088",
+     "path": "sebeke-mdblj-ll-rby-Eq9uoSZcTh1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 10,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "226197": {
+   "title": "The QUEEN of News",
+   "original": "新聞女王",
+   "tmdb_episodes": 51,
+   "tmdb_seasons": 2,
+   "dub_episodes": 55,
+   "variants": [
+    {
+     "id": "8501423715912222096",
+     "path": "the-queen-mdblj-ll-rby-2xWfIXRB08a",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 55,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,52,53,54,55"
+      }
+     ]
+    }
+   ]
+  },
+  "226675": {
+   "title": "The Search",
+   "original": "Arayış",
+   "tmdb_episodes": 6,
+   "tmdb_seasons": 1,
+   "dub_episodes": 6,
+   "variants": [
+    {
+     "id": "365275164881338536",
+     "path": "search-mdblj-ll-rby-8sYph7MXYq",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 6,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "228239": {
+   "title": "Aşk ve Günah",
+   "original": "Aşk ve Günah",
+   "tmdb_episodes": 1,
+   "tmdb_seasons": 1,
+   "dub_episodes": 120,
+   "variants": [
+    {
+     "id": "6154650286842856232",
+     "path": "ask-ve-gunah-mdblj-ll-rby-mvevpIxmEk7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 120,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "228523": {
+   "title": "I Will Not Give You to The Hands",
+   "original": "Vermem Seni Ellere",
+   "tmdb_episodes": 9,
+   "tmdb_seasons": 1,
+   "dub_episodes": 45,
+   "variants": [
+    {
+     "id": "6471593721959252760",
+     "path": "vermem-seni-ellere-mdblj-ll-rby-UgMMUC0Y3I7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 45,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "228979": {
+   "title": "If You Love",
+   "original": "Ya Çok Seversen",
+   "tmdb_episodes": 13,
+   "tmdb_seasons": 1,
+   "dub_episodes": 65,
+   "variants": [
+    {
+     "id": "3026902544657301864",
+     "path": "what-if-you-love-too-much-mdblj-ll-rby-mL0kjJefBB3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 65,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "228980": {
+   "title": "Come What May",
+   "original": "Kendi Düşen Ağlamaz",
+   "tmdb_episodes": 27,
+   "tmdb_seasons": 1,
+   "dub_episodes": 89,
+   "variants": [
+    {
+     "id": "8806012086506735544",
+     "path": "kendi-dusen-aglamaz-mdblj-ll-rby-WjXRa2ZCvua",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 89,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "231100": {
+   "title": "Boundless Love",
+   "original": "Hudutsuz Sevda",
+   "tmdb_episodes": 63,
+   "tmdb_seasons": 2,
+   "dub_episodes": 98,
+   "variants": [
+    {
+     "id": "7734242047632592944",
+     "path": "hudutsuz-sevda-mdblj-ll-rby-uFzletsUkd9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 98,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "231503": {
+   "title": "Wild heart",
+   "original": "Yabani",
+   "tmdb_episodes": 51,
+   "tmdb_seasons": 2,
+   "dub_episodes": 326,
+   "variants": [
+    {
+     "id": "9167474874670006632",
+     "path": "wild-heart-mdblj-ll-rby-4Y7QA7c8dVa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 255,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 71,
+       "allEp": "1,2,4,5,6,7,8,9,13,14,16,17,18,20,21,22,23,24,27,29,31,35,36,37,39,40,42,43,44,51,58,59,62,65,71"
+      }
+     ]
+    }
+   ]
+  },
+  "232132": {
+   "title": "Saladın: The Conqueror of Jerusalem",
+   "original": "Kudüs Fatihi: Selahaddin Eyyubi",
+   "tmdb_episodes": 58,
+   "tmdb_seasons": 2,
+   "dub_episodes": 61,
+   "variants": [
+    {
+     "id": "4600883985626138320",
+     "path": "saladin-the-conquerer-of-jerusalem-mdblj-ll-rby-wAoFSE26St5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 61,
+       "allEp": "20,61"
+      }
+     ]
+    }
+   ]
+  },
+  "233314": {
+   "title": "Another Love",
+   "original": "Bambaşka Biri",
+   "tmdb_episodes": 16,
+   "tmdb_seasons": 1,
+   "dub_episodes": 52,
+   "variants": [
+    {
+     "id": "6118430174800742304",
+     "path": "another-love-mdblj-ll-rby-MK95BkstYh7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 52,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "233492": {
+   "title": "Dirty Laundry",
+   "original": "Kirli Sepeti",
+   "tmdb_episodes": 40,
+   "tmdb_seasons": 2,
+   "dub_episodes": 200,
+   "variants": [
+    {
+     "id": "1585908993573226400",
+     "path": "dirty-laundry-mdblj-ll-rby-0gQodbLt9T1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 200,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "233524": {
+   "title": "Kader Bağları",
+   "original": "Kader Bağları",
+   "tmdb_episodes": 5,
+   "tmdb_seasons": 1,
+   "dub_episodes": 11,
+   "variants": [
+    {
+     "id": "1037543374699511976",
+     "path": "kader-baglari-mdblj-ll-rby-0U2KIWuXDe1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 11,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "234669": {
+   "title": "Sarmaşık Zamanı",
+   "original": "Sarmaşık Zamanı",
+   "tmdb_episodes": 16,
+   "tmdb_seasons": 1,
+   "dub_episodes": 16,
+   "variants": [
+    {
+     "id": "3149962085061247336",
+     "path": "sarmasik-zamani-mdblj-ll-rby-y9yKQWiRGK3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 16,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "236215": {
+   "title": "My Wonderful Life",
+   "original": "Şahane Hayatım",
+   "tmdb_episodes": 30,
+   "tmdb_seasons": 1,
+   "dub_episodes": 93,
+   "variants": [
+    {
+     "id": "8967029736123908160",
+     "path": "my-wonderful-life-mdblj-ll-rby-EKjlf3F5pGa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 93,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,81,82,83,84,85,86,87,88,89,90,91,92,93"
+      }
+     ]
+    }
+   ]
+  },
+  "238859": {
+   "title": "Light in the Dark",
+   "original": "Bir Derdim Var",
+   "tmdb_episodes": 6,
+   "tmdb_seasons": 1,
+   "dub_episodes": 18,
+   "variants": [
+    {
+     "id": "7909719746718089576",
+     "path": "bir-derdim-var-mdblj-ll-rby-U8MsELdBiq9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 18,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "238882": {
+   "title": "The Last Empress",
+   "original": "Altın Kafes",
+   "tmdb_episodes": 4,
+   "tmdb_seasons": 1,
+   "dub_episodes": 20,
+   "variants": [
+    {
+     "id": "2806437681465540968",
+     "path": "altin-kafes-mdblj-ll-rby-u1BdgbTvjl3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 20,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "238883": {
+   "title": "Love & Hope",
+   "original": "Aşk ve Umut",
+   "tmdb_episodes": 285,
+   "tmdb_seasons": 2,
+   "dub_episodes": 25,
+   "variants": [
+    {
+     "id": "3792041123837788272",
+     "path": "ask-ve-umut-mdblj-ll-rby-C1xJzuuA7w4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 25,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "239492": {
+   "title": "Kader Oyunları",
+   "original": "Kader Oyunları",
+   "tmdb_episodes": 121,
+   "tmdb_seasons": 2,
+   "dub_episodes": 200,
+   "variants": [
+    {
+     "id": "7349830833668588312",
+     "path": "kader-oyunlari-mdblj-ll-rby-0sYsGtNiWK8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 100,
+       "allEp": ""
+      }
+     ]
+    },
+    {
+     "id": "9110033893469700240",
+     "path": "kader-oyunlari-mdblj-ll-rby-Qstg4rd3YQa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 100,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "240282": {
+   "title": "What Ships I've Burnt",
+   "original": "Ne Gemiler Yaktım",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 24,
+   "variants": [
+    {
+     "id": "1502540036225598232",
+     "path": "ne-gemiler-yaktim-mdblj-ll-rby-w2n8YVfEZM1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 24,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "240335": {
+   "title": "I Am Mother",
+   "original": "Sandık Kokusu",
+   "tmdb_episodes": 50,
+   "tmdb_seasons": 2,
+   "dub_episodes": 250,
+   "variants": [
+    {
+     "id": "4206529399996433192",
+     "path": "sandik-kokusu-mdblj-ll-rby-2HfM02RWJ05",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 250,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "240798": {
+   "title": "Gaddar",
+   "original": "Gaddar",
+   "tmdb_episodes": 20,
+   "tmdb_seasons": 1,
+   "dub_episodes": 100,
+   "variants": [
+    {
+     "id": "3708551375366799832",
+     "path": "no-mercy-mdblj-ll-rby-segvpEGcXp4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 100,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "240801": {
+   "title": "The Stars Are Far From Me",
+   "original": "Yıldızlar Bana Uzak",
+   "tmdb_episodes": 4,
+   "tmdb_seasons": 1,
+   "dub_episodes": 20,
+   "variants": [
+    {
+     "id": "74230451279380840",
+     "path": "yildizlar-bana-uzak-mdblj-ll-rby-0E0RKIwYt5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 20,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "242073": {
+   "title": "Kübra",
+   "original": "Kübra",
+   "tmdb_episodes": 16,
+   "tmdb_seasons": 2,
+   "dub_episodes": 16,
+   "variants": [
+    {
+     "id": "691473876563411176",
+     "path": "kubra-mdblj-ll-rby-g276vmnX4P",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "243832": {
+   "title": "Secret of Pearls",
+   "original": "İnci Taneleri",
+   "tmdb_episodes": 52,
+   "tmdb_seasons": 3,
+   "dub_episodes": 132,
+   "variants": [
+    {
+     "id": "4656836586175349208",
+     "path": "inci-taneleri-mdblj-ll-rby-iRSdiznm0y5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 132,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "245914": {
+   "title": "Bahar",
+   "original": "Bahar",
+   "tmdb_episodes": 73,
+   "tmdb_seasons": 3,
+   "dub_episodes": 280,
+   "variants": [
+    {
+     "id": "3902958637614072600",
+     "path": "bahar-mdblj-ll-rby-Uw0etwHAjE4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 180,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 100,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100"
+      }
+     ]
+    }
+   ]
+  },
+  "246621": {
+   "title": "Mehmed: Sultan of Conquests",
+   "original": "Mehmed: Fetihler Sultanı",
+   "tmdb_episodes": 83,
+   "tmdb_seasons": 3,
+   "dub_episodes": 15,
+   "variants": [
+    {
+     "id": "6362784390732829104",
+     "path": "mehmed-fetihler-sultani-mdblj-ll-rby-6TGyEkrC1A7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 15,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "246701": {
+   "title": "Rock Paper Scissors",
+   "original": "Taş Kağıt Makas",
+   "tmdb_episodes": 19,
+   "tmdb_seasons": 2,
+   "dub_episodes": 70,
+   "variants": [
+    {
+     "id": "8391409152438027760",
+     "path": "tas-kagit-makas-mdblj-ll-rby-kCoPuS3KSZ9",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 70,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "247219": {
+   "title": "Dilemma",
+   "original": "Düğüm",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 8,
+   "variants": [
+    {
+     "id": "2600100718057064352",
+     "path": "dilemma-mdblj-ll-rby-swXbjeju463",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "248557": {
+   "title": "Next Room",
+   "original": "Yan Oda",
+   "tmdb_episodes": 4,
+   "tmdb_seasons": 1,
+   "dub_episodes": 14,
+   "variants": [
+    {
+     "id": "3573065626455264168",
+     "path": "yandaki-oda-mdblj-ll-rby-kErZY34GWf4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 14,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "251883": {
+   "title": "Thank You, Next",
+   "original": "Kimler Geldi Kimler Geçti",
+   "tmdb_episodes": 24,
+   "tmdb_seasons": 3,
+   "dub_episodes": 24,
+   "variants": [
+    {
+     "id": "974950376753479848",
+     "path": "thank-you-next-mdblj-ll-rby-OjdLg7yh1a1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 8,
+       "allEp": ""
+      },
+      {
+       "se": 3,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "253645": {
+   "title": "RU",
+   "original": "RU",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 8,
+   "variants": [
+    {
+     "id": "1570081145734185456",
+     "path": "ru-mdblj-ll-rby-SJL5I2hZYR1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "254783": {
+   "title": "Ay Tutulmasi",
+   "original": "Ay Tutulmasi",
+   "tmdb_episodes": 1,
+   "tmdb_seasons": 1,
+   "dub_episodes": 33,
+   "variants": [
+    {
+     "id": "5084980439195043592",
+     "path": "ay-tutulmasi-mdblj-ll-rby-Uk6edcogD36",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 33,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "259812": {
+   "title": "Leyla",
+   "original": "Leyla: Hayat... Aşk... Adalet...",
+   "tmdb_episodes": 40,
+   "tmdb_seasons": 1,
+   "dub_episodes": 213,
+   "variants": [
+    {
+     "id": "8678353450561931112",
+     "path": "the-tulip-age-mdblj-ll-rby-USFrX9XW4la",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 13,
+       "allEp": ""
+      }
+     ]
+    },
+    {
+     "id": "707601948522037504",
+     "path": "leyla-hayat-ask-adalet-mdblj-ll-rby-4m8z477PgQ",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 200,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "270538": {
+   "title": "Land of Beautiful Love",
+   "original": "Güzel Aşklar Diyarı",
+   "tmdb_episodes": 6,
+   "tmdb_seasons": 1,
+   "dub_episodes": 18,
+   "variants": [
+    {
+     "id": "3056559044191309232",
+     "path": "guzel-asklar-diyari-mdblj-ll-rby-u3Ede2w4ND3",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 18,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "271014": {
+   "title": "Siyah Kalp",
+   "original": "Siyah Kalp",
+   "tmdb_episodes": 34,
+   "tmdb_seasons": 1,
+   "dub_episodes": 112,
+   "variants": [
+    {
+     "id": "5781461037518148280",
+     "path": "valley-of-hearts-mdblj-ll-rby-mH0REHt95T6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 112,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "271403": {
+   "title": "Kalbim 4 Mevsim",
+   "original": "Kalbim 4 Mevsim",
+   "tmdb_episodes": 1,
+   "tmdb_seasons": 1,
+   "dub_episodes": 43,
+   "variants": [
+    {
+     "id": "6243291127567761768",
+     "path": "kalbim-4-mevsim-mdblj-ll-rby-CHgrnq3lcr7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 43,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "271548": {
+   "title": "6 of Us",
+   "original": "Sahipsizler",
+   "tmdb_episodes": 51,
+   "tmdb_seasons": 2,
+   "dub_episodes": 96,
+   "variants": [
+    {
+     "id": "1619230034365952752",
+     "path": "sahipsizler-mdblj-ll-rby-YcLmYMC5CV1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 96,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "274556": {
+   "title": "Far Away",
+   "original": "Uzak Şehir",
+   "tmdb_episodes": 63,
+   "tmdb_seasons": 2,
+   "dub_episodes": 170,
+   "variants": [
+    {
+     "id": "2617685877534984152",
+     "path": "uzak-sehir-mdblj-ll-rby-SBbI8PN1n73",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 140,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 30,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "274955": {
+   "title": "Asaf",
+   "original": "Asaf",
+   "tmdb_episodes": 6,
+   "tmdb_seasons": 1,
+   "dub_episodes": 6,
+   "variants": [
+    {
+     "id": "4801349163415912640",
+     "path": "asaf-mdblj-ll-rby-UetwXwgeGI5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 6,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "277590": {
+   "title": "Portrait of a Scandalous Family",
+   "original": "Şakir Paşa Ailesi: Mucizeler ve Skandallar",
+   "tmdb_episodes": 16,
+   "tmdb_seasons": 2,
+   "dub_episodes": 72,
+   "variants": [
+    {
+     "id": "4426517577116058112",
+     "path": "portrait-of-a-scandalous-family-mdblj-ll-rby-G73dSfQuZg5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 72,
+       "allEp": "72"
+      }
+     ]
+    }
+   ]
+  },
+  "277856": {
+   "title": "Don't Cry Istanbul",
+   "original": "Sen Ağlama İstanbul",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 24,
+   "variants": [
+    {
+     "id": "2031212084901431448",
+     "path": "sen-aglama-istanbul-mdblj-ll-rby-wO3qWOjY2q2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 24,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "278004": {
+   "title": "Istanbul Encyclopedia",
+   "original": "İstanbul Ansiklopedisi",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 8,
+   "variants": [
+    {
+     "id": "9114999949405704528",
+     "path": "istanbul-encyclopedia-mdblj-ll-rby-M4kDrDnNkRa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "278006": {
+   "title": "Letters from the Past",
+   "original": "Geleceğe Mektuplar",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 8,
+   "variants": [
+    {
+     "id": "8690098989431173360",
+     "path": "letters-from-the-past-mdblj-ll-rby-K5tNsXdKWla",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "280777": {
+   "title": "The Fall of the King",
+   "original": "Kral Kaybederse",
+   "tmdb_episodes": 30,
+   "tmdb_seasons": 2,
+   "dub_episodes": 80,
+   "variants": [
+    {
+     "id": "5758569181805445496",
+     "path": "kral-kaybederse-mdblj-ll-rby-G1UwjK5joR6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 80,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "281746": {
+   "title": "Once Upon a Time in Istanbul",
+   "original": "Bir Zamanlar İstanbul",
+   "tmdb_episodes": 16,
+   "tmdb_seasons": 1,
+   "dub_episodes": 16,
+   "variants": [
+    {
+     "id": "411112728217242080",
+     "path": "bir-zamanlar-istanbul-arabic-mdblj-ll-rby-KLASJ7QTmu",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 16,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "282224": {
+   "title": "Another Day",
+   "original": "Başka Bir Gün",
+   "tmdb_episodes": 10,
+   "tmdb_seasons": 1,
+   "dub_episodes": 31,
+   "variants": [
+    {
+     "id": "6881425133656229512",
+     "path": "baska-bir-gun-mdblj-ll-rby-cKgjjs00lc8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 31,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "283123": {
+   "title": "Eşref Rüya",
+   "original": "Eşref Rüya",
+   "tmdb_episodes": 47,
+   "tmdb_seasons": 2,
+   "dub_episodes": 252,
+   "variants": [
+    {
+     "id": "4585859753548700272",
+     "path": "esref-ruya-mdblj-ll-rby-A2ylXCKhLs5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 65,
+       "allEp": ""
+      },
+      {
+       "se": 2,
+       "maxEp": 187,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187"
+      }
+     ]
+    }
+   ]
+  },
+  "283375": {
+   "title": "Team 1",
+   "original": "Ekip 1: Nizama Adanmış Ruhlar",
+   "tmdb_episodes": 265,
+   "tmdb_seasons": 3,
+   "dub_episodes": 32,
+   "variants": [
+    {
+     "id": "7664327315857850464",
+     "path": "ekip-1-nizama-adanmis-ruhlar-mdblj-ll-rby-OxarwpqHa89",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 32,
+       "allEp": "20,32"
+      }
+     ]
+    }
+   ]
+  },
+  "288472": {
+   "title": "Room for Love",
+   "original": "Çift Kişilik Oda",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 40,
+   "variants": [
+    {
+     "id": "1020944105100264248",
+     "path": "cift-kisilik-oda-mdblj-ll-rby-KrIsPuXVpd1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 40,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "297058": {
+   "title": "Black Sea Eyes",
+   "original": "Gözleri Karadeniz",
+   "tmdb_episodes": 17,
+   "tmdb_seasons": 1,
+   "dub_episodes": 80,
+   "variants": [
+    {
+     "id": "3556433681281599312",
+     "path": "gozleri-karadeniz-mdblj-ll-rby-qnPRelfvIe4",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 80,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "298792": {
+   "title": "Queen of Tears",
+   "original": "Aşk ve Gözyaşı",
+   "tmdb_episodes": 7,
+   "tmdb_seasons": 1,
+   "dub_episodes": 35,
+   "variants": [
+    {
+     "id": "6897068768200376352",
+     "path": "ask-ve-gozyasi-mdblj-ll-rby-YC80LpbEud8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 35,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "299847": {
+   "title": "Children of Paradise",
+   "original": "Cennetin Çocukları",
+   "tmdb_episodes": 36,
+   "tmdb_seasons": 1,
+   "dub_episodes": 6,
+   "variants": [
+    {
+     "id": "5557080684570856496",
+     "path": "cennetin-cocuklari-mdblj-ll-rby-EgQvfLhuvC6",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 6,
+       "allEp": "2,3,4,5,6"
+      }
+     ]
+    }
+   ]
+  },
+  "300030": {
+   "title": "Envy",
+   "original": "Kıskanmak",
+   "tmdb_episodes": 33,
+   "tmdb_seasons": 1,
+   "dub_episodes": 165,
+   "variants": [
+    {
+     "id": "6436051857730587488",
+     "path": "kiskanmak-mdblj-ll-rby-qpIdXawbrF7",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 165,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "300388": {
+   "title": "Sins and Roses",
+   "original": "Güller ve Günahlar",
+   "tmdb_episodes": 32,
+   "tmdb_seasons": 1,
+   "dub_episodes": 160,
+   "variants": [
+    {
+     "id": "4449886107626538760",
+     "path": "guller-ve-gunahlar-mdblj-ll-rby-UwIc6lAwIi5",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 160,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160"
+      }
+     ]
+    }
+   ]
+  },
+  "301693": {
+   "title": "Lovers & Liars",
+   "original": "Sahtekarlar",
+   "tmdb_episodes": 22,
+   "tmdb_seasons": 1,
+   "dub_episodes": 110,
+   "variants": [
+    {
+     "id": "2210713592280795960",
+     "path": "sahtekarlar-mdblj-ll-rby-wA8SfwG5jD2",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 110,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110"
+      }
+     ]
+    }
+   ]
+  },
+  "306215": {
+   "title": "The One I Love",
+   "original": "Sevdiğim Sensin",
+   "tmdb_episodes": 15,
+   "tmdb_seasons": 1,
+   "dub_episodes": 75,
+   "variants": [
+    {
+     "id": "7024114051139914056",
+     "path": "sevdigim-sensin-mdblj-ll-rby-8M63IR2wSm8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 75,
+       "allEp": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,62,63,64,65,66,67,68,69,70,71,72,73,74,75"
+      }
+     ]
+    }
+   ]
+  },
+  "306529": {
+   "title": "A.B.I.: A Broken Inheritance",
+   "original": "A.B.İ.",
+   "tmdb_episodes": 18,
+   "tmdb_seasons": 1,
+   "dub_episodes": 90,
+   "variants": [
+    {
+     "id": "9131758042063818976",
+     "path": "a-b-i-mdblj-ll-rby-Qi0COf1yzSa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 90,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "309328": {
+   "title": "Underground",
+   "original": "Yeraltı",
+   "tmdb_episodes": 16,
+   "tmdb_seasons": 1,
+   "dub_episodes": 80,
+   "variants": [
+    {
+     "id": "7511616315527256256",
+     "path": "underground-mdblj-ll-rby-Q4Tr1CvhTW8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 80,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "310045": {
+   "title": "To Love, To Lose",
+   "original": "Ayrılık da Sevdaya Dahil",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 8,
+   "variants": [
+    {
+     "id": "6967895244222744400",
+     "path": "to-love-to-lose-mdblj-ll-rby-cuK38f72Ji8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 8,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "310239": {
+   "title": "Museum of Innocence",
+   "original": "Masumiyet Müzesi",
+   "tmdb_episodes": 9,
+   "tmdb_seasons": 1,
+   "dub_episodes": 9,
+   "variants": [
+    {
+     "id": "7487453774412665960",
+     "path": "museum-of-innocence-mdblj-ll-rby-OtYWFwiC6V8",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 9,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "310772": {
+   "title": "Esaretim Sensin",
+   "original": "Esaretim Sensin",
+   "tmdb_episodes": 1,
+   "tmdb_seasons": 1,
+   "dub_episodes": 35,
+   "variants": [
+    {
+     "id": "1114555015408112736",
+     "path": "esaretim-sensin-mdblj-ll-rby-8K7rf4MFkk1",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 35,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "314172": {
+   "title": "We'll Be Fine",
+   "original": "Bize Bi'Şey Olmaz",
+   "tmdb_episodes": 8,
+   "tmdb_seasons": 1,
+   "dub_episodes": 7,
+   "variants": [
+    {
+     "id": "8960380415932516680",
+     "path": "bize-bisey-olmaz-mdblj-ll-rby-KlhSz2wDUFa",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 7,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  },
+  "325104": {
+   "title": "Araf Zamani",
+   "original": "Araf Zamani",
+   "tmdb_episodes": 1,
+   "tmdb_seasons": 1,
+   "dub_episodes": 80,
+   "variants": [
+    {
+     "id": "3441301880096391960",
+     "path": "araf-zamani-mdblj-ll-rby-ytqbYplcd64",
+     "lang": "ar-dub",
+     "label": "مدبلج للعربية",
+     "seasons": [
+      {
+       "se": 1,
+       "maxEp": 80,
+       "allEp": ""
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
