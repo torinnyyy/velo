@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-08-02",
+  "updated": "2026-10-07",
   "entries": {
     "127532": {
       "title": "Solo Leveling",
@@ -926,6 +926,67 @@
             "anidb_id": 19983,
             "thetvdb_id": 457078,
             "imdb_id": "tt36034547"
+          }
+        }
+      ]
+    },
+    "73223": {
+      "title": "Black Clover",
+      "tmdb_type": "tv",
+      "note": "ani.zip?themoviedb_id=73223 يُرجع خطأً الحلقة الخاصّة Jump Festa 2016 (OVA · mal 33950 · حلقة واحدة) لا المسلسل ⇒ كلّ مصادر الأنمي تبحث عن العمل الخطأ (no-hits/no-source/no-slug). TMDB: S1=170 · S2=26 (بدأ 2026-10-03). تحقّق 2026-10-07: ani.zip?mal_id=34572 ⇒ 170 حلقة abs 1–170 · ani.zip?mal_id=61967 ⇒ S2 abs 171+. slug_titles = العنوان الأساسيّ (animesalt يبني black-clover-{S}x{E}).",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 170,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Black Clover (2017)",
+            "Black Clover",
+            "Black Clover (TV)",
+            "ブラッククローバー (2017)"
+          ],
+          "slug_titles": [
+            "Black Clover"
+          ],
+          "ids": {
+            "mal_id": 34572,
+            "anilist_id": 97940,
+            "kitsu_id": 13209,
+            "anidb_id": 12665,
+            "anisearch_id": 12131,
+            "livechart_id": 2478,
+            "animeplanet_id": "black-clover",
+            "thetvdb_id": 331753,
+            "imdb_id": "tt7441658"
+          }
+        },
+        {
+          "tmdb_season": 2,
+          "from": 1,
+          "to": 26,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Black Clover 2nd Season",
+            "Black Clover Second Season",
+            "Black Clover Season 2",
+            "ブラッククローバー 2nd Season"
+          ],
+          "slug_titles": [
+            "Black Clover"
+          ],
+          "ids": {
+            "mal_id": 61967,
+            "anilist_id": 195604,
+            "kitsu_id": 50024,
+            "anidb_id": 19433,
+            "anisearch_id": 20716,
+            "livechart_id": 13232,
+            "animeplanet_id": "black-clover-2nd-season",
+            "thetvdb_id": 331753,
+            "imdb_id": "tt7441658"
           }
         }
       ]
