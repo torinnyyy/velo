@@ -990,6 +990,516 @@
           }
         }
       ]
+    },
+    "34109": {
+      "title": "Bakugan Battle Brawlers",
+      "tmdb_type": "tv",
+      "note": "TMDB يفصل 4 مواسم (52/52/39/46) وani.zip يُرجع معرّفات S1 دائماً. ⚠️ S1: TMDB E40 «Alice Gets Schooled» لا مقابل له في ani.zip (51 حلقة) ⇒ E41–E52 = ani.zip E40–E51 (بالعنوان: «A Fish Called Tayghen/Taygen») · E40 بلا مدخل. S2–S4 متطابقة بالعنوان/التاريخ. تحقّق 2026-10-07.",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 39,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Bakugan",
+            "爆丸バトルブローラーズ"
+          ],
+          "slug_titles": [
+            "Bakugan Battle Brawlers",
+            "Bakugan"
+          ],
+          "ids": {
+            "mal_id": 2156,
+            "anilist_id": 2156,
+            "kitsu_id": 1952,
+            "anidb_id": 5098,
+            "anisearch_id": 4162,
+            "livechart_id": 4814,
+            "animeplanet_id": "bakugan-battle-brawlers",
+            "thetvdb_id": 82832,
+            "imdb_id": "tt1114855"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 41,
+          "to": 52,
+          "episode_offset": 40,
+          "season_number": 1,
+          "titles": [
+            "Bakugan",
+            "爆丸バトルブローラーズ"
+          ],
+          "slug_titles": [
+            "Bakugan Battle Brawlers",
+            "Bakugan"
+          ],
+          "ids": {
+            "mal_id": 2156,
+            "anilist_id": 2156,
+            "kitsu_id": 1952,
+            "anidb_id": 5098,
+            "anisearch_id": 4162,
+            "livechart_id": 4814,
+            "animeplanet_id": "bakugan-battle-brawlers",
+            "thetvdb_id": 82832,
+            "imdb_id": "tt1114855"
+          }
+        },
+        {
+          "tmdb_season": 2,
+          "from": 1,
+          "to": 52,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Bakugan: New Vestroia",
+            "Bakugan Battle Brawlers: New Vestroia",
+            "爆丸バトルブローラーズ ニューヴェストロイア"
+          ],
+          "slug_titles": [
+            "Bakugan Battle Brawlers",
+            "Bakugan"
+          ],
+          "ids": {
+            "mal_id": 5337,
+            "anilist_id": 5337,
+            "kitsu_id": 4062,
+            "anidb_id": 7401,
+            "anisearch_id": 5758,
+            "livechart_id": 4692,
+            "animeplanet_id": "bakugan-battle-brawlers-new-vestroia",
+            "thetvdb_id": 82832,
+            "imdb_id": "tt1114855"
+          }
+        },
+        {
+          "tmdb_season": 3,
+          "from": 1,
+          "to": 39,
+          "episode_offset": 1,
+          "season_number": 3,
+          "titles": [
+            "Bakugan: Gundalian Invaders",
+            "爆丸バトルブローラーズ ガンダリアンインベーダーズ"
+          ],
+          "slug_titles": [
+            "Bakugan Battle Brawlers",
+            "Bakugan"
+          ],
+          "ids": {
+            "mal_id": 7334,
+            "anilist_id": 7334,
+            "kitsu_id": 4944,
+            "anidb_id": 7535,
+            "anisearch_id": 5940,
+            "livechart_id": 5283,
+            "animeplanet_id": "bakugan-battle-brawlers-gundalian-invaders",
+            "thetvdb_id": 82832,
+            "imdb_id": "tt1114855"
+          }
+        },
+        {
+          "tmdb_season": 4,
+          "from": 1,
+          "to": 46,
+          "episode_offset": 1,
+          "season_number": 4,
+          "titles": [
+            "Bakugan Battle Brawlers: Survival Force",
+            "Bakugan: Mechtanium Surge"
+          ],
+          "slug_titles": [
+            "Bakugan Battle Brawlers",
+            "Bakugan"
+          ],
+          "ids": {
+            "mal_id": 10330,
+            "anilist_id": 10330,
+            "kitsu_id": 6131,
+            "anidb_id": 8391,
+            "anisearch_id": 7042,
+            "livechart_id": 1570,
+            "animeplanet_id": "bakugan-battle-brawlers-mechtanium-surge",
+            "thetvdb_id": 82832,
+            "imdb_id": "tt1114855"
+          }
+        }
+      ]
+    },
+    "218843": {
+      "title": "The Seven Deadly Sins: Four Knights of the Apocalypse",
+      "tmdb_type": "tv",
+      "note": "بلاغ مستخدم: «الموسم الثاني بدو توافق». TMDB يدمج S1=36 = 24 + 12. ani.zip?themoviedb_id ⇒ mal 51794 (24 فقط). الحدود بعناوين الحلقات: E25 «The Power of the King» = S2E1. تحقّق 2026-10-07.",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 24,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "7sins 4knights",
+            "The Seven Deadly Sins: Four Knights of the Apocalypse",
+            "七つの大罪 黙示録の四騎士"
+          ],
+          "slug_titles": [
+            "Nanatsu no Taizai: Mokushiroku no Yonkishi",
+            "The Seven Deadly Sins: Four Knights of the Apocalypse"
+          ],
+          "ids": {
+            "mal_id": 51794,
+            "anilist_id": 148862,
+            "kitsu_id": 46107,
+            "anidb_id": 17355,
+            "anisearch_id": 17439,
+            "livechart_id": 11213,
+            "animeplanet_id": "the-seven-deadly-sins-four-knights-of-the-apocalypse",
+            "thetvdb_id": 420018,
+            "imdb_id": "tt20228550"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 25,
+          "to": 36,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "7sins 4knights 2",
+            "The Seven Deadly Sins: Four Knights of the Apocalypse (2024)",
+            "七つの大罪 黙示録の四騎士 (2024)"
+          ],
+          "slug_titles": [
+            "Nanatsu no Taizai: Mokushiroku no Yonkishi",
+            "The Seven Deadly Sins: Four Knights of the Apocalypse"
+          ],
+          "ids": {
+            "mal_id": 58511,
+            "anilist_id": 176292,
+            "kitsu_id": 48647,
+            "anidb_id": 18558,
+            "anisearch_id": 19154,
+            "livechart_id": 12606,
+            "animeplanet_id": "the-seven-deadly-sins-four-knights-of-the-apocalypse-season-2",
+            "thetvdb_id": 420018,
+            "imdb_id": "tt20228550"
+          }
+        }
+      ]
+    },
+    "105009": {
+      "title": "Tokyo Revengers",
+      "tmdb_type": "tv",
+      "note": "بلاغ مستخدم: «الجزء الثاني». TMDB يدمج S1=55 (24+13+13+S4 جارٍ). الحدود بعناوين الحلقات: E25 «It Is What It Is» · E38 «The Longest Day» · E51 «Break Up» (2026-10-03 = S4E1). S4 مخطَّط 13 ⇒ to=63. تحقّق 2026-10-07.",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 24,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Toman",
+            "Tokyo Revengers",
+            "東京リベンジャーズ"
+          ],
+          "slug_titles": [
+            "Tokyo Revengers"
+          ],
+          "ids": {
+            "mal_id": 42249,
+            "anilist_id": 120120,
+            "kitsu_id": 43321,
+            "anidb_id": 15601,
+            "anisearch_id": 15335,
+            "livechart_id": 10019,
+            "animeplanet_id": "tokyo-revengers",
+            "thetvdb_id": 393478,
+            "imdb_id": "tt13196080"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 25,
+          "to": 37,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "tr s2",
+            "Tokyo Revengers: Christmas Showdown",
+            "東京リベンジャーズ 聖夜決戦編"
+          ],
+          "slug_titles": [
+            "Tokyo Revengers"
+          ],
+          "ids": {
+            "mal_id": 50608,
+            "anilist_id": 142853,
+            "kitsu_id": 45607,
+            "anidb_id": 17064,
+            "anisearch_id": 16927,
+            "livechart_id": 10956,
+            "animeplanet_id": "tokyo-revengers-seiya-kessen-hen",
+            "thetvdb_id": 393478,
+            "imdb_id": "tt13196080"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 38,
+          "to": 50,
+          "episode_offset": 1,
+          "season_number": 3,
+          "titles": [
+            "Tokyo Revengers: Tenjiku Hen",
+            "tr s3",
+            "東京リベンジャーズ 天竺編"
+          ],
+          "slug_titles": [
+            "Tokyo Revengers"
+          ],
+          "ids": {
+            "mal_id": 54918,
+            "anilist_id": 163329,
+            "kitsu_id": 47278,
+            "anidb_id": 17969,
+            "anisearch_id": 18331,
+            "livechart_id": 11923,
+            "animeplanet_id": "tokyo-revengers-tenjiku-hen",
+            "thetvdb_id": 393478,
+            "imdb_id": "tt13196080"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 51,
+          "to": 63,
+          "episode_offset": 1,
+          "season_number": 4,
+          "titles": [
+            "Tokyo Revengers: Santen Sensou Hen",
+            "Tokyo Revengers: War of the Three Titans Arc",
+            "東京リベンジャーズ 三天戦争編"
+          ],
+          "slug_titles": [
+            "Tokyo Revengers"
+          ],
+          "ids": {
+            "mal_id": 59088,
+            "anilist_id": 178083,
+            "kitsu_id": 48960,
+            "anidb_id": 18693,
+            "anisearch_id": 19353,
+            "livechart_id": 12704,
+            "animeplanet_id": "tokyo-revengers-battle-of-three-deities",
+            "thetvdb_id": 393478,
+            "imdb_id": "tt13196080"
+          }
+        }
+      ]
+    },
+    "65931": {
+      "title": "Bungo Stray Dogs",
+      "tmdb_type": "tv",
+      "note": "بلاغ مستخدم. TMDB يدمج 5 مواسم في S1=60 (12+12+12+13+11). ⚠️ abs في ani.zip يحسب OVA (abs 25) لا يعدّها TMDB ⇒ الحدود من عناوين الحلقات لا abs: E13 «The Dark Age» · E25 «Dazai, Chuuya, Fifteen Years Old» · E37 «The Lone Swordsman…» · E50 «The Strongest Man». تحقّق 2026-10-07.",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 12,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "bsd",
+            "Bungo Stray Dogs",
+            "文豪ストレイドッグス"
+          ],
+          "slug_titles": [
+            "Bungo Stray Dogs",
+            "Bungou Stray Dogs"
+          ],
+          "ids": {
+            "mal_id": 31478,
+            "anilist_id": 21311,
+            "kitsu_id": 11339,
+            "anidb_id": 11523,
+            "anisearch_id": 10694,
+            "livechart_id": 1783,
+            "animeplanet_id": "bungo-stray-dogs",
+            "thetvdb_id": 305075,
+            "imdb_id": "tt5679720"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 13,
+          "to": 24,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "bungosd2",
+            "Bungo Stray Dogs 2",
+            "文豪ストレイドッグス (2016)"
+          ],
+          "slug_titles": [
+            "Bungo Stray Dogs",
+            "Bungou Stray Dogs"
+          ],
+          "ids": {
+            "mal_id": 32867,
+            "anilist_id": 21679,
+            "kitsu_id": 11882,
+            "anidb_id": 11965,
+            "anisearch_id": 11246,
+            "livechart_id": 2056,
+            "animeplanet_id": "bungo-stray-dogs-2nd-season",
+            "thetvdb_id": 305075,
+            "imdb_id": "tt5679720"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 25,
+          "to": 36,
+          "episode_offset": 1,
+          "season_number": 3,
+          "titles": [
+            "bsd3",
+            "Bungo Stray Dogs 3",
+            "文豪ストレイドッグス (2019)"
+          ],
+          "slug_titles": [
+            "Bungo Stray Dogs",
+            "Bungou Stray Dogs"
+          ],
+          "ids": {
+            "mal_id": 38003,
+            "anilist_id": 103223,
+            "kitsu_id": 41984,
+            "anidb_id": 14230,
+            "anisearch_id": 13766,
+            "livechart_id": 3427,
+            "animeplanet_id": "bungo-stray-dogs-3rd-season",
+            "thetvdb_id": 305075,
+            "imdb_id": "tt5679720"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 37,
+          "to": 49,
+          "episode_offset": 1,
+          "season_number": 4,
+          "titles": [
+            "bsd4",
+            "Bungo Stray Dogs 4",
+            "文豪ストレイドッグス (2023)"
+          ],
+          "slug_titles": [
+            "Bungo Stray Dogs",
+            "Bungou Stray Dogs"
+          ],
+          "ids": {
+            "mal_id": 50330,
+            "anilist_id": 141249,
+            "kitsu_id": 45460,
+            "anidb_id": 16965,
+            "anisearch_id": 16758,
+            "livechart_id": 10879,
+            "animeplanet_id": "bungo-stray-dogs-4th-season",
+            "thetvdb_id": 305075,
+            "imdb_id": "tt5679720"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 50,
+          "to": 60,
+          "episode_offset": 1,
+          "season_number": 5,
+          "titles": [
+            "bsd5",
+            "Bungo Stray Dogs 5",
+            "文豪ストレイドッグス (2023) TV"
+          ],
+          "slug_titles": [
+            "Bungo Stray Dogs",
+            "Bungou Stray Dogs"
+          ],
+          "ids": {
+            "mal_id": 54898,
+            "anilist_id": 163263,
+            "kitsu_id": 47258,
+            "anidb_id": 17962,
+            "anisearch_id": 18320,
+            "livechart_id": 11915,
+            "animeplanet_id": "bungo-stray-dogs-5th-season",
+            "thetvdb_id": 305075,
+            "imdb_id": "tt5679720"
+          }
+        }
+      ]
+    },
+    "57775": {
+      "title": "Chibi Maruko-chan",
+      "tmdb_type": "tv",
+      "note": "النوع ٢: ani.zip?themoviedb_id=57775 ⇒ فيلم 1990 (MOVIE · mal 3203) لا المسلسل. S1=142 = mal 951 (142 · الترقيم متطابق بعناوين E81–E90؛ تواريخ TMDB متقدّمة أسبوعين فلا يُعتمد عليها). S2 = مسلسل 1995 الجاري (mal 6149) — متطابق بالتواريخ (انحرافات نقطيّة فقط) · to=3000 لأنّه مستمرّ. تحقّق 2026-10-07.",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 142,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Chibi Maruko-chan",
+            "Little Miss Maruko",
+            "ちびまる子ちゃん"
+          ],
+          "slug_titles": [
+            "Chibi Maruko-chan"
+          ],
+          "ids": {
+            "mal_id": 951,
+            "anilist_id": 951,
+            "kitsu_id": 843,
+            "anidb_id": 1841,
+            "anisearch_id": 2680,
+            "livechart_id": 8279,
+            "animeplanet_id": "chibi-maruko-chan",
+            "thetvdb_id": 167131,
+            "imdb_id": "tt0220204"
+          }
+        },
+        {
+          "tmdb_season": 2,
+          "from": 1,
+          "to": 3000,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Chibi Maruko-chan 2",
+            "ちびまる子ちゃん (1995)"
+          ],
+          "slug_titles": [
+            "Chibi Maruko-chan"
+          ],
+          "ids": {
+            "mal_id": 6149,
+            "anilist_id": 6149,
+            "kitsu_id": 4445,
+            "anidb_id": 1842,
+            "anisearch_id": 158,
+            "livechart_id": 1484,
+            "animeplanet_id": "chibi-maruko-chan-1995",
+            "thetvdb_id": 167131,
+            "imdb_id": "tt0220204"
+          }
+        }
+      ]
     }
   }
 }
