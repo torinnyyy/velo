@@ -2551,6 +2551,69 @@
           }
         }
       ]
+    },
+    "204832": {
+      "title": "MASHLE: MAGIC AND MUSCLES",
+      "tmdb_type": "tv",
+      "note": "Telegram failures 2026-10-07..14 — verified 2026-10-14 (boundaries.mjs by episode titles). Type 1 — TMDB S1=24 merges S1 (mal 52211) + Divine Visionary Candidate Exam Arc (mal 55813). Reports: E13–E24 \"> 12 per ani.zip\".",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 12,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Mashle",
+            "Mashle: Magic and Muscles",
+            "MASHLE: MAGIC AND MUSCLES",
+            "マッシュル-MASHLE-"
+          ],
+          "slug_titles": [
+            "Mashle",
+            "MASHLE: MAGIC AND MUSCLES"
+          ],
+          "ids": {
+            "mal_id": 52211,
+            "anilist_id": 151801,
+            "kitsu_id": 46229,
+            "anidb_id": 17478,
+            "anisearch_id": 17495,
+            "livechart_id": 11318,
+            "animeplanet_id": "mashle-magic-and-muscles",
+            "thetvdb_id": 421737,
+            "imdb_id": "tt21209804"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 13,
+          "to": 24,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Mashle: Shinkakusha Kouho Senbatsu Shiken Hen",
+            "Mashle: Magic and Muscles - The Divine Visionary Candidate Exam Arc",
+            "MASHLE: MAGIC AND MUSCLES Season 2",
+            "マッシュル 神覚者候補選抜試験編"
+          ],
+          "slug_titles": [
+            "Mashle",
+            "MASHLE: MAGIC AND MUSCLES"
+          ],
+          "ids": {
+            "mal_id": 55813,
+            "anilist_id": 166610,
+            "kitsu_id": 47671,
+            "anidb_id": 18088,
+            "anisearch_id": 18500,
+            "livechart_id": 12233,
+            "animeplanet_id": "mashle-magic-and-muscles-the-divine-visionary-candidate-exam-arc",
+            "thetvdb_id": 421737,
+            "imdb_id": "tt21209804"
+          }
+        }
+      ]
     }
   }
 }
