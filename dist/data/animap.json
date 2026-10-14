@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-07",
+  "updated": "2026-10-14",
   "entries": {
     "127532": {
       "title": "Solo Leveling",
@@ -306,7 +306,7 @@
         {
           "tmdb_season": 1,
           "from": 67,
-          "to": 81,
+          "to": 85,
           "episode_offset": 1,
           "season_number": 5,
           "titles": [
@@ -327,7 +327,8 @@
             "imdb_id": "tt5607616"
           }
         }
-      ]
+      ],
+      "note": "2026-10-14: S4 to 81 → 85 (S4 = 19 eps, ended 2026-09-30). Report: E85."
     },
     "209867": {
       "title": "Frieren: Beyond Journey's End",
@@ -491,8 +492,32 @@
             "thetvdb_id": 431162,
             "imdb_id": "tt26743760"
           }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 49,
+          "to": 60,
+          "episode_offset": 1,
+          "season_number": 3,
+          "titles": [
+            "Kusuriya no Hitorigoto (2026)",
+            "The Apothecary Diaries (2026)",
+            "薬屋のひとりごと (2026)"
+          ],
+          "ids": {
+            "mal_id": 61987,
+            "anilist_id": 195516,
+            "kitsu_id": 50021,
+            "anidb_id": 19444,
+            "anisearch_id": 20704,
+            "livechart_id": 13226,
+            "animeplanet_id": "the-apothecary-diaries-3rd-season",
+            "thetvdb_id": 431162,
+            "imdb_id": "tt26743760"
+          }
         }
-      ]
+      ],
+      "note": "2026-10-14: + S3 E49-60 (mal 61987, began 2026-10-02). Reports: E49/E50 \"> 24\"."
     },
     "120089": {
       "title": "SPY x FAMILY",
@@ -1497,6 +1522,1032 @@
             "animeplanet_id": "chibi-maruko-chan-1995",
             "thetvdb_id": 167131,
             "imdb_id": "tt0220204"
+          }
+        }
+      ]
+    },
+    "12971": {
+      "title": "Dragon Ball Z",
+      "tmdb_type": "tv",
+      "note": "Telegram failures 2026-10-07..14 — verified 2026-10-14 (inspect + TMDB air dates). Type 2 — ani.zip?themoviedb_id returns the MOVIE Wrath of the Dragon (mal 906). TMDB splits 291 eps into 9 sagas; all = mal 813 (abs 1-291), offset = cumulative. Reports: S1E2 \"2 > 1\", S2-S9 failures.",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 39,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Dragon Ball Z",
+            "ドラゴンボールゼット"
+          ],
+          "slug_titles": [
+            "Dragon Ball Z"
+          ],
+          "ids": {
+            "mal_id": 813,
+            "anilist_id": 813,
+            "kitsu_id": 720,
+            "anidb_id": 1530,
+            "anisearch_id": 2938,
+            "livechart_id": 3632,
+            "animeplanet_id": "dragon-ball-z",
+            "thetvdb_id": 81472,
+            "imdb_id": "tt0121220"
+          }
+        },
+        {
+          "tmdb_season": 2,
+          "from": 1,
+          "to": 35,
+          "episode_offset": 40,
+          "season_number": 1,
+          "titles": [
+            "Dragon Ball Z",
+            "ドラゴンボールゼット"
+          ],
+          "slug_titles": [
+            "Dragon Ball Z"
+          ],
+          "ids": {
+            "mal_id": 813,
+            "anilist_id": 813,
+            "kitsu_id": 720,
+            "anidb_id": 1530,
+            "anisearch_id": 2938,
+            "livechart_id": 3632,
+            "animeplanet_id": "dragon-ball-z",
+            "thetvdb_id": 81472,
+            "imdb_id": "tt0121220"
+          }
+        },
+        {
+          "tmdb_season": 3,
+          "from": 1,
+          "to": 33,
+          "episode_offset": 75,
+          "season_number": 1,
+          "titles": [
+            "Dragon Ball Z",
+            "ドラゴンボールゼット"
+          ],
+          "slug_titles": [
+            "Dragon Ball Z"
+          ],
+          "ids": {
+            "mal_id": 813,
+            "anilist_id": 813,
+            "kitsu_id": 720,
+            "anidb_id": 1530,
+            "anisearch_id": 2938,
+            "livechart_id": 3632,
+            "animeplanet_id": "dragon-ball-z",
+            "thetvdb_id": 81472,
+            "imdb_id": "tt0121220"
+          }
+        },
+        {
+          "tmdb_season": 4,
+          "from": 1,
+          "to": 32,
+          "episode_offset": 108,
+          "season_number": 1,
+          "titles": [
+            "Dragon Ball Z",
+            "ドラゴンボールゼット"
+          ],
+          "slug_titles": [
+            "Dragon Ball Z"
+          ],
+          "ids": {
+            "mal_id": 813,
+            "anilist_id": 813,
+            "kitsu_id": 720,
+            "anidb_id": 1530,
+            "anisearch_id": 2938,
+            "livechart_id": 3632,
+            "animeplanet_id": "dragon-ball-z",
+            "thetvdb_id": 81472,
+            "imdb_id": "tt0121220"
+          }
+        },
+        {
+          "tmdb_season": 5,
+          "from": 1,
+          "to": 26,
+          "episode_offset": 140,
+          "season_number": 1,
+          "titles": [
+            "Dragon Ball Z",
+            "ドラゴンボールゼット"
+          ],
+          "slug_titles": [
+            "Dragon Ball Z"
+          ],
+          "ids": {
+            "mal_id": 813,
+            "anilist_id": 813,
+            "kitsu_id": 720,
+            "anidb_id": 1530,
+            "anisearch_id": 2938,
+            "livechart_id": 3632,
+            "animeplanet_id": "dragon-ball-z",
+            "thetvdb_id": 81472,
+            "imdb_id": "tt0121220"
+          }
+        },
+        {
+          "tmdb_season": 6,
+          "from": 1,
+          "to": 29,
+          "episode_offset": 166,
+          "season_number": 1,
+          "titles": [
+            "Dragon Ball Z",
+            "ドラゴンボールゼット"
+          ],
+          "slug_titles": [
+            "Dragon Ball Z"
+          ],
+          "ids": {
+            "mal_id": 813,
+            "anilist_id": 813,
+            "kitsu_id": 720,
+            "anidb_id": 1530,
+            "anisearch_id": 2938,
+            "livechart_id": 3632,
+            "animeplanet_id": "dragon-ball-z",
+            "thetvdb_id": 81472,
+            "imdb_id": "tt0121220"
+          }
+        },
+        {
+          "tmdb_season": 7,
+          "from": 1,
+          "to": 25,
+          "episode_offset": 195,
+          "season_number": 1,
+          "titles": [
+            "Dragon Ball Z",
+            "ドラゴンボールゼット"
+          ],
+          "slug_titles": [
+            "Dragon Ball Z"
+          ],
+          "ids": {
+            "mal_id": 813,
+            "anilist_id": 813,
+            "kitsu_id": 720,
+            "anidb_id": 1530,
+            "anisearch_id": 2938,
+            "livechart_id": 3632,
+            "animeplanet_id": "dragon-ball-z",
+            "thetvdb_id": 81472,
+            "imdb_id": "tt0121220"
+          }
+        },
+        {
+          "tmdb_season": 8,
+          "from": 1,
+          "to": 34,
+          "episode_offset": 220,
+          "season_number": 1,
+          "titles": [
+            "Dragon Ball Z",
+            "ドラゴンボールゼット"
+          ],
+          "slug_titles": [
+            "Dragon Ball Z"
+          ],
+          "ids": {
+            "mal_id": 813,
+            "anilist_id": 813,
+            "kitsu_id": 720,
+            "anidb_id": 1530,
+            "anisearch_id": 2938,
+            "livechart_id": 3632,
+            "animeplanet_id": "dragon-ball-z",
+            "thetvdb_id": 81472,
+            "imdb_id": "tt0121220"
+          }
+        },
+        {
+          "tmdb_season": 9,
+          "from": 1,
+          "to": 38,
+          "episode_offset": 254,
+          "season_number": 1,
+          "titles": [
+            "Dragon Ball Z",
+            "ドラゴンボールゼット"
+          ],
+          "slug_titles": [
+            "Dragon Ball Z"
+          ],
+          "ids": {
+            "mal_id": 813,
+            "anilist_id": 813,
+            "kitsu_id": 720,
+            "anidb_id": 1530,
+            "anisearch_id": 2938,
+            "livechart_id": 3632,
+            "animeplanet_id": "dragon-ball-z",
+            "thetvdb_id": 81472,
+            "imdb_id": "tt0121220"
+          }
+        }
+      ]
+    },
+    "237150": {
+      "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+      "tmdb_type": "tv",
+      "note": "Telegram failures 2026-10-07..14 — verified 2026-10-14 (inspect + TMDB air dates). Type 1 — TMDB S1 merges 3 seasons (12+12+S3 airing since 2026-09-27 at E25). S3 to=40 is a ceiling (episode count unannounced). Reports: E27/E28 \"> 12 per ani.zip\".",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 12,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "KanteiSkill",
+            "As a Reincarnated Aristocrat, I`ll Use My Appraisal Skill to Rise in the World",
+            "転生貴族, 鑑定スキルで成り上がる"
+          ],
+          "slug_titles": [
+            "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+            "Tensei Kizoku, Kantei Skill de Nariagaru"
+          ],
+          "ids": {
+            "mal_id": 55265,
+            "anilist_id": 164702,
+            "kitsu_id": 47481,
+            "anidb_id": 18026,
+            "anisearch_id": 18387,
+            "livechart_id": 12009,
+            "animeplanet_id": "as-a-reincarnated-aristocrat-ill-use-my-appraisal-skill-to-rise-in-the-world",
+            "thetvdb_id": 434704,
+            "imdb_id": null
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 13,
+          "to": 24,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "KanteiSkill 2",
+            "As a Reincarnated Aristocrat, I`ll Use My Appraisal Skill to Rise in the World (2024)",
+            "転生貴族, 鑑定スキルで成り上がる 第2期"
+          ],
+          "slug_titles": [
+            "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+            "Tensei Kizoku, Kantei Skill de Nariagaru"
+          ],
+          "ids": {
+            "mal_id": 59131,
+            "anilist_id": 178434,
+            "kitsu_id": 48979,
+            "anidb_id": 18707,
+            "anisearch_id": 19379,
+            "livechart_id": 12713,
+            "animeplanet_id": "as-a-reincarnated-aristocrat-ill-use-my-appraisal-skill-to-rise-in-the-world-season-2",
+            "thetvdb_id": 434704,
+            "imdb_id": null
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 25,
+          "to": 40,
+          "episode_offset": 1,
+          "season_number": 3,
+          "titles": [
+            "Tensei Kizoku, Kantei Skill de Nariagaru Dai 3 Ki",
+            "As a Reincarnated Aristocrat, I`ll Use My Appraisal Skill to Rise in the World (2026)",
+            "転生貴族, 鑑定スキルで成り上がる 第3期"
+          ],
+          "slug_titles": [
+            "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+            "Tensei Kizoku, Kantei Skill de Nariagaru"
+          ],
+          "ids": {
+            "mal_id": 60601,
+            "anilist_id": 185756,
+            "kitsu_id": 49437,
+            "anidb_id": 19070,
+            "anisearch_id": 19993,
+            "livechart_id": 12991,
+            "animeplanet_id": "as-a-reincarnated-aristocrat-ill-use-my-appraisal-skill-to-rise-in-the-world-season-3",
+            "thetvdb_id": 434704,
+            "imdb_id": null
+          }
+        }
+      ]
+    },
+    "261343": {
+      "title": "Chitose Is in the Ramune Bottle",
+      "tmdb_type": "tv",
+      "note": "Telegram failures 2026-10-07..14 — verified 2026-10-14 (inspect + TMDB air dates). Type 1 — TMDB S1=25: E1-13 (2025) + Part 2 from E14 (2026-10-13). Part 2 is not linked to TMDB in ani.zip. Report: E15 \"> 13\".",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 13,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Chiramune",
+            "Chitose Is in the Ramune Bottle",
+            "千歳くんはラムネ瓶のなか"
+          ],
+          "slug_titles": [
+            "Chitose Is in the Ramune Bottle",
+            "Chitose-kun wa Ramune Bin no Naka"
+          ],
+          "ids": {
+            "mal_id": 59517,
+            "anilist_id": 180082,
+            "kitsu_id": 49122,
+            "anidb_id": 18811,
+            "anisearch_id": 19571,
+            "livechart_id": 12794,
+            "animeplanet_id": "chitose-is-in-the-ramune-bottle",
+            "thetvdb_id": 453057,
+            "imdb_id": "tt35769369"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 14,
+          "to": 25,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Chitose-kun wa Ramune Bin no Naka Part 2",
+            "Chitose Is in the Ramune Bottle Part 2"
+          ],
+          "slug_titles": [
+            "Chitose Is in the Ramune Bottle",
+            "Chitose-kun wa Ramune Bin no Naka"
+          ],
+          "ids": {
+            "mal_id": 62484,
+            "anilist_id": 198727,
+            "kitsu_id": null,
+            "anidb_id": null,
+            "anisearch_id": null,
+            "livechart_id": null,
+            "animeplanet_id": null,
+            "thetvdb_id": null,
+            "imdb_id": null
+          }
+        }
+      ]
+    },
+    "27647": {
+      "title": "Read or Die the TV",
+      "tmdb_type": "tv",
+      "note": "Telegram failures 2026-10-07..14 — verified 2026-10-14 (inspect + TMDB air dates). Type 2 — ani.zip?themoviedb_id returns the 3-ep OVA R.O.D (mal 208). TV = mal 209 (26 eps). Report: E9 \"> 3\".",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 26,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "rodtv",
+            "R.O.D -THE TV-",
+            "R.O.D THE TV"
+          ],
+          "slug_titles": [
+            "Read or Die the TV",
+            "R.O.D the TV"
+          ],
+          "ids": {
+            "mal_id": 209,
+            "anilist_id": 209,
+            "kitsu_id": 185,
+            "anidb_id": 894,
+            "anisearch_id": 618,
+            "livechart_id": 3940,
+            "animeplanet_id": "read-or-die-tv",
+            "thetvdb_id": 82319,
+            "imdb_id": "tt0425710"
+          }
+        }
+      ]
+    },
+    "283428": {
+      "title": "The Ramparts of Ice",
+      "tmdb_type": "tv",
+      "note": "Telegram failures 2026-10-07..14 — verified 2026-10-14 (inspect + TMDB air dates). Type 1 — TMDB S1=28: E1-14 (2026-04) + 2nd Season from E15 (2026-10-01). Report: E16 \"> 14\".",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 14,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Koori no Jyōheki",
+            "The Ramparts of Ice",
+            "氷の城壁"
+          ],
+          "slug_titles": [
+            "The Ramparts of Ice",
+            "Koori no Jouheki"
+          ],
+          "ids": {
+            "mal_id": 60852,
+            "anilist_id": 186497,
+            "kitsu_id": 50465,
+            "anidb_id": 19139,
+            "anisearch_id": 20149,
+            "livechart_id": 13028,
+            "animeplanet_id": "the-ramparts-of-ice",
+            "thetvdb_id": 459627,
+            "imdb_id": "tt39123061"
+          }
+        },
+        {
+          "tmdb_season": 1,
+          "from": 15,
+          "to": 28,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Koori no Jouheki 2nd Season",
+            "The Ramparts of Ice Season 2"
+          ],
+          "slug_titles": [
+            "The Ramparts of Ice",
+            "Koori no Jouheki"
+          ],
+          "ids": {
+            "mal_id": 64534,
+            "anilist_id": 213805,
+            "kitsu_id": 50827,
+            "anidb_id": null,
+            "anisearch_id": null,
+            "livechart_id": null,
+            "animeplanet_id": null,
+            "thetvdb_id": null,
+            "imdb_id": null
+          }
+        }
+      ]
+    },
+    "312359": {
+      "title": "Dragon Ball Super: Beerus",
+      "tmdb_type": "tv",
+      "note": "Telegram failures 2026-10-07..14 — verified 2026-10-14 (inspect + TMDB air dates). ani.zip?themoviedb_id returns no mal/anilist ids (airing since 2026-10-11, not linked). mal 63367 / anilist 206814. Reports: E1/E2 no-mal-match.",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 19,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Dragon Ball Super: Beerus"
+          ],
+          "slug_titles": [
+            "Dragon Ball Super: Beerus",
+            "Dragon Ball Super"
+          ],
+          "ids": {
+            "mal_id": 63367,
+            "anilist_id": 206814,
+            "kitsu_id": 50497,
+            "anidb_id": null,
+            "anisearch_id": 21566,
+            "livechart_id": 13497,
+            "animeplanet_id": "dragon-ball-super-beerus",
+            "thetvdb_id": null,
+            "imdb_id": null
+          }
+        }
+      ]
+    },
+    "34753": {
+      "title": "Kirarin Revolution",
+      "tmdb_type": "tv",
+      "note": "Telegram failures 2026-10-07..14 — verified 2026-10-14 (inspect + TMDB air dates). TMDB splits 3x51 eps; all = mal 1516 (153 eps, absolute). Without this S2/S3 send the S1 episode number. Reports: S3E1, S3E51.",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 51,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Kirarin Revolution",
+            "きらりん☆レボリューション"
+          ],
+          "slug_titles": [
+            "Kirarin Revolution"
+          ],
+          "ids": {
+            "mal_id": 1516,
+            "anilist_id": 1516,
+            "kitsu_id": 1361,
+            "anidb_id": 4237,
+            "anisearch_id": 1869,
+            "livechart_id": 6524,
+            "animeplanet_id": "kirarin-revolution",
+            "thetvdb_id": 103071,
+            "imdb_id": null
+          }
+        },
+        {
+          "tmdb_season": 2,
+          "from": 1,
+          "to": 51,
+          "episode_offset": 52,
+          "season_number": 1,
+          "titles": [
+            "Kirarin Revolution",
+            "きらりん☆レボリューション"
+          ],
+          "slug_titles": [
+            "Kirarin Revolution"
+          ],
+          "ids": {
+            "mal_id": 1516,
+            "anilist_id": 1516,
+            "kitsu_id": 1361,
+            "anidb_id": 4237,
+            "anisearch_id": 1869,
+            "livechart_id": 6524,
+            "animeplanet_id": "kirarin-revolution",
+            "thetvdb_id": 103071,
+            "imdb_id": null
+          }
+        },
+        {
+          "tmdb_season": 3,
+          "from": 1,
+          "to": 51,
+          "episode_offset": 103,
+          "season_number": 1,
+          "titles": [
+            "Kirarin Revolution",
+            "きらりん☆レボリューション"
+          ],
+          "slug_titles": [
+            "Kirarin Revolution"
+          ],
+          "ids": {
+            "mal_id": 1516,
+            "anilist_id": 1516,
+            "kitsu_id": 1361,
+            "anidb_id": 4237,
+            "anisearch_id": 1869,
+            "livechart_id": 6524,
+            "animeplanet_id": "kirarin-revolution",
+            "thetvdb_id": 103071,
+            "imdb_id": null
+          }
+        }
+      ]
+    },
+    "42395": {
+      "title": "Golgo 13",
+      "tmdb_type": "tv",
+      "note": "Telegram failures 2026-10-07..14 — verified 2026-10-14 (inspect + TMDB air dates). Type 2 — ani.zip?themoviedb_id returns the 1983 MOVIE (mal 1760). The TV series is mal 4039 (50 eps). Report: E2/E4 \"> 1 per ani.zip\".",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 50,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Golgo TV",
+            "Golgo 13",
+            "ゴルゴ13 (2008)"
+          ],
+          "slug_titles": [
+            "Golgo 13"
+          ],
+          "ids": {
+            "mal_id": 4039,
+            "anilist_id": 4039,
+            "kitsu_id": 3426,
+            "anidb_id": 5746,
+            "anisearch_id": 4735,
+            "livechart_id": 4518,
+            "animeplanet_id": "golgo-13",
+            "thetvdb_id": 81849,
+            "imdb_id": "tt1166871"
+          }
+        }
+      ]
+    },
+    "56387": {
+      "title": "Fist of the North Star",
+      "tmdb_type": "tv",
+      "note": "Telegram failures 2026-10-07..14 — verified 2026-10-14 (inspect + TMDB air dates). Type 2 — ani.zip?themoviedb_id returns the 1986 MOVIE (mal 1358). TMDB S1-S4 (22+35+25+27=109) = mal 967; S5-S6 (13+30=43) = mal 1356 (Part 2). Report: S4E24.",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 22,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "HnK",
+            "Fist of the North Star",
+            "北斗の拳"
+          ],
+          "slug_titles": [
+            "Fist of the North Star"
+          ],
+          "ids": {
+            "mal_id": 967,
+            "anilist_id": 967,
+            "kitsu_id": 857,
+            "anidb_id": 386,
+            "anisearch_id": 3053,
+            "livechart_id": 4523,
+            "animeplanet_id": "fist-of-the-north-star",
+            "thetvdb_id": 79156,
+            "imdb_id": "tt0091211"
+          }
+        },
+        {
+          "tmdb_season": 2,
+          "from": 1,
+          "to": 35,
+          "episode_offset": 23,
+          "season_number": 1,
+          "titles": [
+            "HnK",
+            "Fist of the North Star",
+            "北斗の拳"
+          ],
+          "slug_titles": [
+            "Fist of the North Star"
+          ],
+          "ids": {
+            "mal_id": 967,
+            "anilist_id": 967,
+            "kitsu_id": 857,
+            "anidb_id": 386,
+            "anisearch_id": 3053,
+            "livechart_id": 4523,
+            "animeplanet_id": "fist-of-the-north-star",
+            "thetvdb_id": 79156,
+            "imdb_id": "tt0091211"
+          }
+        },
+        {
+          "tmdb_season": 3,
+          "from": 1,
+          "to": 25,
+          "episode_offset": 58,
+          "season_number": 1,
+          "titles": [
+            "HnK",
+            "Fist of the North Star",
+            "北斗の拳"
+          ],
+          "slug_titles": [
+            "Fist of the North Star"
+          ],
+          "ids": {
+            "mal_id": 967,
+            "anilist_id": 967,
+            "kitsu_id": 857,
+            "anidb_id": 386,
+            "anisearch_id": 3053,
+            "livechart_id": 4523,
+            "animeplanet_id": "fist-of-the-north-star",
+            "thetvdb_id": 79156,
+            "imdb_id": "tt0091211"
+          }
+        },
+        {
+          "tmdb_season": 4,
+          "from": 1,
+          "to": 27,
+          "episode_offset": 83,
+          "season_number": 1,
+          "titles": [
+            "HnK",
+            "Fist of the North Star",
+            "北斗の拳"
+          ],
+          "slug_titles": [
+            "Fist of the North Star"
+          ],
+          "ids": {
+            "mal_id": 967,
+            "anilist_id": 967,
+            "kitsu_id": 857,
+            "anidb_id": 386,
+            "anisearch_id": 3053,
+            "livechart_id": 4523,
+            "animeplanet_id": "fist-of-the-north-star",
+            "thetvdb_id": 79156,
+            "imdb_id": "tt0091211"
+          }
+        },
+        {
+          "tmdb_season": 5,
+          "from": 1,
+          "to": 13,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "hnk2",
+            "Fist of the North Star Part 2",
+            "世紀末救世主伝説 北斗の拳2"
+          ],
+          "slug_titles": [
+            "Fist of the North Star"
+          ],
+          "ids": {
+            "mal_id": 1356,
+            "anilist_id": 1356,
+            "kitsu_id": 1210,
+            "anidb_id": 984,
+            "anisearch_id": 1672,
+            "livechart_id": 6672,
+            "animeplanet_id": "fist-of-the-north-star-2",
+            "thetvdb_id": 79156,
+            "imdb_id": "tt0091211"
+          }
+        },
+        {
+          "tmdb_season": 6,
+          "from": 1,
+          "to": 30,
+          "episode_offset": 14,
+          "season_number": 2,
+          "titles": [
+            "hnk2",
+            "Fist of the North Star Part 2",
+            "世紀末救世主伝説 北斗の拳2"
+          ],
+          "slug_titles": [
+            "Fist of the North Star"
+          ],
+          "ids": {
+            "mal_id": 1356,
+            "anilist_id": 1356,
+            "kitsu_id": 1210,
+            "anidb_id": 984,
+            "anisearch_id": 1672,
+            "livechart_id": 6672,
+            "animeplanet_id": "fist-of-the-north-star-2",
+            "thetvdb_id": 79156,
+            "imdb_id": "tt0091211"
+          }
+        }
+      ]
+    },
+    "62110": {
+      "title": "Assassination Classroom",
+      "tmdb_type": "tv",
+      "note": "Telegram failures 2026-10-07..14 — verified 2026-10-14 (inspect + TMDB air dates). Type 2 — ani.zip?themoviedb_id returns the Jump Festa 2013 SPECIAL (mal 19759). S1 = mal 24833 (22), S2 = mal 30654 (25).",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 22,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Ansatsu Kyoushitsu (2015)",
+            "Assassination Classroom",
+            "暗殺教室 ASSASSINATION CLASSROOM"
+          ],
+          "slug_titles": [
+            "Assassination Classroom"
+          ],
+          "ids": {
+            "mal_id": 24833,
+            "anilist_id": 20755,
+            "kitsu_id": 8640,
+            "anidb_id": 10702,
+            "anisearch_id": 9701,
+            "livechart_id": 638,
+            "animeplanet_id": "assassination-classroom",
+            "thetvdb_id": 283947,
+            "imdb_id": "tt3837246"
+          }
+        },
+        {
+          "tmdb_season": 2,
+          "from": 1,
+          "to": 25,
+          "episode_offset": 1,
+          "season_number": 2,
+          "titles": [
+            "Ansatsu Kyoushitsu: Final Season",
+            "Assassination Classroom: Second Season",
+            "暗殺教室 ASSASSINATION CLASSROOM (2016)"
+          ],
+          "slug_titles": [
+            "Assassination Classroom"
+          ],
+          "ids": {
+            "mal_id": 30654,
+            "anilist_id": 21170,
+            "kitsu_id": 10877,
+            "anidb_id": 11203,
+            "anisearch_id": 10438,
+            "livechart_id": 1561,
+            "animeplanet_id": "assassination-classroom-2nd-season",
+            "thetvdb_id": 283947,
+            "imdb_id": "tt3837246"
+          }
+        }
+      ]
+    },
+    "91426": {
+      "title": "Jewelpet",
+      "tmdb_type": "tv",
+      "note": "Telegram failures 2026-10-07..14 — verified 2026-10-14 (inspect + TMDB air dates). ani.zip has no TMDB link at all; TMDB S1-S7 = 7 separate series. Reports: S7E15, S7E24.",
+      "ranges": [
+        {
+          "tmdb_season": 1,
+          "from": 1,
+          "to": 52,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Jewelpet",
+            "Jewel Pet",
+            "ジュエルペット"
+          ],
+          "slug_titles": [
+            "Jewelpet"
+          ],
+          "ids": {
+            "mal_id": 6008,
+            "anilist_id": 6008,
+            "kitsu_id": 4383,
+            "anidb_id": 6444,
+            "anisearch_id": 5285,
+            "livechart_id": 7059,
+            "animeplanet_id": "jewelpet",
+            "thetvdb_id": null,
+            "imdb_id": null
+          }
+        },
+        {
+          "tmdb_season": 2,
+          "from": 1,
+          "to": 52,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Jewelpet Twinkle",
+            "ジュエルペット てぃんくる☆"
+          ],
+          "slug_titles": [
+            "Jewelpet"
+          ],
+          "ids": {
+            "mal_id": 8217,
+            "anilist_id": 8217,
+            "kitsu_id": 5249,
+            "anidb_id": 7414,
+            "anisearch_id": 6098,
+            "livechart_id": 7567,
+            "animeplanet_id": "jewelpet-twinkle",
+            "thetvdb_id": null,
+            "imdb_id": null
+          }
+        },
+        {
+          "tmdb_season": 3,
+          "from": 1,
+          "to": 52,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Jewelpet Sunshine",
+            "ジュエルペット サンシャイン"
+          ],
+          "slug_titles": [
+            "Jewelpet"
+          ],
+          "ids": {
+            "mal_id": 10359,
+            "anilist_id": 10359,
+            "kitsu_id": 6147,
+            "anidb_id": 8295,
+            "anisearch_id": 6924,
+            "livechart_id": 1533,
+            "animeplanet_id": "jewelpet-sunshine",
+            "thetvdb_id": null,
+            "imdb_id": null
+          }
+        },
+        {
+          "tmdb_season": 4,
+          "from": 1,
+          "to": 52,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Jewelpet Kira Deco!",
+            "ジュエルペットきら☆デコッ!"
+          ],
+          "slug_titles": [
+            "Jewelpet"
+          ],
+          "ids": {
+            "mal_id": 12963,
+            "anilist_id": 12963,
+            "kitsu_id": 6857,
+            "anidb_id": 8960,
+            "anisearch_id": 7586,
+            "livechart_id": 1113,
+            "animeplanet_id": "jewelpet-kira-deco",
+            "thetvdb_id": null,
+            "imdb_id": null
+          }
+        },
+        {
+          "tmdb_season": 5,
+          "from": 1,
+          "to": 52,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Jewelpet Happiness",
+            "ジュエルペット ハッピネス"
+          ],
+          "slug_titles": [
+            "Jewelpet"
+          ],
+          "ids": {
+            "mal_id": 17497,
+            "anilist_id": 17497,
+            "kitsu_id": 7650,
+            "anidb_id": 9706,
+            "anisearch_id": 8574,
+            "livechart_id": 821,
+            "animeplanet_id": "jewelpet-happiness",
+            "thetvdb_id": null,
+            "imdb_id": null
+          }
+        },
+        {
+          "tmdb_season": 6,
+          "from": 1,
+          "to": 52,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Lady Jewelpet",
+            "レディ ジュエルペット"
+          ],
+          "slug_titles": [
+            "Jewelpet"
+          ],
+          "ids": {
+            "mal_id": 22693,
+            "anilist_id": 20784,
+            "kitsu_id": 8354,
+            "anidb_id": 10440,
+            "anisearch_id": 9464,
+            "livechart_id": 437,
+            "animeplanet_id": "lady-jewelpet",
+            "thetvdb_id": null,
+            "imdb_id": null
+          }
+        },
+        {
+          "tmdb_season": 7,
+          "from": 1,
+          "to": 39,
+          "episode_offset": 1,
+          "season_number": 1,
+          "titles": [
+            "Jewelpet Magical Change",
+            "ジュエルペット マジカルチェンジ"
+          ],
+          "slug_titles": [
+            "Jewelpet"
+          ],
+          "ids": {
+            "mal_id": 30030,
+            "anilist_id": 21134,
+            "kitsu_id": 10597,
+            "anidb_id": 11076,
+            "anisearch_id": 10225,
+            "livechart_id": 1406,
+            "animeplanet_id": "jewelpet-magical-change",
+            "thetvdb_id": null,
+            "imdb_id": null
           }
         }
       ]
